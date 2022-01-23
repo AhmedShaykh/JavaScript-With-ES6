@@ -1,1 +1,1 @@
-# Learning-&-Practice-JavaScript-With-ECMAScript
+# Learning-And-Practice-JavaScript-With-ECMAScript-6

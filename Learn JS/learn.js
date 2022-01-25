@@ -1,27 +1,18 @@
 var a = 'Ahmed';
 document.write(a);
+console.log(a);
 
-var a = 'Ahmed';
 console.log(a.length);
 
 var b = 'Hello World';
 console.log(b.includes('World'));
 console.log(b.includes('Yello'));
 console.log(b.includes('H'));
+console.log(b.includes('w'));
 
 console.log(b.toUpperCase());
 
 console.log(b.toLowerCase());
-
-// (((((((( RECAP ))))))))
-// You can create strings with " or '.
-// .length is a property that gives you the length of a string
-// .includes(searchString) returns true or false based on whether the searchString was found or not.
-// .toUpperCase() is a function that converts the string to upper case
-// .toLowerCase() is a function that converts the string to lower case
-// parentheses () on functions are required. .length is a property which is already pre-computed thus 
-// why it does not need parentheses
-// document.write & console.log(...) is used for debugging and is NOT a replacement for return.
 
 var language = 'JavaScript';
 console.log(language[0]);
@@ -31,91 +22,23 @@ console.log(language[3]);
 
 console.log(language[language.length - 2]);
 
-// // ******************* Substring *********************
-// // A substring is a part or a portion of a string. 
-// //For example, "rain" is a substring of the string "brain" 
-// //simply because you can get "rain" by taking the last 4 characters.
-// // When working with strings, you often need to get a few characters of a string rather than all of it. 
-// // Thus we use the substring method.
+console.log(language.substring(1, 4));
 
-// // ------------ Substring signature -----------
-// // A function signature gives you an explanation of the parameters that you need to pass for that method. 
-// // Let's take a look at the signature of substring:
+var nameA = 'Selena ';
+var nameB = 'Gomez';
 
-// // Signature
-// // substring(indexStart, indexEnd);
+console.log('Best Female Singer Name Is ' + nameA + nameB);
 
-// // This means that when you call substring, you can give it 2 parameters, 
-// // the first one for the indexStart and the second one for indexEnd.
+console.log(`Best Female Singer Name Is ${nameA}${nameB}`);
 
-// // indexStart: the position of the first character you'd like to include
-// // indexEnd: the position of the first character you'd like to ignore
-// // This means an indexEnd of 5, will only include up to character 4.
-// // The combination of these 2 will give you a substring.
+const phoneNumber = "+ 92 123456789";
+console.log(phoneNumber.startsWith('+'));
+console.log(phoneNumber.startsWith('1'));
+console.log(phoneNumber.endsWith('9'));
+console.log(phoneNumber.endsWith('7'));
 
-// // Let's take an example with a variable named language with a value JavaScript, 
-// // and let's get the substring with indexStart of 1 and indexEnd of 4. 
-// // This will return a string made up of all the characters from positions 1 to 3, 
-// // because 4 is the first character that is ignored:
-// // the result will be 'ava'
-// // Javascript
-
-// console.log(language.substring(1, 4));
-
-// // OPTIONAL PARAMETERS
-// console.log(language.substring(4));
-// // Result will be: Script
-
-// // ((((((((((( Recap )))))))))))
-// // A substring is a part or a portion of a string.
-// // string.substring(indexStart, indexEnd) is used to return a portion of the string.
-// // indexStart: the position of the first character you'd like to include.
-// // indexEnd: the position of the first character you'd like to ignore.
-// // the indexEnd argument is optional which means you can leave it out.
-
-
-// // ********************** Template Strings ***********************
-// // we previously used (' ' or " "), there is one more thing called (` `) template string,
-// // but why we used template strings when we have (' ' and " ")
-// // You already know that you can create strings with double quotes or single quotes, 
-// // but as you already know, these strings do not support interpolation.
-// // Template strings, however, support interpolation and other nifty features.
-// // For example:
-
-// var nameA = 'Selena ';
-// var nameB = 'Gomez';
-
-// // first we will try to write these two variables in ( ' ' or " " )
-// console.log('Female singer name is ' + nameA + nameB);
-
-// // Now we will use Template String (` `)
-// // Interpolation
-// console.log(`Female singer name is ${nameA}${nameB}`);
-
-// // ((((((((((((( Recap )))))))))))))
-// // A template string is a string created with the backtick character: `
-// // Template strings can span multiple lines
-// // Template strings support interpolation with the ${variableName} syntax
-
-// // ************ Miscellaneous string methods ************
-// // commands of Miscellaneous string methods:
-// // startsWith() and endsWith()
-// // .startsWith(searchString) will return true when the string starts with the searchString and false otherwise.
-// // .endsWith(searchString) will return true when the string ends with the searchString and false otherwise.
-// // here are some example:
-
-// const phoneNumber = "+92 123456789";
-// console.log(phoneNumber.startsWith('+')); // true
-// console.log(phoneNumber.startsWith('1')); // false
-// console.log(phoneNumber.endsWith('9')); // true
-// console.log(phoneNumber.endsWith('7')); // false
-
-// // ******* Trim ********
-// // Imagine you ask your users to write their email, and they end up writing "hi@mail.com ".
-// // Did you notice that empty space at the end?
-// // In those cases, you can trim the string which removes extra spaces and newlines.
-// const text = 'Hello   world';
-// console.log(text.trim());
+const text = 'Hello   World';
+console.log(text.trim());
 
 // // ((((((((((((((( Recap )))))))))))))))
 // // string.startsWith(substring) returns true when a string starts with the substring.

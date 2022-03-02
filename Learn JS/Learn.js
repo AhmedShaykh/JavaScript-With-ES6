@@ -31,262 +31,101 @@ console.log('Best Female Singer Name Is ' + nameA + nameB);
 
 console.log(`Best Female Singer Name Is ${nameA}${nameB}`);
 
-const phoneNumber = "+ 92 123456789";
+const phoneNumber = "+92123456789";
 console.log(phoneNumber.startsWith('+'));
 console.log(phoneNumber.startsWith('1'));
 console.log(phoneNumber.endsWith('9'));
 console.log(phoneNumber.endsWith('7'));
 
-const text = 'Hello   World';
+const text = '    Ahmed Shaykh';
+console.log(text)
 console.log(text.trim());
 
-// // ((((((((((((((( Recap )))))))))))))))
-// // string.startsWith(substring) returns true when a string starts with the substring.
-// // string.endsWith(substring) returns true when a string ends with the substring.
-// // string.trim() removes additional spaces from the beginning and the end of a string.
+const answer = 42;
+const stringNum = 42;
+console.log(answer.toString());
+console.log(stringNum)
 
-// // ===================================================================================================
-// // ===================================================================================================
-// // ===================================================================================================
+console.log(Number.parseInt('12'));
 
-// // +++++++++++++++++++ JavaScript Built-in Function (Numbers) +++++++++++++++++++++
+function isPassing(grade){
+    if (grade >= 10){
+        return true;
+    } else {
+        return false;
+    }
+}
 
-// // 1
-// // 2
-// // -5
-// // 3.5
-// // 2000
-// // 2019
-// // -23.51
-// // All of these are examples of Numbers in JavaScript. It doesn't matter if it's negative or positive, 
-// // if it has a decimal (values after the .) or not. We call them numbers.
+console.log(isPassing(12));
+console.log(isPassing(-10));
+console.log(isPassing(9.9));
 
-// // *********** CONVERTING NUMBER TO STRING ************
-// // You can convert a number to string by simply calling the .toString() method.
-// // Let's take an example where we have a variable called answer with a value 42;
+var rose = 'Red';
+var Rose = 'Red';
 
-// const answer = 42;
-// console.log(answer.toString()); // '42'
+console.log(rose);
+console.log(Rose);
+console.log(ROSE); // Error
 
-// // *********** CONVERTING STRING TO NUMBER ************
-// // In some scenarios, you'd like to convert from a string to a number. For that, 
-// // you'd have to use the Number.parseInt method. Here's an example, 
+var a = 5 + 2 * (3 - 2) / 2;
+console.log(a)
 
-// console.log(Number.parseInt('12'));
+var b = 3 + 5 * 2;
+console.log(b)
 
-// // Note that the Number in Number.parseInt("42") is an Object in JavaScript 
-// //that contains methods related to numbers, and .parseInt() is one of them. 
-// // It's a method that you call on Number to convert a string into a number.
+var c = 8 / 2 - 1;
+console.log(c)
 
-// // ************** JavaScript (IF / ELSE) condition ***************
+var d = 3 % 2 + 4 - 1;
+console.log(d)
 
-// // Conditions in JavaScript have the following blueprints:
+var z = a + 5 * c - b / (3 + d);
+console.log(z)
 
-// if (condition){   
-//     //do something
-// }                 
+var num = 6;
+num++
+console.log(num);
 
-// // Let's take an example, assuming that we have a variable const grade = 15;
+num--
+console.log(num);
 
-// // if (grade >= 10) {  
-//     //passing          
-// // }   
+var num2 = ++num;
+console.log(num2);
 
-// // ******** ELSE *********
+var num = 8;
+var num2 = num++;
+var num3 = ++num;
+console.log(num);
+console.log(num2);
+console.log(num3);
 
-// // You can also add an else block for all other cases:
+var firstName = 'Java';
+var lastName = 'Script';
 
-// const grade = 15;
-// if (grade >= 10){
-//     //passing
-// } else {
-//     //failing
-// }
+console.log(firstName + "" + lastName);
+console.log(firstName + " " + lastName);
+console.log(firstName + lastName);
+console.log(`${firstName} ${lastName}`);
 
-// // ******************* Returning booleans *******************
+var fullName = firstName + "" + lastName;
+console.log(fullName);
 
-// // Whenever you're returning a boolean (true or false), 
-// // it's quite redundant to use if and else. Here's an example:
+var a = "6" + 2;
+console.log(a)
 
-// function isPassing(grade){
-//     if (grade >= 10){
-//         return true;
-//     }else{
-//         return false;
-//     }
-// }
+var b = 3 + "6";
+console.log(b)
 
-// isPassing(12);
+var c = "Hello " + 2;
+console.log(c)
 
-// // This is redundant because grade >= 10 on its own, 
-// // returns true or false depending on the grade. Which means you don't need to wrap it with an if/else statement.
+var d = "Hello " + 2 + 3;
+console.log(d)
 
-// // That's why you can simply refactor it like this:
-
-// function isPassing(grade){
-//     return grade >= 10;
-// }
-// // without using if/else which will always return a boolean!
-
-
-// // *********** Legal & Illegal Names *************
-
-// // A variable name can't contain any spaces
-// // A variable name can contain only letters, number, dollar signs, and underscores
-// // The first character must be a letter, or an underscore ( _ ), or a dollar sign ($)
-// // Numbers are not allowed as the first character of variable. For example:
-
-// // Legal Names 
-// var hello = 56;
-// var _xyz = 44;
-// var $work = 'Office';
-// var user2 = 56;
-// var i_info = true;
-// var my$work = ['one', 'two', 'three'];
-
-// // Illegal Names
-// // var 2user = 12; // cant start with number
-// // var my user = 23; // cant contain spaces
-// // var hellp#world = 34;
-// // var my-info = true;
-// // var my?info = ['one', 'two', 'three'];
-// // var my*info = 'office';
-
-// // Types of variables
-// // CaseSensitive
-// // CamelCase
-
-// // ========== CaseSensitive ==========
-
-// // variables names are case sensitive, Example:
-
-// var rose = 'Red';
-// var Rose = 'Red';
-
-// console.log(rose);
-// console.log(Rose);
-// console.log(ROSE); // Error
-
-// // so rose and Rose are two different variables
-
-
-// // ========== CamelCase ===========
-
-// // if there are more than one word in the variable, then it is recommended to use CamelCase
-// // A camelCase names begins in lower case. If there more than on word in the name, each subsequent 
-// // word gets an initial cap, creating a hump. For example:
-
-// var firstName
-// var userResponse
-// var timeLimit
-// var newDay
-
-// // ************* BODMAS & Operator Precedence *************
-
-// // complex arithmetic expressions can pose a problem when there are multiple operators in single expression
-// // Example:
-
-// var a = 5 + 2 * (3 - 2) / 2; // result 06
-
-// // 1) 3 - 2 with brackets will be evaluated first, result 01
-// // 2) 2 * result of (3 - 2) so 2 * 1, result 02
-// // 3) Result of 2 * (3 - 2) divide by 2 so 2 / 2, result 01
-// // 4) 5 + result of 2 * (3 - 2) / 2, so 5 + 1, result 06
-
-// // B ---------------> Brackets first 
-// // O ---------------> Orders (i.e Powers and Square Roots, etc)
-// // DM --------------> Division and Multiplication (left to right)
-// // AS --------------> Addition and Subtraction (left to right)
-
-// // Examples: 
-
-// var a = 3 + 5 * 2 // result 13
-// var b = 8 / 2 - 1 // result 3
-// var c = 3 % 2 + 4 - 1 // result 4
-// var d = a + 5 * c - b / (3 + b) // ----- output is 06, so 3 + b(03) = 06
-// //          --|--        --|--
-// //            |            |
-// //            20           6
-
-// //     a + 20 - b / 6 -------- b = 3 / 6 = 0.5 
-// //              --|--
-// //                |
-// //               0.5
-
-// //     a + 20 - 0.5 = 32.5
-// //     |
-// //     |
-// //     13
-
-// // *************** Increment /  Decrement *************
-
-// // Increment
-// var a = 6;
-// a++
-// console.log(a); // output 07
-
-// // increment wil add one more value in the existing value
-
-// // Decrement
-// a--
-// console.log(a); // output 05
-// // decrement wil decrease one value in the existing value
-
-// // 01 Example:
-// var b = ++a;
-// console.log(b); // output 7
-
-// // 02 Example
-// var a = 6;
-// var b = a++;
-// console.log(a); // output 7
-// console.log(b); // output 6
-
-// // WHY?
-// var a = 6;    // -----   ------> 07 ------------> 02 step
-// var b = a++; // 6 ___|
-// //              |
-// //           01 step
-
-// // ************** String Concatenation **************
-
-// // The + operator can also be used for concatenation strings, Example:
-
-// var firstName = 'Java';
-// var lastName = 'Script';
-
-// console.log(firstName + " " + lastName);
-// //            OR
-
-// // make one more variable
-// var fullName = firstName + " " + lastName
-// console.log(fullName);
-
-// // similar adding two number will return the sum, but adding a number and a string will return a string
-// // Example:
-
-// var a = "6" + 2       // "62"
-// var b = 3 + "6"       // "36"
-// var c = "Hello " + 2   // "Hello 2"
-// var d = "Hello " + 2 + 3 // "Hello 23"
-// var e = "Hello " + (3 + 4) // "Hello 7"
+var x = "Hello " + (3 + 4);
+console.log(x)
 
 // // ************** FUNCTIONS ****************
-
-// // A JavaScript Function is executed when something invokes it (calls it).
-// // it save your repetitive code and makes code easier to understand.
-// // you can reuse code: Define the code once, and use it many times.
-
-// // Just like we made a program of Pass and Fail checker with if else statement,
-// // if we want to use this code again so we have to write this if else statement again...
-// // because code always run line by line, and once a line executed it will not be executed again..
-// // so we have to write the code again... and it consumes our lot of time..
-// // so Function came out, what it do is function can save your logic inside block of code...
-// // and when you want to use this code again you don't have to write the logic again you will just write a 
-// // function name and it will execute you login inside a function.
-// // write once and use anywhere with only function name.
-
-// // *************** Functions Declarations *************
 
 // // 1) A function is defined with the function keyword, followed by a name and followed by parentheses()
 // // 2) Function name can contain letters, digits, underscore, and dollar signs(same rule as variable)

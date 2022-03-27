@@ -1,1 +1,1 @@
-# Learning And Practice JavaScript With ECMAScript 6 !
+JavaScript With ECMAScript 6 (ES6)

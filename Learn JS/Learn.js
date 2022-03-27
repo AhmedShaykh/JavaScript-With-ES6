@@ -6,253 +6,214 @@ console.log(a.length);
 
 var b = 'Hello World';
 console.log(b.includes('World'));
-// console.log(b.includes('Yello'));
-// console.log(b.includes('H'));
-// console.log(b.includes('w'));
+console.log(b.includes('Yello'));
+console.log(b.includes('H'));
+console.log(b.includes('w'));
 
-// console.log(b.toUpperCase());
+console.log(b.toUpperCase());
 
-// console.log(b.toLowerCase());
+console.log(b.toLowerCase());
 
-// var language = 'JavaScript';
-// console.log(language[0]);
-// console.log(language[1]);
-// console.log(language[2]);
-// console.log(language[3]);
+var language = 'JavaScript';
+console.log(language[0]);
+console.log(language[1]);
+console.log(language[2]);
+console.log(language[3]);
 
-// console.log(language[language.length - 2]);
+console.log(language[language.length - 2]);
 
-// console.log(language.substring(1, 4));
+console.log(language.substring(1, 4));
 
-// var nameA = 'Selena ';
-// var nameB = 'Gomez';
+var nameA = 'Sabrina';
+var nameB = 'Carpenter';
 
-// console.log('Best Female Singer Name Is ' + nameA + nameB);
+console.log('Best Female Singer Is ' + nameA + " " + nameB + ' In The World');
 
-// console.log(`Best Female Singer Name Is ${nameA}${nameB}`);
+console.log(`Best Female Singer Is ${nameA} ${nameB} In The World`);
 
-// const phoneNumber = "+92123456789";
-// console.log(phoneNumber.startsWith('+'));
-// console.log(phoneNumber.startsWith('1'));
-// console.log(phoneNumber.endsWith('9'));
-// console.log(phoneNumber.endsWith('7'));
+const phoneNumber = "+92123456789";
+console.log(phoneNumber.startsWith('+'));
+console.log(phoneNumber.startsWith('1'));
+console.log(phoneNumber.endsWith('9'));
+console.log(phoneNumber.endsWith('7'));
 
-// const text = '    Ahmed Shaykh';
-// console.log(text)
-// console.log(text.trim());
+const text = '    Ahmed Shaykh';
+console.log(text)
+console.log(text.trim());
 
-// const answer = 42;
-// const stringNum = 42;
-// console.log(answer.toString());
-// console.log(stringNum)
+const answer = 42;
+const stringNum = 40;
+console.log(answer)
+console.log(answer.toString());
+console.log(stringNum)
 
-// console.log(Number.parseInt('12'));
+console.log("12");
+console.log(Number.parseInt('12'));
 
-// function isPassing(grade){
-//     if (grade >= 10){
-//         return true;
-//     } else {
-//         return false;
-//     }
-// }
+function isPassing(grade){
+    if (grade >= 10){
+        return "Passed";
+    } else {
+        return "Failed";
+    }
+}
 
-// console.log(isPassing(12));
-// console.log(isPassing(-10));
-// console.log(isPassing(9.9));
+console.log(isPassing(12));
+console.log(isPassing(10));
+console.log(isPassing(-10));
+console.log(isPassing(9.9));
 
-// var rose = 'Red';
-// var Rose = 'Red';
+var rose = 'Red';
+var Rose = 'Red';
 
-// console.log(rose);
-// console.log(Rose);
-// console.log(ROSE); // Error
+console.log(rose);
+console.log(Rose);
 
-// var a = 5 + 2 * (3 - 2) / 2;
-// console.log(a)
+var a = 5 + 2 * (3 - 2) / 2;
+console.log(a)
 
-// var b = 3 + 5 * 2;
-// console.log(b)
+var b = 3 + 5 * 2;
+console.log(b)
 
-// var c = 8 / 2 - 1;
-// console.log(c)
+var c = 8 / 2 - 1;
+console.log(c)
 
-// var d = 3 % 2 + 4 - 1;
-// console.log(d)
+var d = 3 % 2 + 4 - 1;
+console.log(d)
 
-// var z = a + 5 * c - b / (3 + d);
-// console.log(z)
+var z = a + 5 * c - b / (3 + d);
+console.log(z)
 
-// var num = 6;
-// num++
-// console.log(num);
+var num = 6;
+num++
+console.log(num);
 
-// num--
-// console.log(num);
+num--
+console.log(num);
 
-// var num2 = ++num;
-// console.log(num2);
+var num2 = ++num;
+console.log(num2);
 
-// var num = 8;
-// var num2 = num++;
-// var num3 = ++num;
-// console.log(num);
-// console.log(num2);
-// console.log(num3);
+var num = 8;
+var num2 = num++;
+var num3 = ++num;
+console.log(num);
+console.log(num2);
+console.log(num3);
 
-// var firstName = 'Java';
-// var lastName = 'Script';
+var firstName = 'Java';
+var lastName = 'Script';
 
-// console.log(firstName + "" + lastName);
-// console.log(firstName + " " + lastName);
-// console.log(firstName + lastName);
-// console.log(`${firstName} ${lastName}`);
+console.log(firstName + "" + lastName);
+console.log(firstName + " " + lastName);
+console.log(firstName + lastName);
+console.log(`${firstName} ${lastName}`);
 
-// var fullName = firstName + "" + lastName;
-// console.log(fullName);
+var a = "6" + 2;
+console.log(a)
 
-// var a = "6" + 2;
-// console.log(a)
+var b = 3 + "6";
+console.log(b)
 
-// var b = 3 + "6";
-// console.log(b)
+var add = 3 + 6;
+console.log(add)
 
-// var c = "Hello " + 2;
-// console.log(c)
+var c = "Hello " + 2;
+console.log(c)
 
-// var d = "Hello " + 2 + 3;
-// console.log(d)
+var d = "Hello " + 2 + 3;
+console.log(d)
 
-// var x = "Hello " + (3 + 4);
-// console.log(x)
+var e = "Hello " + (2 + 3);
+console.log(e)
 
-// // ************** FUNCTIONS ****************
+var x = "Hello " + 3 * 4;
+console.log(x)
 
-// // 1) A function is defined with the function keyword, followed by a name and followed by parentheses()
-// // 2) Function name can contain letters, digits, underscore, and dollar signs(same rule as variable)
-// // 3) the parentheses may include parameters names separated by commas: (parameter01, parameter02)
-// // The code to be executed, by the function is placed inside curly brackets: { }
+var z = "Hello " + (3 - 4);
+console.log(z)
 
-// function name(parameter01, parameter02) {
-//     // code to be executed
-// };
+function showMessage() {        
+    console.log('Hello World')
+};
 
-// // Example
-// function sum(a, b) {
-//     return a + b
-// };
-// // remember the function is only declared, and when you want to use it just write the function
-// // name with brackets ( ) and pass the parameters and the code will execute.
+showMessage();
 
-// // ===== Examples =====
+function multiply(num1, num2) {
+    var num3 = num1 * num2;
+    console.log(`The Output is: ${num3}`);
+};
 
-// function showMessage() {        
-//     console.log('Hello World')  // -------> function declared
-// };
+multiply(3, 3);
 
-// // calling function
-// showMessage();      // output: Hello World
+function showName(name) {
+    console.log('Hello', name);
+};
 
-// // ************ Passing Data to Function ************
+showName("Hardwell");
 
-// // in order for a function to become a programmable robot rather than a one-job, you have to set it up to 
-// // receive the data you are passing
-// // You can pass any type of data to function depending on requirement
+function test() {
+    return 45
+};
 
-// function multiply(num1, num2) {
-//     var num3 = num1 * num2;
-//     console.log("The output is: ", num3);
-// };
+var a = test();
+console.log(a);
 
-// multiply(3, 3);
+function multi(num1, num2) {
+    return num2;
+};
 
-// function showMessage(name) {
-//     console.log('Hello', name);
-// };
+var a = multi(3, 6);
+console.log(a);
 
-// showMessage('Mike');
+function showMessage2(name) {
+    console.log("Hello " + name);
+};
 
-// // ***************** Function Return ******************
-// // Function can return data back to caller.
-// // After execution login in function if you want to return result to the caller of 
-// //function then use Return keyword.
-// // When function reaches return statement, the function stop execution and return value 
-// // is 'returned' back to caller.
-// // and if you don't give return statement in the function, it will show undefined.
-
-// function test() {
-
-// };
-// var a = test();    // return undefined
-// console.log(a);    // undefined
-
-// function test() {
-//     return 45
-// };
-// var a = test();
-// console.log(a);
-
-// function multiply(num1, num2) {
-//     return num2;            // function execution ends here
-//     return num1 * num2
-// };
-
-// var a = multiply(3, 6);    // returns 6
-// console.log(a);            // 6
-
-// // ****************** PARAMETER RULES *******************
-// // function don't specify data types for parameters.
-// // function don't perform type checking on the passed arguments.
-// // function don't check the number of arguments received.
-// // if a function is called with missing arguments, the missing value are set to: undefined
-
-// function showMessage(name) {
-//     console.log("Hello " + name);
-// };
-// showMessage("World")        // Hello World
-// showMessage(45)             // Hello 45
-// showMessage(true)           // Hello true
-// showMessage()               // Hello undefined
-// showMessage("Mike", 12)     // Hello Mike
-
-// // ****************** FUNCTION IN EXPRESSION *****************
-// // function can be used in expressions
-// // just like we use variables in calculation we can use function and output function will be included
-// // in calculation
+showMessage2("World")
+showMessage2(404)
+showMessage2(true)
+showMessage2()
+showMessage2("Crypto", 12)
+showMessage2("Bitcoin " + "#1")
 
 
-// function multiply(num1, num2) {
-//     return num1 * num2
-// };
+function multiply2(num1, num2) {
+    return num1 * num2
+};
 
-// var a = multiply(3, 6) + 5
-// console.log(a);             // 23
+var a = multiply2(3, 6) + 5
+var b = multiply2(3, 6) - 6
+var c = multiply2(3, 6) * 5
+var d = multiply2(3, 6) / 2
+console.log(a);
+console.log(b);
+console.log(c);
+console.log(d);
 
-// // Example 02
+function multiply3(num1, num2) {
+    return num1 * num2
+};
 
-// function multiply(num1, num2) {
-//     return num1 * num2
-// };
-
-// function sum(a , b) {
-//     // Result of multiply sum with value of b
-//     return multiply(a, b) + b         // 16
-// };
+function sum(a , b) {
+    return multiply3(a, b) + b
+};
  
-// var total = sum(3, 4) + 6            
-// console.log(total)                    // 22
+var total = sum(3, 4) + 6 // +b (4)   
+console.log(total)
 
-// // Example 03
+function multiply4(num1, num2) {
+    return num1 * num2
+};
 
-// function multiply(num1, num2) {
-//     return num1 * num2
-// };
+function sum2(a, b) {
+    return a + b
+};
 
-// function sum(a, b) {
-//     return a + b
-// };
+multiply4(a, b);
 
-// // Call multiply first and result passed to sum
-// var total = sum(multiply(3, 4), 2) + 6
+var total2 = sum2(multiply4(3, 4), 2) + 6
+console.log(total2)
 
 // // ************** Function Hoisting ***************
 

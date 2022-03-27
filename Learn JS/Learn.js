@@ -6,124 +6,124 @@ console.log(a.length);
 
 var b = 'Hello World';
 console.log(b.includes('World'));
-console.log(b.includes('Yello'));
-console.log(b.includes('H'));
-console.log(b.includes('w'));
+// console.log(b.includes('Yello'));
+// console.log(b.includes('H'));
+// console.log(b.includes('w'));
 
-console.log(b.toUpperCase());
+// console.log(b.toUpperCase());
 
-console.log(b.toLowerCase());
+// console.log(b.toLowerCase());
 
-var language = 'JavaScript';
-console.log(language[0]);
-console.log(language[1]);
-console.log(language[2]);
-console.log(language[3]);
+// var language = 'JavaScript';
+// console.log(language[0]);
+// console.log(language[1]);
+// console.log(language[2]);
+// console.log(language[3]);
 
-console.log(language[language.length - 2]);
+// console.log(language[language.length - 2]);
 
-console.log(language.substring(1, 4));
+// console.log(language.substring(1, 4));
 
-var nameA = 'Selena ';
-var nameB = 'Gomez';
+// var nameA = 'Selena ';
+// var nameB = 'Gomez';
 
-console.log('Best Female Singer Name Is ' + nameA + nameB);
+// console.log('Best Female Singer Name Is ' + nameA + nameB);
 
-console.log(`Best Female Singer Name Is ${nameA}${nameB}`);
+// console.log(`Best Female Singer Name Is ${nameA}${nameB}`);
 
-const phoneNumber = "+92123456789";
-console.log(phoneNumber.startsWith('+'));
-console.log(phoneNumber.startsWith('1'));
-console.log(phoneNumber.endsWith('9'));
-console.log(phoneNumber.endsWith('7'));
+// const phoneNumber = "+92123456789";
+// console.log(phoneNumber.startsWith('+'));
+// console.log(phoneNumber.startsWith('1'));
+// console.log(phoneNumber.endsWith('9'));
+// console.log(phoneNumber.endsWith('7'));
 
-const text = '    Ahmed Shaykh';
-console.log(text)
-console.log(text.trim());
+// const text = '    Ahmed Shaykh';
+// console.log(text)
+// console.log(text.trim());
 
-const answer = 42;
-const stringNum = 42;
-console.log(answer.toString());
-console.log(stringNum)
+// const answer = 42;
+// const stringNum = 42;
+// console.log(answer.toString());
+// console.log(stringNum)
 
-console.log(Number.parseInt('12'));
+// console.log(Number.parseInt('12'));
 
-function isPassing(grade){
-    if (grade >= 10){
-        return true;
-    } else {
-        return false;
-    }
-}
+// function isPassing(grade){
+//     if (grade >= 10){
+//         return true;
+//     } else {
+//         return false;
+//     }
+// }
 
-console.log(isPassing(12));
-console.log(isPassing(-10));
-console.log(isPassing(9.9));
+// console.log(isPassing(12));
+// console.log(isPassing(-10));
+// console.log(isPassing(9.9));
 
-var rose = 'Red';
-var Rose = 'Red';
+// var rose = 'Red';
+// var Rose = 'Red';
 
-console.log(rose);
-console.log(Rose);
-console.log(ROSE); // Error
+// console.log(rose);
+// console.log(Rose);
+// console.log(ROSE); // Error
 
-var a = 5 + 2 * (3 - 2) / 2;
-console.log(a)
+// var a = 5 + 2 * (3 - 2) / 2;
+// console.log(a)
 
-var b = 3 + 5 * 2;
-console.log(b)
+// var b = 3 + 5 * 2;
+// console.log(b)
 
-var c = 8 / 2 - 1;
-console.log(c)
+// var c = 8 / 2 - 1;
+// console.log(c)
 
-var d = 3 % 2 + 4 - 1;
-console.log(d)
+// var d = 3 % 2 + 4 - 1;
+// console.log(d)
 
-var z = a + 5 * c - b / (3 + d);
-console.log(z)
+// var z = a + 5 * c - b / (3 + d);
+// console.log(z)
 
-var num = 6;
-num++
-console.log(num);
+// var num = 6;
+// num++
+// console.log(num);
 
-num--
-console.log(num);
+// num--
+// console.log(num);
 
-var num2 = ++num;
-console.log(num2);
+// var num2 = ++num;
+// console.log(num2);
 
-var num = 8;
-var num2 = num++;
-var num3 = ++num;
-console.log(num);
-console.log(num2);
-console.log(num3);
+// var num = 8;
+// var num2 = num++;
+// var num3 = ++num;
+// console.log(num);
+// console.log(num2);
+// console.log(num3);
 
-var firstName = 'Java';
-var lastName = 'Script';
+// var firstName = 'Java';
+// var lastName = 'Script';
 
-console.log(firstName + "" + lastName);
-console.log(firstName + " " + lastName);
-console.log(firstName + lastName);
-console.log(`${firstName} ${lastName}`);
+// console.log(firstName + "" + lastName);
+// console.log(firstName + " " + lastName);
+// console.log(firstName + lastName);
+// console.log(`${firstName} ${lastName}`);
 
-var fullName = firstName + "" + lastName;
-console.log(fullName);
+// var fullName = firstName + "" + lastName;
+// console.log(fullName);
 
-var a = "6" + 2;
-console.log(a)
+// var a = "6" + 2;
+// console.log(a)
 
-var b = 3 + "6";
-console.log(b)
+// var b = 3 + "6";
+// console.log(b)
 
-var c = "Hello " + 2;
-console.log(c)
+// var c = "Hello " + 2;
+// console.log(c)
 
-var d = "Hello " + 2 + 3;
-console.log(d)
+// var d = "Hello " + 2 + 3;
+// console.log(d)
 
-var x = "Hello " + (3 + 4);
-console.log(x)
+// var x = "Hello " + (3 + 4);
+// console.log(x)
 
 // // ************** FUNCTIONS ****************
 

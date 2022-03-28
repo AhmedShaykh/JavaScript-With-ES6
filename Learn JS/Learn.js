@@ -215,53 +215,28 @@ multiply4(a, b);
 var total2 = sum2(multiply4(3, 4), 2) + 6
 console.log(total2)
 
-// // ************** Function Hoisting ***************
+var total = sum(5, 6);
+console.log('Sum = ', total);
 
-// // Hoisting is JavaScript's default behaviour of moving declarations to the top of the current scope
-// // Because of this, JavaScript function can be called before they are declared
-// // But variable don't move declaration to the top of the current scope
-// // like if you define a variable: Example
+var sum = (a, b) => a + b
 
-// var a = 2;
+function sum(a, b) {
+    return a + b
+};
 
-// // and now if you want to access it on the top of the scope, it will return undefined: Example
+var sumValue;
+var mul = multiply(3, 2);
+console.log("Mul = ", mul);
+var add = sum(1, 2);
+console.log("Add = ", add);
 
-// // var a;       ------------->  only variable name go to the top of the scope... that's why is will through 
-// //                              undefined
+var sumValue = function (a, b) {
+    return a + b
+};
 
-// console.log(a);
-// var a = 2;  
-
-// // Example 01
-
-// var total = sum(5, 6);         // Calling before declaration
-// console.log('Sum = ', total);
-
-// var sum = (a, b) => a + b
-
-// function sum(a, b) {
-//     return a + b
-// };
-
-// // Example 02
-
-// var sum;
-// var mul = multiply(3, 2);
-// console.log("Mul = ", mul);   // 6
-// var add = sum(1, 2);
-// console.log("Add = ", add);   // sum is not a function
-
-// var sum = function (a, b) {
-//     return a + b
-// };
-
-// function multiply(num1, num2) {
-//     return num1 * num2
-// };
-
-// // ****************** ARGUMENTS PASSED BY VALUE *******************
-
-// // Example 01
+function multiply(num1, num2) {
+    return num1 * num2
+};
 
 // var num = 5;
 

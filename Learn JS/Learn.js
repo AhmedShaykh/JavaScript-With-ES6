@@ -63,10 +63,7 @@ console.log(isPassing(10));
 console.log(isPassing(-10));
 console.log(isPassing(9.9));
 
-var rose = 'Red';
 var Rose = 'Red';
-
-console.log(rose);
 console.log(Rose);
 
 var a = 5 + 2 * (3 - 2) / 2;
@@ -81,162 +78,162 @@ console.log(c)
 var d = 3 % 2 + 4 - 1;
 console.log(d)
 
-var z = a + 5 * c - b / (3 + d);
+var z = a + 5 * c - d / (3 + b);
 console.log(z)
 
-var num = 6;
-num++
-console.log(num);
+// var num = 6;
+// num++
+// console.log(num);
 
-num--
-console.log(num);
+// num--
+// console.log(num);
 
-var num2 = ++num;
-console.log(num2);
+// var num2 = ++num;
+// console.log(num2);
 
-var num = 8;
-var num2 = num++;
-var num3 = ++num;
-console.log(num);
-console.log(num2);
-console.log(num3);
+// var num = 8;
+// var num2 = num++;
+// var num3 = ++num;
+// console.log(num);
+// console.log(num2);
+// console.log(num3);
 
-var firstName = 'Java';
-var lastName = 'Script';
+// var firstName = 'Java';
+// var lastName = 'Script';
 
-console.log(firstName + "" + lastName);
-console.log(firstName + " " + lastName);
-console.log(firstName + lastName);
-console.log(`${firstName} ${lastName}`);
+// console.log(firstName + "" + lastName);
+// console.log(firstName + " " + lastName);
+// console.log(firstName + lastName);
+// console.log(`${firstName} ${lastName}`);
 
-var a = "6" + 2;
-console.log(a)
+// var a = "6" + 2;
+// console.log(a)
 
-var b = 3 + "6";
-console.log(b)
+// var b = 3 + "6";
+// console.log(b)
 
-var add = 3 + 6;
-console.log(add)
+// var add = 3 + 6;
+// console.log(add)
 
-var c = "Hello " + 2;
-console.log(c)
+// var c = "Hello " + 2;
+// console.log(c)
 
-var d = "Hello " + 2 + 3;
-console.log(d)
+// var d = "Hello " + 2 + 3;
+// console.log(d)
 
-var e = "Hello " + (2 + 3);
-console.log(e)
+// var e = "Hello " + (2 + 3);
+// console.log(e)
 
-var x = "Hello " + 3 * 4;
-console.log(x)
+// var x = "Hello " + 3 * 4;
+// console.log(x)
 
-var z = "Hello " + (3 - 4);
-console.log(z)
+// var z = "Hello " + (3 - 4);
+// console.log(z)
 
-function showMessage() {        
-    console.log('Hello World')
-};
+// function showMessage() {        
+//     console.log('Hello World')
+// };
 
-showMessage();
+// showMessage();
 
-function multiply(num1, num2) {
-    var num3 = num1 * num2;
-    console.log(`The Output is: ${num3}`);
-};
+// function multiply(num1, num2) {
+//     var num3 = num1 * num2;
+//     console.log(`The Output is: ${num3}`);
+// };
 
-multiply(3, 3);
+// multiply(3, 3);
 
-function showName(name) {
-    console.log('Hello', name);
-};
+// function showName(name) {
+//     console.log('Hello', name);
+// };
 
-showName("Hardwell");
+// showName("Hardwell");
 
-function test() {
-    return 45
-};
+// function test() {
+//     return 45
+// };
 
-var a = test();
-console.log(a);
+// var a = test();
+// console.log(a);
 
-function multi(num1, num2) {
-    return num2;
-};
+// function multi(num1, num2) {
+//     return num2;
+// };
 
-var a = multi(3, 6);
-console.log(a);
+// var a = multi(3, 6);
+// console.log(a);
 
-function showMessage2(name) {
-    console.log("Hello " + name);
-};
+// function showMessage2(name) {
+//     console.log("Hello " + name);
+// };
 
-showMessage2("World")
-showMessage2(404)
-showMessage2(true)
-showMessage2()
-showMessage2("Crypto", 12)
-showMessage2("Bitcoin " + "#1")
+// showMessage2("World")
+// showMessage2(404)
+// showMessage2(true)
+// showMessage2()
+// showMessage2("Crypto", 12)
+// showMessage2("Bitcoin " + "#1")
 
 
-function multiply2(num1, num2) {
-    return num1 * num2
-};
+// function multiply2(num1, num2) {
+//     return num1 * num2
+// };
 
-var a = multiply2(3, 6) + 5
-var b = multiply2(3, 6) - 6
-var c = multiply2(3, 6) * 5
-var d = multiply2(3, 6) / 2
-console.log(a);
-console.log(b);
-console.log(c);
-console.log(d);
+// var a = multiply2(3, 6) + 5
+// var b = multiply2(3, 6) - 6
+// var c = multiply2(3, 6) * 5
+// var d = multiply2(3, 6) / 2
+// console.log(a);
+// console.log(b);
+// console.log(c);
+// console.log(d);
 
-function multiply3(num1, num2) {
-    return num1 * num2
-};
+// function multiply3(num1, num2) {
+//     return num1 * num2
+// };
 
-function sum(a , b) {
-    return multiply3(a, b) + b
-};
+// function sum(a , b) {
+//     return multiply3(a, b) + b
+// };
  
-var total = sum(3, 4) + 6 // +b (4)   
-console.log(total)
+// var total = sum(3, 4) + 6 // +b (4)   
+// console.log(total)
 
-function multiply4(num1, num2) {
-    return num1 * num2
-};
+// function multiply4(num1, num2) {
+//     return num1 * num2
+// };
 
-function sum2(a, b) {
-    return a + b
-};
+// function sum2(a, b) {
+//     return a + b
+// };
 
-multiply4(a, b);
+// multiply4(a, b);
 
-var total2 = sum2(multiply4(3, 4), 2) + 6
-console.log(total2)
+// var total2 = sum2(multiply4(3, 4), 2) + 6
+// console.log(total2)
 
-var total = sum(5, 6);
-console.log('Sum = ', total);
+// var total = sum(5, 6);
+// console.log('Sum = ', total);
 
-var sum = (a, b) => a + b
+// var sum = (a, b) => a + b
 
-function sum(a, b) {
-    return a + b
-};
+// function sum(a, b) {
+//     return a + b
+// };
 
-var sumValue;
-var mul = multiply(3, 2);
-console.log("Mul = ", mul);
-var add = sum(1, 2);
-console.log("Add = ", add);
+// var sumValue;
+// var mul = multiply(3, 2);
+// console.log("Mul = ", mul);
+// var add = sum(1, 2);
+// console.log("Add = ", add);
 
-var sumValue = function (a, b) {
-    return a + b
-};
+// var sumValue = function (a, b) {
+//     return a + b
+// };
 
-function multiply(num1, num2) {
-    return num1 * num2
-};
+// function multiply(num1, num2) {
+//     return num1 * num2
+// };
 
 // var num = 5;
 

@@ -6,14 +6,15 @@ function Hello() {
 
 var exp = function () {
     console.log("Hello from Expression");
-}; 
+};
 
-console.log('exp', exp());
+exp()
+
 
 var double;
 
 function double(num) {
-    return(num * 2)
+    return (num * 2)
 };
 
-console.log(double(6));
+console.log(double(6))

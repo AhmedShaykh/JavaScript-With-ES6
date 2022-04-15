@@ -212,61 +212,50 @@ multiply4(a, b);
 var total2 = sum2(multiply4(3, 4), 2) + 6
 console.log(total2)
 
-// var total = sum(5, 6);
-// console.log('Sum = ', total);
+var sum;
+var mul = multiply(3, 2);
+console.log("Mul = ", mul);
+var add = sum(1, 2);
+console.log("Add = ", add);
 
-// var sum = (a, b) => a + b
+var sum = function (a, b) {
+    return a + b
+};
 
-// function sum(a, b) {
-//     return a + b
-// };
+function multiply(num1, num2) {
+    return num1 * num2
+};
 
-// var sumValue;
-// var mul = multiply(3, 2);
-// console.log("Mul = ", mul);
-// var add = sum(1, 2);
-// console.log("Add = ", add);
+var num = 5;
 
-// var sumValue = function (a, b) {
-//     return a + b
-// };
+function changeValue() {
+    return num = 8
+};
 
-// function multiply(num1, num2) {
-//     return num1 * num2
-// };
+console.log(num);
+changeValue(num);
+console.log(num);
 
-// var num = 5;
 
-// function changeValue(a) {
-//     return a                // change will not affect num
-// };
+var arr = [1, 2, 3, 4];
 
-// changeValue(num);          // 5
-// console.log(num);          // 5, num will not be updated
+function arrayIndex(val) {
+    val[1] = 57
+};
 
-// // Example 02
+console.log(arr[1]);
+arrayIndex(arr);
+console.log(arr[1]);
 
-// var arr = [1, 2, 3, 4];
+var obj = { name: 'John', age: 23 };
 
-// function arrayIndex(val) {      // array received in val
-//     val[1] = 57                 // updating val will also update arr
-// };
+function updateObject(val) { 
+    val.age = 30
+};
 
-// console.log(arr[1]);            // 12 before calling function
-// arrayIndex(arr);                
-// console.log(arr[1])             // 57 after calling function
-
-// // Example 03
-
-// var obj = { name: 'John', age: 23 };
-
-// function updateObject(val) {        // object received in val  
-//     val.age = 30                    // updating val will also update obj
-// };
-
-// console.log(obj.age);               // 23
-// updateObject(obj);
-// console.log(obj.age);               // 30
+console.log(obj.age);
+updateObject(obj);
+console.log(obj.age);
 
 // // ************** Nested IF **************
 

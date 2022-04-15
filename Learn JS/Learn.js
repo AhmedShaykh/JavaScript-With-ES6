@@ -130,87 +130,87 @@ console.log(x)
 var z = "Hello " + (3 - 4);
 console.log(z)
 
-// function showMessage() {        
-//     console.log('Hello World')
-// };
+function showMessage() {        
+    console.log('Hello World')
+};
 
-// showMessage();
+showMessage();
 
-// function multiply(num1, num2) {
-//     var num3 = num1 * num2;
-//     console.log(`The Output is: ${num3}`);
-// };
+function multiply(num1, num2) {
+    var num3 = num1 * num2;
+    console.log(`The Output is: ${num3}`);
+};
 
-// multiply(3, 3);
+multiply(3, 3);
 
-// function showName(name) {
-//     console.log('Hello', name);
-// };
+function showName(name) {
+    console.log('Hello', name);
+};
 
-// showName("Hardwell");
+showName("Hardwell");
 
-// function test() {
-//     return 45
-// };
+function test() {
+    return 45
+};
 
-// var a = test();
-// console.log(a);
+var a = test();
+console.log(a);
 
-// function multi(num1, num2) {
-//     return num2;
-// };
+function multi(num1, num2) {
+    return num2;
+};
 
-// var a = multi(3, 6);
-// console.log(a);
+var a = multi(3, 6);
+console.log(a);
 
-// function showMessage2(name) {
-//     console.log("Hello " + name);
-// };
+function showMessage2(name) {
+    console.log("Hello " + name);
+};
 
-// showMessage2("World")
-// showMessage2(404)
-// showMessage2(true)
-// showMessage2()
-// showMessage2("Crypto", 12)
-// showMessage2("Bitcoin " + "#1")
+showMessage2("World")
+showMessage2(404)
+showMessage2(true)
+showMessage2()
+showMessage2("Crypto", 12)
+showMessage2("Bitcoin " + "#1")
 
 
-// function multiply2(num1, num2) {
-//     return num1 * num2
-// };
+function multiply2(num1, num2) {
+    return num1 * num2
+};
 
-// var a = multiply2(3, 6) + 5
-// var b = multiply2(3, 6) - 6
-// var c = multiply2(3, 6) * 5
-// var d = multiply2(3, 6) / 2
-// console.log(a);
-// console.log(b);
-// console.log(c);
-// console.log(d);
+var a = multiply2(3, 6) + 5
+var b = multiply2(3, 6) - 6
+var c = multiply2(3, 6) * 5
+var d = multiply2(3, 6) / 2
+console.log(a);
+console.log(b);
+console.log(c);
+console.log(d);
 
-// function multiply3(num1, num2) {
-//     return num1 * num2
-// };
+function multiply3(num1, num2) {
+    return num1 * num2
+};
 
-// function sum(a , b) {
-//     return multiply3(a, b) + b
-// };
+function sum(a , b) {
+    return multiply3(a, b) + b
+};
  
-// var total = sum(3, 4) + 6 // +b (4)   
-// console.log(total)
+var total = sum(3, 4) + 6 // +b (4)   
+console.log(total)
 
-// function multiply4(num1, num2) {
-//     return num1 * num2
-// };
+function multiply4(num1, num2) {
+    return num1 * num2
+};
 
-// function sum2(a, b) {
-//     return a + b
-// };
+function sum2(a, b) {
+    return a + b
+};
 
-// multiply4(a, b);
+multiply4(a, b);
 
-// var total2 = sum2(multiply4(3, 4), 2) + 6
-// console.log(total2)
+var total2 = sum2(multiply4(3, 4), 2) + 6
+console.log(total2)
 
 // var total = sum(5, 6);
 // console.log('Sum = ', total);

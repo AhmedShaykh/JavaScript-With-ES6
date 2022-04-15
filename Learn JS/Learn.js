@@ -81,54 +81,54 @@ console.log(d)
 var z = a + 5 * c - d / (3 + b);
 console.log(z)
 
-// var num = 6;
-// num++
-// console.log(num);
+var num = 6;
+num++
+console.log(num);
 
-// num--
-// console.log(num);
+num--
+console.log(num);
 
-// var num2 = ++num;
-// console.log(num2);
+var num2 = ++num;
+console.log(num2);
 
-// var num = 8;
-// var num2 = num++;
-// var num3 = ++num;
-// console.log(num);
-// console.log(num2);
-// console.log(num3);
+var num = 8;
+var num2 = num++;
+var num3 = ++num;
+console.log(num);
+console.log(num2);
+console.log(num3);
 
-// var firstName = 'Java';
-// var lastName = 'Script';
+var firstName = 'Java';
+var lastName = 'Script';
 
-// console.log(firstName + "" + lastName);
-// console.log(firstName + " " + lastName);
-// console.log(firstName + lastName);
-// console.log(`${firstName} ${lastName}`);
+console.log(firstName + "" + lastName);
+console.log(firstName + " " + lastName);
+console.log(firstName + lastName);
+console.log(`${firstName} ${lastName}`);
 
-// var a = "6" + 2;
-// console.log(a)
+var a = "6" + 2;
+console.log(a)
 
-// var b = 3 + "6";
-// console.log(b)
+var b = 3 + "6";
+console.log(b)
 
-// var add = 3 + 6;
-// console.log(add)
+var add = 3 + 6;
+console.log(add)
 
-// var c = "Hello " + 2;
-// console.log(c)
+var c = "Hello " + 2;
+console.log(c)
 
-// var d = "Hello " + 2 + 3;
-// console.log(d)
+var d = "Hello " + 2 + 3;
+console.log(d)
 
-// var e = "Hello " + (2 + 3);
-// console.log(e)
+var e = "Hello " + (2 + 3);
+console.log(e)
 
-// var x = "Hello " + 3 * 4;
-// console.log(x)
+var x = "Hello " + 3 * 4;
+console.log(x)
 
-// var z = "Hello " + (3 - 4);
-// console.log(z)
+var z = "Hello " + (3 - 4);
+console.log(z)
 
 // function showMessage() {        
 //     console.log('Hello World')

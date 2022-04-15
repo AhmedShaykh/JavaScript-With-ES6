@@ -296,89 +296,28 @@ function Verification(z) {
 
 console.log(Verification(15));
 
-function adminControl(user) {
-    if (user) {
-        if (user.admin) {
-            console.log('showing admin panel')
-        } else {
-            console.log('you need to be an admin')
-        }
-    } else {
-        console.log('You need to logged in')
+const object = {
+    name: 'AHM X',
+    age: 21,
+    Artist: true
+};
+
+console.log(object.name);
+
+console.log(object);
+
+const obj2 = {
+    name: 'John',
+    age: 23,
+    isAdult: true,
+    nested2: {
+        name: 'Mike',
+        age: 16,
+        isAdult: false
     }
-}
-
-let mainUser = {
-    name: 'Harry',
-    admin: true      // 'showing admin panel'
 };
 
-let userOne = {
-    name: 'Harry',
-    admin: false     // 'you need to be an admin'
-};
-
-let userTwo = null    // 'You need to logged in' 
-
-adminControl(mainUser);
-
-// // Now we are using Ternary Operator in this function
-
-function adminControl(user) {
-   return user ? user.admin ? 'showing admin panel' : 'you need to be an admin' : 'You need to logged in'
-};
-
-// // now we will write this entire function in one line with javascript updated version
-// // ECMAScript (ES6)
-
-let adminControl = (user) => user ? user.admin ? 'showing admin panel' : 'you need to be an admin' : 'You need to logged in';
-
-// // *************** Objects in JavaScript ***************
-
-// // Objects in JavaScript is similar to Array/
-// // Array contains only values for Example:
-// const arr = [4, 'Mike', true];
-// //          --------|--------
-// //                values
-
-// // but in Objects it contains keys and values also, so whats, the syntax:
-
-// // -----------> 1) object contain a variable just like array and a pair of curly brackets,
-// const obj = {  };
-
-// // -----------> 2) now first we will write a key name and then pass a value in key,
-// const obj = {
-//     name: 'John',
-//     age: 23,
-//     isAdult: true
-// };
-// // the name, age and isAdult is the key name, and "John", 23, true is their values,
-// // so if we want to access a specific key, so we will just call variable name and key name,
-
-// console.log(obj.name);     // John
-
-// // and if you want to access a whole object so just write only variable name
-// console.log(obj);
-
-// // *************** Nested Objects in JavaScript ***************
-
-// const obj = {
-//     name: 'John',
-//     age: 23,
-//     isAdult: true,
-//     nested2: {
-//         name: 'Mike',
-//         age: 16,
-//         isAdult: false
-//     }
-// };
-
-// console.log(obj.nested2.name);
-
-// // nested object is same thing, it just only contain object in object.
-// // now if i want to change the value of name, we will write variable name pass the key name: Example,
-// obj.name = 'peter'    
-// console.log(obj.name)       // peter
+console.log(obj2.nested2.name);
 
 // // ************** Functions in Objects ***************
 // // in objects we will write anonymous function, Example:

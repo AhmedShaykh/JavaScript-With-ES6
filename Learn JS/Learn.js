@@ -257,107 +257,81 @@ console.log(obj.age);
 updateObject(obj);
 console.log(obj.age);
 
-// // ************** Nested IF **************
+function markssheet(marks) {
+    if (marks >= 90) {
+        return 'Grade A+';
+     }
+     else if (marks >=80 && marks < 90) {
+        return 'Grade A';
+     }
+     else if (marks >=70 && marks < 80) {
+        return 'Good Affort';
+     }
+     else if (marks >=40 && marks < 70) {
+         return 'Just Passed';
+     }
+     else {
+        return 'Failed';
+     };
+}
 
-// var score = 80;
+console.log(markssheet(70));
+console.log(markssheet(39));
+console.log(markssheet(91));
+console.log(markssheet(54));
 
-// if (score > 80) {
-//     console.log('Grade A');
-//     if (score > 90) {
-//         console.log('Reward 100$');
-//     } else {
-//         console.log('Reward 20$')
-//     };
-// } else {
-//     console.log('failed');
-// };
+function ageVerification(x) {
+    if (x >= 18) {
+        return 'Eligible';
+    } else {
+        return 'Not Eligible';
+    };
+};
 
-// // ************* Ternary Operator *************
+console.log(ageVerification(18));
 
-// // 1) ( ? )
-// // 2) ( : )
+function Verification(z) {
+    return z >= 18 ? 'Eligible' : 'Not Eligible';
+};
 
-// if (x) {
-//     return true
-// } else {
-//     return false
-// };
+console.log(Verification(15));
 
-// // Ternary Operator is the simplest method of doing If else statement, Example: 
-// x ? true : false
+function adminControl(user) {
+    if (user) {
+        if (user.admin) {
+            console.log('showing admin panel')
+        } else {
+            console.log('you need to be an admin')
+        }
+    } else {
+        console.log('You need to logged in')
+    }
+}
 
-// // these statement are build to use in WebApp development framework like: React, Angular, Vue etc!
+let mainUser = {
+    name: 'Harry',
+    admin: true      // 'showing admin panel'
+};
 
-// // Example: 01
+let userOne = {
+    name: 'Harry',
+    admin: false     // 'you need to be an admin'
+};
 
-// function ageVerification(x) {
-//     if (x >= 18) {
-//         console.log('Eligible')
-//     } else {
-//         console.log('Not Eligible')
-//     };
-// };
-// console.log(ageVerification(18));     // Eligible
-// // this method is old, and was used in Vanilla Javascript
+let userTwo = null    // 'You need to logged in' 
+
+adminControl(mainUser);
 
 // // Now we are using Ternary Operator in this function
 
-// function ageVerification(x) {
-//     x >= 18 ? 'Eligible' : 'Not Eligible'
-// }; 
-// //   |        |            |
-// //  if      return       else
-
-// console.log(ageVerification(15));     // Not Eligible 
-
-// // same function with new syntax
+function adminControl(user) {
+   return user ? user.admin ? 'showing admin panel' : 'you need to be an admin' : 'You need to logged in'
+};
 
 // // now we will write this entire function in one line with javascript updated version
 // // ECMAScript (ES6)
 
-// let ageVerification = (x) => x >= 18 ? 'Eligible' : 'Not Eligible';
-// //                          ----|----   ---|---      ------|------
-// //                          condition      |     if condition was false
-// //                                if condition is true
-
-// // Example: 02
-
-// function adminControl(user) {
-//     if (user) {
-//         if (user.admin) {
-//             console.log('showing admin panel')
-//         } else {
-//             console.log('you need to be an admin')
-//         }
-//     } else {
-//         console.log('You need to logged in')
-//     }
-// }
-
-// let mainUser = {
-//     name: 'Harry',
-//     admin: true      // 'showing admin panel'
-// };
-
-// let userOne = {
-//     name: 'Harry',
-//     admin: false     // 'you need to be an admin'
-// };
-
-// let userTwo = null    // 'You need to logged in' 
-
-// adminControl(mainUser);
-
-// // Now we are using Ternary Operator in this function
-
-// function adminControl(user) {
-//    return user ? user.admin ? 'showing admin panel' : 'you need to be an admin' : 'You need to logged in'
-// };
-
-// // now we will write this entire function in one line with javascript updated version
-// // ECMAScript (ES6)
-
-// let adminControl = (user) => user ? user.admin ? 'showing admin panel' : 'you need to be an admin' : 'You need to logged in';
+let adminControl = (user) => user ? user.admin ? 'showing admin panel' : 'you need to be an admin' : 'You need to logged in';
 
 // // *************** Objects in JavaScript ***************
 

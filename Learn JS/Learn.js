@@ -364,46 +364,24 @@ function call() {
 
 call();
 
-// let a = {};
-// let b = a;             // copy the reference
-// console.log(a == b);      // true, both variables reference the same object
-// console.log(a === b);     // true
+let userName = { name: "John" };
 
-// // And here two independent objects are not equal, even though both are empty:
-// let a = {};
-// let b = {}; // two independent objects
+let permissions1 = { canView: true };
+let permissions2 = { canEdit: true };
 
-// alert( a == b ); // false
+console.log(Object.assign(userName, permissions1, permissions2));
 
-// // ************ Cloning and merging, Object.assign ************
-// let user = { name: "John" };
+let userName2 = { name: "John" };
 
-// let permissions1 = { canView: true };
-// let permissions2 = { canEdit: true };
+Object.assign(userName2, { name: "Peter" });
 
-// // copies all properties from permissions1 and permissions2 into user
-// Object.assign(user, permissions1, permissions2);
+console.log(userName2.name);
 
-// // now user = { name: "John", canView: true, canEdit: true }
+let fun = new Function('a', 'b', 'return a + b')
+console.log(fun(1,2));
 
-// // If the copied property name already exists, it gets overwritten:
-// let user = { name: "John" };
-
-// Object.assign(user, { name: "Pete" });
-
-// console.log(user.name); // now user = { name: "Pete" }
-
-// // *************** The "new Function" syntax ***************
-
-// // There’s one more way to create a function. It’s rarely used, but sometimes there’s no alternative.
-// // The syntax for creating a function:
-
-// let fun = new Function('a', 'b', 'return a + b')
-// console.log(fun(1,2));
-
-// // and heres the function without arguments
-// let sayHi = new Function('console.log("Hello")');
-// sayHi();
+let sayHello = new Function('console.log("Hello")');
+sayHello();
 
 // // **************** Time Interval in JS ******************
 

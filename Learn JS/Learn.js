@@ -343,42 +343,26 @@ obj3 = {
 
 obj3.sayHi();
 
-// let user = {
-//     name: 'John',
-//     age: 12,
-//     sayHi() {
-//         // "this" is the "current object"
-//         console.log(this.name)
-//     }
-// };
+let user = {
+    name: 'John',
+    age: 12,
+    sayHi() {
+        console.log(this.name)
+        console.log(this.gender)
+    }
+};
 
-// user.sayHi();    // John
+user.sayHi();
 
-// // *********** ( THIS ) is not Bound **********
-// let user = { name: "John" };
-// let admin = { name: "Admin" };
+let username = { name: "Johnny" , age: 21 };
+let admin = { name: "Admin" };
 
-// function sayHi() {
-//   console.log(this.name);
-// };
+function call() {
+  console.log(this.name); // Wrong Practice 
+  console.log(username.name);
+};
 
-// // Calling without an object: this == undefined
-// function sayHi() {
-//     console.log(this);
-// }
-
-// sayHi(); // undefined
-
-// // use the same function in two objects
-// user.f = sayHi;
-// admin.f = sayHi;
-
-// // these calls have different this
-// // "this" inside the function is the object "before the dot"
-// user.f(); // John  (this == user)
-// admin.f(); // Admin  (this == admin)
-
-// // ************** Comparison by reference *************
+call();
 
 // let a = {};
 // let b = a;             // copy the reference

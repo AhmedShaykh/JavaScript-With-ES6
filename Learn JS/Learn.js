@@ -319,54 +319,29 @@ const obj2 = {
 
 console.log(obj2.nested2.name);
 
-// // ************** Functions in Objects ***************
-// // in objects we will write anonymous function, Example:
+var obj = {
+    name: 'John',
+    age: 23,
+    isAdult: true,
+    nested2: {
+        name: 'Mike',
+        age: 16,
+        isAdult: false
+    },
+    sayHi: function() {
+        console.log("Hello NFTs");
+    }
+};
 
-// var obj = {
-//     name: 'John',
-//     age: 23,
-//     isAdult: true,
-//     nested2: {
-//         name: 'Mike',
-//         age: 16,
-//         isAdult: false
-//     },
-//     sayHi: function() {
-//         console.log('Hello')
-//     }
-// };
+obj.sayHi();
 
-// // sayHi is the key of the function and it also act like its name, and the value of the sayHi is 
-// // an anonymous function which prints 'Hello',
+obj3 = {
+    sayHi: function() {
+      console.log("Hello Object 3");
+    }
+};
 
-// obj.sayHi();
-
-// obj = {
-//     sayHi: function() {
-//       console.log("Hello");
-//     }
-// };
-
-// // method shorthand looks better, right?
-// obj = {
-//   sayHi() { // same as "sayHi: function()"
-//     console.log("Hello");
-//   }
-// };
-
-
-// // ================== Module one completed! ================
-
-
-
-// // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ADVANCE JAVASCRIPT %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-// // ************* "THIS" in methods *************
-// // It’s common that an object method needs to access the information stored in the object to do its job.
-// // For instance, the code inside user.sayHi() may need the name of the user.
-// // To access the object, a method can use the this keyword.
-// // The value of this is the object “before dot”, the one used to call the method.
+obj3.sayHi();
 
 // let user = {
 //     name: 'John',

@@ -385,13 +385,6 @@ sayHello();
 
 // // **************** Time Interval in JS ******************
 
-// // DELAY
-// // The delay before run, in milliseconds (1000 ms = 1 second), by default 0.
-
-// // arg1, arg2…
-// // Arguments for the function (not supported)
-
-// // For instance, this code calls sayHi() after 03 second:
 // function set() {
 //     console.log('Hi')
 // }

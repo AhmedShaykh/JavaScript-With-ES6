@@ -384,7 +384,7 @@ let sayHello = new Function('console.log("Hello")');
 sayHello();
 
 function set() {
-    console.log('Hi!')
+    console.log('Hi Solana!')
 }
 
 setTimeout(set, 3000);
@@ -401,23 +401,19 @@ let timer = setTimeout(() => {
     console.log('Hello Crypto!')
 }, 2000);
 
-// let func = (renderData) => {
-//     setTimeout(() => {
-//        renderData('Hello')
-//     }, 2000)
-// };
+let func = (renderData) => {
+    setTimeout(() => {
+       renderData('Hello ETH')
+    }, 2000)
+};
 
-// func();
+function renderData(x) {
+   console.log(x)
+};
 
-// function renderData(x) {
-//    console.log(x)
-// };
-
-// func(renderData);
+func(renderData);
 
 // // ************ Decorators and forwarding, call/apply ***********
-
-// // ------------- CALL -------------
 
 // // we will create an object, and inside that object we will create a function that refers to that object.
 // let obj1 = {
@@ -617,16 +613,6 @@ let timer = setTimeout(() => {
 // obj.d = 4;
 // console.log(JSON.stringify(obj)); // {"a":1,"b":2,"c":3,"d":4}
 // console.log(JSON.stringify(objCopy)); // {"a":1,"b":2,"c":3}
-
-// // -------------------- SUMMARY ------------------------
-// // When we see "..." in the code, it is either rest parameters or the spread syntax.
-
-// // There’s an easy way to distinguish between them:
-
-// // When ... is at the end of function parameters, it’s “rest parameters” and gathers the rest of the 
-// // list of arguments into an array.
-// // When ... occurs in a function call or alike, it’s called a “spread syntax” and expands an list into a array.
-
 
 // // *********** ARRAY PUSH ************
 // // An easy way to append data to the end of an array is via the push() function.

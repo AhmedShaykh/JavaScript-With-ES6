@@ -413,174 +413,90 @@ function renderData(x) {
 
 func(renderData);
 
-// // ************ Decorators and forwarding, call/apply ***********
+let obj1 = {
+    name: 'Elon',
+    age: 20,
+    borrow() {
+        console.log(this.name + " + " + this.age)
+    }
+};
 
-// // we will create an object, and inside that object we will create a function that refers to that object.
-// let obj1 = {
-//     name: 'John',
-//     age: 20,
-//     borrow() {
-//         console.log(this.name + " " + this.age)
-//     }
-// };
+obj1.borrow();
 
-// // similar to that we will also create one more object without function, but we want to make a function
-// // that also refers to the second object, so here a CALL method comes in, we wil borrow a function from 
-// // first object and use it on second object.
+var obJ2 = {
+    name: 'Mike',
+    age: 25
+};
 
-// var obj2 = {
-//     name: 'Mike',
-//     age: 25
-// };
+obj1.borrow.call(obJ2);
 
-// // function borrowing
-// obj1.borrow.call(obj2);  // Mike 25
+var obj4 = {
+    name: 'Elon',
+    age: 22,
+};
 
-// // this is the first method of borrowing a function from other object, now we will see another method of doing it
+let bio = function(grade) {
+    console.log(this.name + " " + this.age + " Class " + grade)
+}
 
-// // we create a function not in any object, we created this function to act globally
+bio.call(obj4);
 
-// // and heres our obj
-// var obj1 = {
-//     name: 'John',
-//     age: 23,
-// };
+var obj5 = {
+    name: 'Harry',
+    age: 29
+};
 
-// // now we will use this function in object with call method
-// bio.call(obj1);    // John 23
+bio.call(obj5, 08)
 
-// // same thing we are doing in this example, but now we are taking arguments in function,
+let bioo = function(grade, home) {
+    console.log(this.name + " " + this.age + " Class " + grade + " " + home)
+}
 
-// let bio = function(grade) {
-//     console.log(this.name + " " + this.age + " class " + grade)
-// }
+var data = {
+    name: 'Ali',
+    age: 18
+};
 
-// var obj2 = {
-//     name: 'Mike',
-//     age: 25
-// };
+bioo.apply(data, [08, "Malir"])
 
-// bio.call(obj2, 08)
-// //              |
-// //    arguments passed here
+let myName = bioo.bind(data, 76, 'Clifton');
+myName();
 
-// // --------------- APPLY -----------------
-// // apply is also the same thing as call method, the only change is we will pass arguments in array shape,
+function addUp(fName, lName, ...title) {
+    console.log(`${fName} ${lName}`);
+    console.log(title);
+    console.log(title[1]);
+    console.log(title[0]);
+};
 
-// let bio = function(grade, home) {
-//     console.log(this.name + " " + this.age + " class " + grade + " " + home)
-// }
+addUp('Yaseen', 'Usman', 'Saqlain', 'Majid');
 
-// var obj2 = {
-//     name: 'Mike',
-//     age: 25
-// };
+function showName(a, b) {
+    console.log(arguments.length);
+    console.log(arguments);
+    console.log(arguments[0]);
+    console.log(arguments[2]);
+};
 
-// bio.apply(obj2, [08, "malir"])
-// //              ------|-------
-// //                array form
+showName("Jack", "Martin", "Thomas");
 
-// // -------------- BIND --------------
+console.log(Math.max(3, 5, 1) );
 
-// // bind method creates a copy of a function and store it on variable and we can just call the variable name
-// // and our function will invoke
+let arr2 = [39, 52, 14];
 
-// let myName = bio.bind(obj2, 08, 'malir');
-// myName();
+console.log(Math.max(...arr2));
 
-// // *************** Rest parameters and spread syntax **************
-// // The rest of the parameters can be included in the function definition by using 
-// // three dots ... followed by the name of the array that will contain them. The dots literally 
-// // mean “gather the remaining parameters into an array”.
+let arr3 = [1, -2, 3, 4];
+let arr4 = [8, 3, -8, 1];
 
-// // For instance, to gather all arguments into array args:
+console.log(Math.max(...arr3, ...arr4) );
 
-// function sum(a, b,c, ...args) {
-//     return a + b+ c;
-//     console.log(...args)        // 3, 4, 5
-// };
-// console.log(sum(1, 2, 3, 4, 5));
-// // only 1 and 2 parameters will add up in function, and the reset of other will go in array.
+let arr5 = [3, 5, 1];
+let arr6 = [8, 9, 15];
 
-// // We can choose to get the first parameters as variables, and gather only the rest.
-// // Here the first two arguments go into variables and the rest go into titles array:
-// function addUp(fName, lName, ...title) {
-//     console.log(`${fName} ${lName}`);
-//     console.log(title[0]);               // Mehroz
-//     console.log(title[1]);               // Shayan
-//     console.log(title);                  // Mehroz and Shayan
-// };
+let merged = [0, ...arr5, 2, ...arr6];
 
-// addUp('Zulkaif', 'Bilal', 'Mehroz', 'Shayan');
-
-// // ----------------- The rest parameters must be at the end ----------------
-// // The rest parameters gather all remaining arguments, so the following does not make sense and causes an error:
-
-// function f(arg1, ...rest, arg2) { // arg2 after ...rest ?!
-//     // error
-// }
-// // The ...rest must always be last.
-
-// // ------------------- The “Arguments” variable ------------------
-// // There is also a special array-like object named arguments that contains all arguments by their index.
-// // For instance:
-
-// function showName(a, b) {
-//     console.log(arguments.length);       // 2
-//     console.log(arguments[0]);           // John
-//     console.log(arguments[1]);           // Mike
-// };
-
-// // shows: 2, John, Mike
-// showName("John", "Mike");                
-
-// // shows: 1, David, undefined (no second argument)
-// showName("David");                      // 1, David, undefined
-
-// // In old times, rest parameters did not exist in the language, and using arguments was the 
-// // only way to get all arguments of the function. 
-// // And it still works, we can find it in the old code.
-
-// // ----------- Arrow functions do not have "arguments" -----------
-// // If we access the arguments object from an arrow function, it takes them from the outer “normal” function.
-
-// // ******************* Spread Syntax ********************
-// // We’ve just seen how to get an array from the list of parameters.
-// // But sometimes we need to do exactly the reverse.
-// // For instance, there’s a built-in function Math.max that returns the greatest number from a list:
-
-// console.log( Math.max(3, 5, 1) ); // 5
-// // Now let’s say we have an array [3, 5, 1]. How do we call Math.max with it?
-// // Passing it “as is” won’t work, because Math.max expects a list of numeric arguments, not a single array:
-// let arr = [3, 5, 1];
-
-// console.log( Math.max(arr) ); // NaN
-
-// // And surely we can’t manually list items in the code Math.max(arr[0], arr[1], arr[2]), because we may be 
-// // unsure how many there are. As our script executes, there could be a lot, or there could be none. 
-// // And that would get ugly.
-// // Spread syntax to the rescue! It looks similar to rest parameters, also using ..., but does quite the opposite.
-// // When ...arr is used in the function call, it “expands” an iterable object arr into the list of arguments.
-// // For Math.max:
-
-// let arr = [3, 5, 1];
-
-// console.log( Math.max(...arr) ); // 5 (spread turns array into a list of arguments)
-
-// // We also can pass multiple iterables this way:
-// let arr1 = [1, -2, 3, 4];
-// let arr2 = [8, 3, -8, 1];
-
-// console.log( Math.max(...arr1, ...arr2) ); // 8
-
-// // We can even combine the spread syntax with normal values:
-// // Also, the spread syntax can be used to merge arrays:
-// let arr = [3, 5, 1];
-// let arr2 = [8, 9, 15];
-
-// let merged = [0, ...arr, 2, ...arr2];
-
-// console.log(merged); // 0,3,5,1,2,8,9,15 (0, then arr, then 2, then arr2)
+console.log(merged);
 
 // // ******************** Get a new copy of an array/object ********************
 // let arr = [1, 2, 3];

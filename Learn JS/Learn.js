@@ -383,34 +383,31 @@ console.log(fun(1,2));
 let sayHello = new Function('console.log("Hello")');
 sayHello();
 
-// // **************** Time Interval in JS ******************
+function set() {
+    console.log('Hi!')
+}
 
-// function set() {
-//     console.log('Hi')
-// }
+setTimeout(set, 3000);
 
-// setTimeout(set, 3000)
+function addFun(a, b) {
+    setTimeout(function() {
+    console.log(a + b)    
+    } , 2000)
+};
 
-// // with Arguments it should look like this
-// function add(a, b) {
-//     console.log(a + b)
-// };
+addFun(2, 3);
 
-// setTimeout(add, 2000, 2, 3)
+let timer = setTimeout(() => {
+    console.log('Hello Crypto!')
+}, 2000);
 
-// // Example 01
-// let timer = setTimeout(() => {
-//     console.log('Hello')
-// }, 2000)
-
-// timer();
-
-// // Example 02
 // let func = (renderData) => {
 //     setTimeout(() => {
 //        renderData('Hello')
 //     }, 2000)
 // };
+
+// func();
 
 // function renderData(x) {
 //    console.log(x)

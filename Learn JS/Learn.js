@@ -532,66 +532,41 @@ arrx.push(["Happy", "Coin"]);
 console.log(arr1);
 console.log(arrx);
 
-// // *************** Manipulate Arrays With shift() ***************
-// // pop() always removes the last element of an array. What if you want to remove the first?
-// // That's where .shift() comes in. It works just like .pop(), except it removes the 
-// // first element instead of the last.
+var ourArray = ["Anderson", "Jelly", ["cat"]];
+console.log(ourArray);
 
-// var ourArray = ["Stimpson", "J", ["cat"]];
-// var removedFromOurArray = ourArray.shift();
-// // removedFromOurArray now equals "Stimpson" and ourArray now equals ["J", ["cat"]].
+var removedArray = ourArray.shift();
+console.log(removedArray);
 
-// // **************** Manipulate Arrays With unshift() *****************
-// // Not only can you shift elements off of the beginning of an array, you can also unshift elements to 
-// // the beginning of an array i.e. add elements in front of the array.
-// // .unshift() works exactly like .push(), but instead of adding the element at the end 
-// // of the array, unshift() adds the element at the beginning of the array.
+var ourArray = ["Anderson", "Jelly", ["cat"]];
+ourArray.unshift("Happy");
 
-// var ourArray = ["Stimpson", "J", "cat"];
-// ourArray.shift(); // ourArray now equals ["J", "cat"]
-// ourArray.unshift("Happy");
-// // ourArray now equals ["Happy", "J", "cat"]
+console.log(ourArray);
 
-// // ************** Assignment with a Returned Value **************
-// // If you'll recall from our discussion of Storing Values with the Assignment Operator, 
-// // everything to the right of the equal sign is resolved before the value is assigned.
-// // This means we can take the return value of a function and assign it to a variable.
-// // Assume we have pre-defined a function sum which adds two numbers together, then:
-// // ourSum = sum(5, 12);
-// // will call sum function, which returns a value of 17 and assigns it to ourSum variable
-// // Setup
-// var processed = 0;
+var processed = 0;
 
-// function processArg(num) {
-//   return (num + 3) / 5;
-// }
+function processArg(num) {
+  return (num + 3) / 5;
+}
 
-// // Only change code below this line
-// var processed = processArg(7)
+var processed = processArg(7);
+console.log(processed)
 
-// // ****************** Stand in Line ******************
-// // In Computer Science a queue is an abstract Data Structure where items are kept in order. 
-// // New items can be added at the back of the queue and old items are taken off from the front of the queue.
-
-// // Write a function nextInLine which takes an array (arr) and a number (item) as arguments.
-// // Add the number to the end of the array, then remove the first element of the array.
-// // The nextInLine function should then return the element that was removed.
-
-// function nextInLine(arr, item) {
-//     // Only change code below this line
-//     arr.push(item)
-//     var removed = arr.shift()
-//     return removed;
-//     // Only change code above this line
-// }
+function nextInLine(arr, item) {
+    // Only change code below this line
+    arr.push(item)
+    var removed = arr.shift()
+    return removed;
+    // Only change code above this line
+}
   
-// // Setup
-// var testArr = [1,2,3,4,5];
+// Setup
+var testArr = [1,2,3,4,5];
   
-// // Display code
-// console.log("Before: " + JSON.stringify(testArr));
-// console.log(nextInLine(testArr, 6));
-// console.log("After: " + JSON.stringify(testArr));
+// Display code
+console.log("Before: " + JSON.stringify(testArr));
+console.log(nextInLine(testArr, 6));
+console.log("After: " + JSON.stringify(testArr));
 
 // // **************** Understanding Boolean Values ***************
 // // Another data type is the Boolean. Booleans may only be one of two values: true or false. 

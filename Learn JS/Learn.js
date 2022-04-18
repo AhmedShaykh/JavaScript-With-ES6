@@ -498,48 +498,38 @@ let merged = [0, ...arr5, 2, ...arr6];
 
 console.log(merged);
 
-// // ******************** Get a new copy of an array/object ********************
-// let arr = [1, 2, 3];
-// let arrCopy = [...arr]; // spread the array into a list of parameters
-//                         // then put the result into a new array
+let arrr = [1, 2, 3];
+let arrCopy = [...arrr];
+console.log("ArrCopy", arrCopy)
 
-// // do the arrays have the same contents?
-// console.log(JSON.stringify(arr) === JSON.stringify(arrCopy)); // true
+console.log(arrr === arrCopy);
 
-// // are the arrays equal?
-// console.log(arr === arrCopy); // false (not same reference)
+console.log(JSON.stringify(arrr) === JSON.stringify(arrCopy));
 
-// // modifying our initial array does not modify the copy:
-// arr.push(4);
-// console.log(arr); // 1, 2, 3, 4
-// console.log(arrCopy); // 1, 2, 3
+arrr.push(4);
+console.log(arrr);
+console.log(arrCopy);
 
-// // Example 02
-// let obj = { a: 1, b: 2, c: 3 };
-// let objCopy = { ...obj }; // spread the object into a list of parameters
-//                           // then return the result in a new object
+let objz = { a: 1, b: 2, c: 3 };
+let objCopy = {...objz};
+console.log("ObjCopy", objCopy)
 
-// // do the objects have the same contents?
-// console.log(JSON.stringify(obj) === JSON.stringify(objCopy)); // true
+console.log(JSON.stringify(objz) === JSON.stringify(objCopy));
 
-// // are the objects equal?
-// console.log(obj === objCopy); // false (not same reference)
+console.log(obj === objCopy);
 
-// // modifying our initial object does not modify the copy:
-// obj.d = 4;
-// console.log(JSON.stringify(obj)); // {"a":1,"b":2,"c":3,"d":4}
-// console.log(JSON.stringify(objCopy)); // {"a":1,"b":2,"c":3}
+objz.d = 4;
+console.log(objz);
+console.log(JSON.stringify(objz));
+console.log(JSON.stringify(objCopy));
 
-// // *********** ARRAY PUSH ************
-// // An easy way to append data to the end of an array is via the push() function.
-// // .push() takes one or more parameters and "pushes" them onto the end of the array.
-// var arr1 = [1,2,3];
-// arr1.push(4);
-// // arr1 is now [1,2,3,4]
+var arr1 = [1,2,3];
+arr1.push(4);
 
-// var arr2 = ["Stimpson", "J", "cat"];
-// arr2.push(["happy", "joy"]);
-// // arr2 now equals ["Stimpson", "J", "cat", ["happy", "joy"]]
+var arrx = ["Steve", "Jet", "Cat"];
+arrx.push(["Happy", "Coin"]);
+
+console.log(arr1,arrx);
 
 // // *************** Manipulate Arrays With shift() ***************
 // // pop() always removes the last element of an array. What if you want to remove the first?

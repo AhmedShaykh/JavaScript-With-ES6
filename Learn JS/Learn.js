@@ -512,7 +512,7 @@ console.log(arrCopy);
 
 let objz = { a: 1, b: 2, c: 3 };
 let objCopy = {...objz};
-console.log("ObjCopy", objCopy)
+console.log("Obj Copy", objCopy)
 
 console.log(JSON.stringify(objz) === JSON.stringify(objCopy));
 
@@ -529,7 +529,8 @@ arr1.push(4);
 var arrx = ["Steve", "Jet", "Cat"];
 arrx.push(["Happy", "Coin"]);
 
-console.log(arr1,arrx);
+console.log(arr1);
+console.log(arrx);
 
 // // *************** Manipulate Arrays With shift() ***************
 // // pop() always removes the last element of an array. What if you want to remove the first?

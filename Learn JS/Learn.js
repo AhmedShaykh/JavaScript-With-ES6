@@ -553,72 +553,51 @@ var processed = processArg(7);
 console.log(processed)
 
 function nextInLine(arr, item) {
-    // Only change code below this line
     arr.push(item)
     var removed = arr.shift()
     return removed;
-    // Only change code above this line
 }
-  
-// Setup
+
 var testArr = [1,2,3,4,5];
-  
-// Display code
+
 console.log("Before: " + JSON.stringify(testArr));
 console.log(nextInLine(testArr, 6));
 console.log("After: " + JSON.stringify(testArr));
 
-// // **************** Understanding Boolean Values ***************
-// // Another data type is the Boolean. Booleans may only be one of two values: true or false. 
-// // They are basically little on-off switches, where true is "on" and false is "off." 
-// // These two states are mutually exclusive.
+var someObj = {
+    propName: "AHM X"
+};
 
-// // *************  Accessing Object Properties with VariablesPassed ***********
-// // Another use of bracket notation on objects is to access a property which is stored as 
-// // the value of a variable. This can be very useful for iterating through an object's 
-// // properties or when accessing a lookup table.
+function propPrefix(str) {
+    var sample = "prop";
+    return sample + str;
+}
 
-// var someObj = {
-//     propName: "John"
-//   };
-//   function propPrefix(str) {
-//     var s = "prop";
-//     return s + str;
-//   }
-//   var someProp = propPrefix("Name"); // someProp now holds the value 'propName'
-//   console.log(someObj[someProp]); // "John"
+var someProp = propPrefix("Name");
+console.log(someProp);
+console.log(someObj[someProp]);
 
-// // Set the playerNumber variable to 16. Then, use the variable to look up the player's 
-// // name and assign it to player.
-
-// // Setup
-// var testObj = {
-//     12: "Namath",
-//     16: "Montana",
-//     19: "Unitas"
-//   };
+var testObj = {
+    12: "Namath",
+    16: "Montana",
+    19: "Unitas"
+};
   
-//   // Only change code below this line
-  
-// var playerNumber = 16;       // Change this line
-// var player = testObj[playerNumber];   // Change this line
+var playerNumber = 16;
+var player = testObj[playerNumber];
+console.log(player)
 
-// // *********** Testing Objects for Properties **********
-// // Modify the function checkObj to test if an object passed to the function (obj) contains 
-// // a specific property (checkProp). If the property is found, return that property's value. 
-// // If not, return "Not Found".
-
-// function checkObj(obj, checkProp) {
-//     // Only change code below this line
-//     if (obj.hasOwnProperty(checkProp) == true) {
-//       return obj[checkProp]
-//     } 
-//     return "Not Found";
-//     // Only change code above this line
-// }
-// checkObj({gift: "pony", pet: "kitten", bed: "sleigh"}, "gift");
-// checkObj({gift: "pony", pet: "kitten", bed: "sleigh"}, "pet");
-// checkObj({gift: "pony", pet: "kitten", bed: "sleigh"}, "house");
+function checkObj(obj, checkProp) {
+    // Only change code below this line
+    if (obj.hasOwnProperty(checkProp) == true) {
+      return obj[checkProp]
+    } 
+    return "Not Found";
+    // Only change code above this line
+}
+console.log(checkObj({gift: "pony", pet: "kitten", bed: "sleigh"}, "gift"));
+console.log(checkObj({gift: "pony", pet: "kitten", bed: "sleigh"}, "pet"));
+console.log(checkObj({gift: "pony", pet: "kitten", bed: "sleigh"}, "house"));
 
 // // ************** Accessing Nested Objects ***************
 // //The sub-properties of objects can be accessed by chaining together the dot or bracket notation.

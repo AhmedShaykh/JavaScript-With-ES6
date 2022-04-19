@@ -50,8 +50,8 @@ console.log(stringNum)
 console.log("12");
 console.log(Number.parseInt('12'));
 
-function isPassing(grade){
-    if (grade >= 10){
+function isPassing(grade) {
+    if (grade >= 10) {
         return "Passed";
     } else {
         return "Failed";
@@ -130,7 +130,7 @@ console.log(x)
 var z = "Hello " + (3 - 4);
 console.log(z)
 
-function showMessage() {        
+function showMessage() {
     console.log('Hello World')
 };
 
@@ -192,10 +192,10 @@ function multiply3(num1, num2) {
     return num1 * num2
 };
 
-function sum(a , b) {
+function sum(a, b) {
     return multiply3(a, b) + b
 };
- 
+
 var total = sum(3, 4) + 6 // +b (4)   
 console.log(total)
 
@@ -249,7 +249,7 @@ console.log(arr[1]);
 
 var obj = { name: 'John', age: 23 };
 
-function updateObject(val) { 
+function updateObject(val) {
     val.age = 30
 };
 
@@ -260,19 +260,19 @@ console.log(obj.age);
 function markssheet(marks) {
     if (marks >= 90) {
         return 'Grade A+';
-     }
-     else if (marks >=80 && marks < 90) {
+    }
+    else if (marks >= 80 && marks < 90) {
         return 'Grade A';
-     }
-     else if (marks >=70 && marks < 80) {
+    }
+    else if (marks >= 70 && marks < 80) {
         return 'Good Affort';
-     }
-     else if (marks >=40 && marks < 70) {
-         return 'Just Passed';
-     }
-     else {
+    }
+    else if (marks >= 40 && marks < 70) {
+        return 'Just Passed';
+    }
+    else {
         return 'Failed';
-     };
+    };
 }
 
 console.log(markssheet(70));
@@ -328,7 +328,7 @@ var obj = {
         age: 16,
         isAdult: false
     },
-    sayHi: function() {
+    sayHi: function () {
         console.log("Hello NFTs");
     }
 };
@@ -336,8 +336,8 @@ var obj = {
 obj.sayHi();
 
 obj3 = {
-    sayHi: function() {
-      console.log("Hello Object 3");
+    sayHi: function () {
+        console.log("Hello Object 3");
     }
 };
 
@@ -354,12 +354,12 @@ let user = {
 
 user.sayHi();
 
-let username = { name: "Johnny" , age: 21 };
+let username = { name: "Johnny", age: 21 };
 let admin = { name: "Admin" };
 
 function call() {
-  console.log(this.name); // Wrong Practice 
-  console.log(username.name);
+    console.log(this.name); // Wrong Practice 
+    console.log(username.name);
 };
 
 call();
@@ -378,7 +378,7 @@ Object.assign(userName2, { name: "Peter" });
 console.log(userName2.name);
 
 let fun = new Function('a', 'b', 'return a + b')
-console.log(fun(1,2));
+console.log(fun(1, 2));
 
 let sayHello = new Function('console.log("Hello")');
 sayHello();
@@ -390,9 +390,9 @@ function set() {
 setTimeout(set, 3000);
 
 function addFun(a, b) {
-    setTimeout(function() {
-    console.log(a + b)    
-    } , 2000)
+    setTimeout(function () {
+        console.log(a + b)
+    }, 2000)
 };
 
 addFun(2, 3);
@@ -403,12 +403,12 @@ let timer = setTimeout(() => {
 
 let func = (renderData) => {
     setTimeout(() => {
-       renderData('Hello ETH')
+        renderData('Hello ETH')
     }, 2000)
 };
 
 function renderData(x) {
-   console.log(x)
+    console.log(x)
 };
 
 func(renderData);
@@ -435,7 +435,7 @@ var obj4 = {
     age: 22,
 };
 
-let bio = function(grade) {
+let bio = function (grade) {
     console.log(this.name + " " + this.age + " Class " + grade)
 }
 
@@ -448,7 +448,7 @@ var obj5 = {
 
 bio.call(obj5, 08)
 
-let bioo = function(grade, home) {
+let bioo = function (grade, home) {
     console.log(this.name + " " + this.age + " Class " + grade + " " + home)
 }
 
@@ -480,7 +480,7 @@ function showName(a, b) {
 
 showName("Jack", "Martin", "Thomas");
 
-console.log(Math.max(3, 5, 1) );
+console.log(Math.max(3, 5, 1));
 
 let arr2 = [39, 52, 14];
 
@@ -489,7 +489,7 @@ console.log(Math.max(...arr2));
 let arr3 = [1, -2, 3, 4];
 let arr4 = [8, 3, -8, 1];
 
-console.log(Math.max(...arr3, ...arr4) );
+console.log(Math.max(...arr3, ...arr4));
 
 let arr5 = [3, 5, 1];
 let arr6 = [8, 9, 15];
@@ -511,7 +511,7 @@ console.log(arrr);
 console.log(arrCopy);
 
 let objz = { a: 1, b: 2, c: 3 };
-let objCopy = {...objz};
+let objCopy = { ...objz };
 console.log("Obj Copy", objCopy)
 
 console.log(JSON.stringify(objz) === JSON.stringify(objCopy));
@@ -523,7 +523,7 @@ console.log(objz);
 console.log(JSON.stringify(objz));
 console.log(JSON.stringify(objCopy));
 
-var arr1 = [1,2,3];
+var arr1 = [1, 2, 3];
 arr1.push(4);
 
 var arrx = ["Steve", "Jet", "Cat"];
@@ -546,7 +546,7 @@ console.log(ourArray);
 var processed = 0;
 
 function processArg(num) {
-  return (num + 3) / 5;
+    return (num + 3) / 5;
 }
 
 var processed = processArg(7);
@@ -558,7 +558,7 @@ function nextInLine(arr, item) {
     return removed;
 }
 
-var testArr = [1,2,3,4,5];
+var testArr = [1, 2, 3, 4, 5];
 
 console.log("Before: " + JSON.stringify(testArr));
 console.log(nextInLine(testArr, 6));
@@ -582,143 +582,101 @@ var testObj = {
     16: "Montana",
     19: "Unitas"
 };
-  
+
 var playerNumber = 16;
 var player = testObj[playerNumber];
 console.log(player)
 
-function checkObj(obj, checkProp) {
-    // Only change code below this line
-    if (obj.hasOwnProperty(checkProp) == true) {
-      return obj[checkProp]
-    } 
-    return "Not Found";
-    // Only change code above this line
-}
-console.log(checkObj({gift: "pony", pet: "kitten", bed: "sleigh"}, "gift"));
-console.log(checkObj({gift: "pony", pet: "kitten", bed: "sleigh"}, "pet"));
-console.log(checkObj({gift: "pony", pet: "kitten", bed: "sleigh"}, "house"));
+var ourStorage = {
+    "desk": {
+        "drawer": "stapler"
+    },
+    "cabinet": {
+        "top drawer": {
+            "folder1": "a file",
+            "folder2": "secrets"
+        },
+        "bottom drawer": "soda"
+    }
+};
 
-// // ************** Accessing Nested Objects ***************
-// //The sub-properties of objects can be accessed by chaining together the dot or bracket notation.
+console.log(ourStorage.cabinet["top drawer"].folder2);
+console.log(ourStorage.desk.drawer);
 
-// var ourStorage = {
-//   "desk": {
-//     "drawer": "stapler"
-//   },
-//   "cabinet": {
-//     "top drawer": { 
-//       "folder1": "a file",
-//       "folder2": "secrets"  
-//     },
-//     "bottom drawer": "soda"
-//   }
-// };
-// ourStorage.cabinet["top drawer"].folder2;  // "secrets"
-// ourStorage.desk.drawer; // "stapler"
+var myStorage = {
+    "car": {
+        "inside": {
+            "glove box": "maps",
+            "passenger seat": "crumbs"
+        },
+        "outside": {
+            "trunk": "jack"
+        }
+    }
+};
 
-// // Access the myStorage object and assign the contents of the glove box property to the 
-// // gloveBoxContents variable. Use dot notation for all properties where possible, 
-// // otherwise use bracket notation.
+var gloveBoxContents = myStorage.car.inside["glove box"];
+console.log(gloveBoxContents);
 
-// var myStorage = {
-//   "car": {
-//     "inside": {
-//       "glove box": "maps",
-//       "passenger seat": "crumbs"
-//      },
-//     "outside": {
-//       "trunk": "jack"
-//     }
-//   }
-// };
+var ourPets = [
+    {
+        animalType: "cat",
+        names: [
+            "Meowzer",
+            "Fluffy",
+            "Kit-Cat"
+        ]
+    },
+    {
+        animalType: "dog",
+        names: [
+            "Spot",
+            "Bowser",
+            "Frankie"
+        ]
+    }
+];
 
-// var gloveBoxContents = myStorage.car.inside["glove box"];
+console.log(ourPets[0].names[1]);
+console.log(ourPets[1].names[0]);
 
-// // ************* Accessing Nested Arrays **************
-// // As we have seen in earlier examples, objects can contain both nested objects and nested arrays.
-// // Similar to accessing nested objects, Array bracket notation can be chained to access nested arrays.
+var myPlants = [
+    {
+        type: "flowers",
+        list: [
+            "rose",
+            "tulip",
+            "dandelion"
+        ]
+    },
+    {
+        type: "trees",
+        list: [
+            "fir",
+            "pine",
+            "birch"
+        ]
+    }
+];
 
-// var ourPets = [
-//     {
-//       animalType: "cat",
-//       names: [
-//         "Meowzer",
-//         "Fluffy",
-//         "Kit-Cat"
-//       ]
-//     },
-//     {
-//       animalType: "dog",
-//       names: [
-//         "Spot",
-//         "Bowser",
-//         "Frankie"
-//       ]
-//     }
-// ];
-// ourPets[0].names[1]; // "Fluffy"
-// ourPets[1].names[0]; // "Spot"
+var secondTree = myPlants[1].list[1];
+console.log(secondTree);
 
-// // Retrieve the second tree from the variable myPlants using object dot and array bracket notation.
-// var myPlants = [
-//     {
-//       type: "flowers",
-//       list: [
-//         "rose",
-//         "tulip",
-//         "dandelion"
-//       ]
-//     },
-//     {
-//       type: "trees",
-//       list: [
-//         "fir",
-//         "pine",
-//         "birch"
-//       ]
-//     }
-//   ];
-  
-// // Only change code below this line
+let arrDest = ["Shaykh", "Ahmed"]
 
-// var secondTree = myPlants[1].list[1];
+let [ firstMyName, lastMyName ] = arrDest
 
+console.log(lastMyName);
+console.log(firstMyName);
 
-// // %%%%%%%%%%%%%%%%%%%%% Destructuring %%%%%%%%%%%%%%%%%%%%%%%%
+const objDest = {
+    nameObj: 'Andrew',
+    age: 19,
+};
 
-// /* 
-// The two most used data structures in JavaScript are Object and Array.
+let { nameObj, age } = objDest
 
-// Objects allow us to create a single entity that stores data items by key.
-// Arrays allow us to gather data items into an ordered list.
+console.log(nameObj);
+console.log(age);
 
-// Although, when we pass those to a function, it may need not an object/array as a whole. It may need individual pieces.
-
-// Destructuring assignment is a special syntax that allows us to “unpack” arrays or objects into a bunch of variables, 
-// as sometimes that’s more convenient.
-
-// Here's an example of destructuring 
-
-// ----------- ARRAY DESTRUCTURING -----------
-// */
-
-// // we have an array with the name and surname
-// let arr = ["John", "Smith"]
-
-// let [ firstName, lastName ] = arr // you created variables under the array, now John is assign as firstName and Smith as lastName
-
-// console.log(firstName); // John
-// console.log(lastName); // Smith
-
-// // --------------- OBJECT DESTRUCTURING ----------------
-
-// const obj = {
-//     name: 'John',
-//     age: 19,
-// };
-
-// let { name, age } = obj
-
-// console.log(name); // JOHN
-// console.log(age); // 19
+// ====================== End ====================== //

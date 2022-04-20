@@ -1,6 +1,6 @@
 console.log('Start');
 
-let data = 'content';
+let data = 'Content';
 console.log(data);
 
 function Greet(msg, alertGreet) {

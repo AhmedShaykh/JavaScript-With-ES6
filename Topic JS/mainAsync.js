@@ -15,21 +15,21 @@ function Greet(msg, alertGreet) {
 
 function Evening(alertGreet) {
     alert('Good Evening');
-    alertGreet('Hello World')
+    alertGreet('Its Tea Time');
 };
 
 function Morning(alertGreet) {
     alert('Good Morning');
-    alertGreet('Hello World')
+    alertGreet('Its Coffee Time');
 };
 
 function Night(alertGreet) {
     alert('Good Night');
-    alertGreet('Hello World')
+    alertGreet('Go To Rest');
 };
 
 function alertGreet(msg) {
-    alert(msg);
+    console.log(msg);
 };
 
-Greet('Hello World', alertGreet);
+Greet('morning', alertGreet);

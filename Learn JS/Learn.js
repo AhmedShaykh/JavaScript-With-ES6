@@ -10,9 +10,9 @@ console.log(b.includes('Yello'));
 console.log(b.includes('H'));
 console.log(b.includes('w'));
 
-// console.log(b.toUpperCase());
+console.log(b.toUpperCase());
 
-// console.log(b.toLowerCase());
+console.log(b.toLowerCase());
 
 // var language = 'JavaScript';
 // console.log(language[0]);

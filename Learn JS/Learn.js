@@ -2,13 +2,13 @@ var a = 'Ahmed Shaykh';
 document.write(a);
 console.log(a);
 
-// console.log(a.length);
+console.log(a.length);
 
-// var b = 'Hello World';
-// console.log(b.includes('World'));
-// console.log(b.includes('Yello'));
-// console.log(b.includes('H'));
-// console.log(b.includes('w'));
+var b = 'Hello World';
+console.log(b.includes('World'));
+console.log(b.includes('Yello'));
+console.log(b.includes('H'));
+console.log(b.includes('w'));
 
 // console.log(b.toUpperCase());
 

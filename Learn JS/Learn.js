@@ -1,4 +1,4 @@
-var a = 'Ahmed';
+var a = 'Ahmed Shaykh';
 document.write(a);
 console.log(a);
 

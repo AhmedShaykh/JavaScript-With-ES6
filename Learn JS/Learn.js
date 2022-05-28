@@ -6,7 +6,9 @@ console.log(a.length);
 
 var b = 'Hello World';
 console.log(b.includes('World'));
+console.log(b.includes('Web 3.0'));
 console.log(b.includes('Yello'));
+console.log(b.includes('He'));
 console.log(b.includes('H'));
 console.log(b.includes('w'));
 

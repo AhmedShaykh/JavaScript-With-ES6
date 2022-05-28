@@ -22,9 +22,9 @@ console.log(language[1]);
 console.log(language[2]);
 console.log(language[3]);
 
-// console.log(language[language.length - 2]);
+console.log(language[language.length - 2]);
 
-// console.log(language.substring(1, 4));
+console.log(language.substring(1, 4));
 
 // var nameA = 'Sabrina';
 // var nameB = 'Carpenter';

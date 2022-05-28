@@ -4,7 +4,7 @@ console.log(a);
 
 console.log(a.length);
 
-var b = 'Hello World';
+var b = 'Hello Web 3.0';
 console.log(b.includes('World'));
 console.log(b.includes('Web 3.0'));
 console.log(b.includes('Yello'));

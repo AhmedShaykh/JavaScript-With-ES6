@@ -16,11 +16,11 @@ console.log(b.toUpperCase());
 
 console.log(b.toLowerCase());
 
-// var language = 'JavaScript';
-// console.log(language[0]);
-// console.log(language[1]);
-// console.log(language[2]);
-// console.log(language[3]);
+var language = 'JavaScript';
+console.log(language[0]);
+console.log(language[1]);
+console.log(language[2]);
+console.log(language[3]);
 
 // console.log(language[language.length - 2]);
 

@@ -31,7 +31,7 @@ var nameB = 'Carpenter';
 
 console.log(nameA + " " + nameB + ' Best Female Singer In The World');
 
-// console.log(`Best Female Singer Is ${nameA} ${nameB} In The World`);
+console.log(`${nameA} ${nameB} Best Female Singer In The World`);
 
 // const phoneNumber = "+92123456789";
 // console.log(phoneNumber.startsWith('+'));

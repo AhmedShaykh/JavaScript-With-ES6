@@ -65,8 +65,8 @@ console.log(isPassing(10));
 console.log(isPassing(-10));
 console.log(isPassing(9.9));
 
-// var Rose = 'Red';
-// console.log(Rose);
+var Rose = 'Red';
+console.log(Rose);
 
 // var a = 5 + 2 * (3 - 2) / 2;
 // console.log(a)

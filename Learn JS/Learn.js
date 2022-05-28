@@ -26,10 +26,10 @@ console.log(language[language.length - 2]);
 
 console.log(language.substring(1, 4));
 
-// var nameA = 'Sabrina';
-// var nameB = 'Carpenter';
+var nameA = 'Sabrina';
+var nameB = 'Carpenter';
 
-// console.log('Best Female Singer Is ' + nameA + " " + nameB + ' In The World');
+console.log(nameA + " " + nameB + ' Best Female Singer In The World');
 
 // console.log(`Best Female Singer Is ${nameA} ${nameB} In The World`);
 

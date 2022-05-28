@@ -33,37 +33,37 @@ console.log(nameA + " " + nameB + ' Best Female Singer In The World');
 
 console.log(`${nameA} ${nameB} Best Female Singer In The World`);
 
-// const phoneNumber = "+92123456789";
-// console.log(phoneNumber.startsWith('+'));
-// console.log(phoneNumber.startsWith('1'));
-// console.log(phoneNumber.endsWith('9'));
-// console.log(phoneNumber.endsWith('7'));
+const phoneNumber = "+92123456789";
+console.log(phoneNumber.startsWith('+'));
+console.log(phoneNumber.startsWith('1'));
+console.log(phoneNumber.endsWith('9'));
+console.log(phoneNumber.endsWith('7'));
 
-// const text = '    Ahmed Shaykh';
-// console.log(text)
-// console.log(text.trim());
+const text = '    Ahmed Shaykh';
+console.log(text)
+console.log(text.trim());
 
-// const answer = 42;
-// const stringNum = 40;
-// console.log(answer)
-// console.log(answer.toString());
-// console.log(stringNum)
+const answer = 42;
+const stringNum = 40;
+console.log(answer)
+console.log(answer.toString());
+console.log(stringNum)
 
-// console.log("12");
-// console.log(Number.parseInt('12'));
+console.log("12");
+console.log(Number.parseInt('12'));
 
-// function isPassing(grade) {
-//     if (grade >= 10) {
-//         return "Passed";
-//     } else {
-//         return "Failed";
-//     }
-// }
+function isPassing(grade) {
+    if (grade >= 10) {
+        return "Passed";
+    } else {
+        return "Failed";
+    }
+}
 
-// console.log(isPassing(12));
-// console.log(isPassing(10));
-// console.log(isPassing(-10));
-// console.log(isPassing(9.9));
+console.log(isPassing(12));
+console.log(isPassing(10));
+console.log(isPassing(-10));
+console.log(isPassing(9.9));
 
 // var Rose = 'Red';
 // console.log(Rose);

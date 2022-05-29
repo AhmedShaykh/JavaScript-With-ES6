@@ -66,19 +66,19 @@ console.log(isPassing(-10));
 console.log(isPassing(9.9));
 
 var a = 5 + 2 * (3 - 2) / 2;
-console.log(a)
+console.log(a) // 6
 
 var b = 3 + 5 * 2;
-console.log(b)
+console.log(b) // 13
 
 var c = 8 / 2 - 1;
-console.log(c)
+console.log(c) // 3
 
 var d = 3 % 2 + 4 - 1;
-console.log(d)
+console.log(d) // 3.06 = 4
 
 var z = a + 5 * c - d / (3 + b);
-console.log(z)
+console.log(z) // 20.75
 
 // var num = 6;
 // num++

@@ -80,24 +80,24 @@ console.log(d) // 3.06 = 4
 var z = a + 5 * c - d / (3 + b);
 console.log(z) // 20.75
 
-// var num = 6;
-// num++
-// console.log(num);
+var num = 6;
+num++
+console.log(num);
 
-// num--
-// console.log(num);
+num--
+console.log(num);
 
-// var num2 = ++num;
-// console.log(num2);
+var num2 = ++num;
+console.log(num2);
 
-// var num = 8;
-// var num2 = num++;
-// var num3 = ++num;
-// console.log(num);
-// console.log(num2);
-// console.log(num3);
+var num = 8;
+var num2 = num++;
+var num3 = ++num;
+console.log(num);
+console.log(num2);
+console.log(num3);
 
-// var firstName = 'Java';
+// var firstName = 'Type';
 // var lastName = 'Script';
 
 // console.log(firstName + "" + lastName);

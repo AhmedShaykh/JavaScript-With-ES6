@@ -54,9 +54,9 @@ console.log(Number.parseInt('12'));
 
 function isPassing(grade) {
     if (grade >= 10) {
-        return "Passed";
+        return "Pass";
     } else {
-        return "Failed";
+        return "Fail";
     }
 }
 

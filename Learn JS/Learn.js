@@ -65,20 +65,20 @@ console.log(isPassing(10));
 console.log(isPassing(-10));
 console.log(isPassing(9.9));
 
-// var a = 5 + 2 * (3 - 2) / 2;
-// console.log(a)
+var a = 5 + 2 * (3 - 2) / 2;
+console.log(a)
 
-// var b = 3 + 5 * 2;
-// console.log(b)
+var b = 3 + 5 * 2;
+console.log(b)
 
-// var c = 8 / 2 - 1;
-// console.log(c)
+var c = 8 / 2 - 1;
+console.log(c)
 
-// var d = 3 % 2 + 4 - 1;
-// console.log(d)
+var d = 3 % 2 + 4 - 1;
+console.log(d)
 
-// var z = a + 5 * c - d / (3 + b);
-// console.log(z)
+var z = a + 5 * c - d / (3 + b);
+console.log(z)
 
 // var num = 6;
 // num++

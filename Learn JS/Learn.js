@@ -96,13 +96,13 @@ console.log(num);
 console.log(num2);
 console.log(num3);
 
-// var firstName = 'Type';
-// var lastName = 'Script';
+var firstName = 'Type';
+var lastName = 'Script';
 
-// console.log(firstName + "" + lastName);
-// console.log(firstName + " " + lastName);
-// console.log(firstName + lastName);
-// console.log(`${firstName} ${lastName}`);
+console.log(firstName + "" + lastName);
+console.log(firstName + " " + lastName);
+console.log(firstName + lastName);
+console.log(`${firstName} ${lastName}`);
 
 // var a = "6" + 2;
 // console.log(a)

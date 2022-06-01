@@ -127,49 +127,49 @@ console.log(x)
 var z = "Hello " + (3 - 4);
 console.log(z)
 
-// function showMessage() {
-//     console.log('Hello World')
-// };
+function showMessage() {
+    console.log('Hello World')
+};
 
-// showMessage();
+showMessage();
 
-// function multiply(num1, num2) {
-//     var num3 = num1 * num2;
-//     console.log(`The Output is: ${num3}`);
-// };
+function multiply(num1, num2) {
+    var num3 = num1 * num2;
+    console.log(`The Output is: ${num3}`);
+};
 
-// multiply(3, 3);
+multiply(3, 3);
 
-// function showName(name) {
-//     console.log('Hello', name);
-// };
+function showName(name) {
+    console.log('Hello', name);
+};
 
-// showName("Hardwell");
+showName("Hardwell");
 
-// function test() {
-//     return 45
-// };
+function test() {
+    return 45
+};
 
-// var a = test();
-// console.log(a);
+var a = test();
+console.log(a);
 
-// function multi(num1, num2) {
-//     return num2;
-// };
+function multi(num1, num2) {
+    return num2;
+};
 
-// var a = multi(3, 6);
-// console.log(a);
+var a = multi(3, 6);
+console.log(a);
 
-// function showMessage2(name) {
-//     console.log("Hello " + name);
-// };
+function showMessage2(name) {
+    console.log("Hello " + name);
+};
 
-// showMessage2("World")
-// showMessage2(404)
-// showMessage2(true)
-// showMessage2()
-// showMessage2("Crypto", 12)
-// showMessage2("Bitcoin " + "#1")
+showMessage2("Metaverse")
+showMessage2(404)
+showMessage2(true)
+showMessage2()
+showMessage2("Crypto", 12)
+showMessage2("Bitcoin " + "#1")
 
 
 // function multiply2(num1, num2) {

@@ -11,7 +11,6 @@ console.log(b.includes('Yello'));
 console.log(b.includes('Hell'));
 console.log(b.includes('web'));
 
-
 console.log(b.toUpperCase());
 
 console.log(b.toLowerCase());

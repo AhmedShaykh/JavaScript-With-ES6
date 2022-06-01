@@ -5,12 +5,12 @@ console.log(a);
 console.log(a.length);
 
 var b = 'Hello Web 3.0';
-console.log(b.includes('World'));
-console.log(b.includes('Web 3.0'));
+console.log(b.includes('Web 3'));
+console.log(b.includes('3.O'));
 console.log(b.includes('Yello'));
 console.log(b.includes('Hell'));
-console.log(b.includes('H'));
-console.log(b.includes('w'));
+console.log(b.includes('web'));
+
 
 console.log(b.toUpperCase());
 

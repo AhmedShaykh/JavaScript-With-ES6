@@ -172,18 +172,18 @@ showMessage2("Crypto", 12)
 showMessage2("Bitcoin " + "#1")
 
 
-// function multiply2(num1, num2) {
-//     return num1 * num2
-// };
+function multiply2(num1, num2) {
+    return num1 * num2
+};
 
-// var a = multiply2(3, 6) + 5
-// var b = multiply2(3, 6) - 6
-// var c = multiply2(3, 6) * 5
-// var d = multiply2(3, 6) / 2
-// console.log(a);
-// console.log(b);
-// console.log(c);
-// console.log(d);
+var a = multiply2(3, 6) + 5
+var b = multiply2(3, 6) - 6
+var c = multiply2(3, 6) * 5
+var d = multiply2(3, 6) / 2
+console.log(a);
+console.log(b);
+console.log(c);
+console.log(d);
 
 // function multiply3(num1, num2) {
 //     return num1 * num2

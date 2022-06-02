@@ -229,58 +229,58 @@ function changeValue() {
 console.log(num);
 console.log(changeValue());
 
-// var arr = [1, 2, 3, 4];
+var arr = [1, 2, 3, 4];
 
-// function arrayIndex(val) {
-//     val[1] = 57
-// };
+function arrayIndex(arr) {
+    arr[1] = 57
+};
 
-// console.log(arr[1]);
-// arrayIndex(arr);
-// console.log(arr[1]);
+console.log(arr[1]);
+arrayIndex(arr);
+console.log(arr[1]);
 
-// var obj = { name: 'John', age: 23 };
+var obj = { name: 'John', age: 23 };
 
-// function updateObject(val) {
-//     val.age = 30
-// };
+function updateObject(obj) {
+    obj.age = 30
+};
 
-// console.log(obj.age);
-// updateObject(obj);
-// console.log(obj.age);
+console.log(obj.age);
+updateObject(obj);
+console.log(obj.age);
 
-// function markssheet(marks) {
-//     if (marks >= 90) {
-//         return 'Grade A+';
-//     }
-//     else if (marks >= 80 && marks < 90) {
-//         return 'Grade A';
-//     }
-//     else if (marks >= 70 && marks < 80) {
-//         return 'Good Affort';
-//     }
-//     else if (marks >= 40 && marks < 70) {
-//         return 'Just Passed';
-//     }
-//     else {
-//         return 'Failed';
-//     };
-// }
+function markssheet(marks) {
+    if (marks >= 90) {
+        return 'Grade A+';
+    }
+    else if (marks >= 80 && marks < 90) {
+        return 'Grade A';
+    }
+    else if (marks >= 70 && marks < 80) {
+        return 'Good Affort';
+    }
+    else if (marks >= 40 && marks < 70) {
+        return 'Improve Your Hard Work';
+    }
+    else {
+        return 'Failed';
+    };
+}
 
-// console.log(markssheet(70));
-// console.log(markssheet(39));
-// console.log(markssheet(91));
-// console.log(markssheet(54));
+console.log(markssheet(70));
+console.log(markssheet(39));
+console.log(markssheet(91));
+console.log(markssheet(54));
 
-// function ageVerification(x) {
-//     if (x >= 18) {
-//         return 'Eligible';
-//     } else {
-//         return 'Not Eligible';
-//     };
-// };
+function ageVerification(x) {
+    if (x >= 18) {
+        return 'You Are Eligible';
+    } else {
+        return 'You Are Not Eligible';
+    };
+};
 
-// console.log(ageVerification(18));
+console.log(ageVerification(18));
 
 // function Verification(z) {
 //     return z >= 18 ? 'Eligible' : 'Not Eligible';

@@ -282,34 +282,34 @@ function ageVerification(x) {
 
 console.log(ageVerification(18));
 
-// function Verification(z) {
-//     return z >= 18 ? 'Eligible' : 'Not Eligible';
-// };
+function Verification(z) {
+    return z >= 18 ? 'Eligible' : 'Not Eligible';
+};
 
-// console.log(Verification(15));
+console.log(Verification(15));
 
-// const object = {
-//     name: 'AHM X',
-//     age: 21,
-//     Artist: true
-// };
+const object = {
+    name: 'AHM X',
+    age: 21,
+    Artist: true
+};
 
-// console.log(object.name);
+console.log(object.name);
 
-// console.log(object);
+console.log(object);
 
-// const obj2 = {
-//     name: 'John',
-//     age: 23,
-//     isAdult: true,
-//     nested2: {
-//         name: 'Mike',
-//         age: 16,
-//         isAdult: false
-//     }
-// };
+const obj2 = {
+    name: 'Brian',
+    age: 23,
+    isAdult: true,
+    nested2: {
+        name: 'Mike',
+        age: 16,
+        isAdult: false
+    }
+};
 
-// console.log(obj2.nested2.name);
+console.log(obj2.nested2.name);
 
 // var obj = {
 //     name: 'John',

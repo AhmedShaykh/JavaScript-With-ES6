@@ -303,7 +303,7 @@ const obj2 = {
     age: 23,
     isAdult: true,
     nested2: {
-        name: 'Mike',
+        name: 'Alan',
         age: 16,
         isAdult: false
     }
@@ -311,21 +311,21 @@ const obj2 = {
 
 console.log(obj2.nested2.name);
 
-// var obj = {
-//     name: 'John',
-//     age: 23,
-//     isAdult: true,
-//     nested2: {
-//         name: 'Mike',
-//         age: 16,
-//         isAdult: false
-//     },
-//     sayHi: function () {
-//         console.log("Hello NFTs");
-//     }
-// };
+var obj = {
+    name: 'Brian',
+    age: 23,
+    isAdult: true,
+    nested2: {
+        name: 'Alan',
+        age: 16,
+        isAdult: false
+    },
+    sayHi: function () {
+        console.log("Bored Apr Yacht Club");
+    }
+};
 
-// obj.sayHi();
+obj.sayHi();
 
 // obj3 = {
 //     sayHi: function () {

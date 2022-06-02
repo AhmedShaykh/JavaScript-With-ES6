@@ -38,7 +38,7 @@ console.log(phoneNumber.startsWith('1'));
 console.log(phoneNumber.endsWith('9'));
 console.log(phoneNumber.endsWith('7'));
 
-const text = '    Ahmed Shaykh';
+const text = '    Ahmëd Shäykh';
 console.log(text)
 console.log(text.trim());
 

@@ -320,20 +320,20 @@ var obj = {
         age: 16,
         isAdult: false
     },
-    sayHi: function () {
-        console.log("Bored Apr Yacht Club");
+    nFTS: function () {
+        console.log("Bored Ape Yacht Club");
     }
 };
 
-obj.sayHi();
+obj.nFTS();
 
-// obj3 = {
-//     sayHi: function () {
-//         console.log("Hello Object 3");
-//     }
-// };
+obj3 = {
+    nFTS: function () {
+        console.log("Mutant Ape Yacht Club");
+    }
+};
 
-// obj3.sayHi();
+obj3.nFTS();
 
 // let user = {
 //     name: 'John',

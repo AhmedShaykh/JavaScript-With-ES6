@@ -220,16 +220,14 @@ function multiply(num1, num2) {
     return num1 * num2
 };
 
-// var num = 5;
+var num = 5;
 
-// function changeValue() {
-//     return num = 8
-// };
+function changeValue() {
+    return num = 8
+};
 
-// console.log(num);
-// changeValue(num);
-// console.log(num);
-
+console.log(num);
+console.log(changeValue());
 
 // var arr = [1, 2, 3, 4];
 

@@ -363,47 +363,47 @@ let permissions2 = { canEdit: true };
 
 console.log(Object.assign(userName, permissions1, permissions2));
 
-// let userName2 = { name: "John" };
+let userName2 = { name: "John" };
 
-// Object.assign(userName2, { name: "Peter" });
+Object.assign(userName2, { name: "Peter" });
 
-// console.log(userName2.name);
+console.log(userName2.name);
 
-// let fun = new Function('a', 'b', 'return a + b')
-// console.log(fun(1, 2));
+let fun = new Function('a', 'b', 'return a + b')
+console.log(fun(1, 2));
 
-// let sayHello = new Function('console.log("Hello")');
-// sayHello();
+let sayHello = new Function('console.log("Hello")');
+sayHello();
 
-// function set() {
-//     console.log('Hi Solana!')
-// }
+function set() {
+    console.log('Hi Solana!')
+}
 
-// setTimeout(set, 3000);
+setTimeout(set, 3000);
 
-// function addFun(a, b) {
-//     setTimeout(function () {
-//         console.log(a + b)
-//     }, 2000)
-// };
+function addFun(a, b) {
+    setTimeout(function () {
+        console.log(a + b)
+    }, 2000)
+};
 
-// addFun(2, 3);
+addFun(2, 3);
 
-// let timer = setTimeout(() => {
-//     console.log('Hello Crypto!')
-// }, 2000);
+let timer = setTimeout(() => {
+    console.log('Time To Travel')
+}, 2000);
 
-// let func = (renderData) => {
-//     setTimeout(() => {
-//         renderData('Hello ETH')
-//     }, 2000)
-// };
+let func = (renderData) => {
+    setTimeout(() => {
+        renderData('Hello ETH!')
+    }, 2000)
+};
 
-// function renderData(x) {
-//     console.log(x)
-// };
+function renderData(x) {
+    console.log(x)
+};
 
-// func(renderData);
+func(renderData);
 
 // let obj1 = {
 //     name: 'Elon',

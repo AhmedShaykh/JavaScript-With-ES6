@@ -209,8 +209,8 @@ console.log(total2)
 var sum;
 var mul = multiply(3, 2);
 console.log("Mul = ", mul);
-var add = sum(1, 2); // Previous Function Sum() Call Paramater 'B'
-console.log("Add = ", add);
+var add = sum(3, 2); // Previous Function Sum() Call Paramater 'B'
+console.log("Add = ", add); // (a * b) + b = 4
 
 var sum = function (a, b) {
     return a + b

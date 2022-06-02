@@ -166,11 +166,10 @@ function showMessage2(name) {
 
 showMessage2("Metaverse")
 showMessage2(404)
-showMessage2(true)
+showMessage2(true)  
 showMessage2()
 showMessage2("Crypto", 12)
 showMessage2("Bitcoin " + "#1")
-
 
 function multiply2(num1, num2) {
     return num1 * num2

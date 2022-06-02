@@ -335,33 +335,33 @@ obj3 = {
 
 obj3.nFTS();
 
-// let user = {
-//     name: 'John',
-//     age: 12,
-//     sayHi() {
-//         console.log(this.name)
-//         console.log(this.gender)
-//     }
-// };
+let user = {
+    name: 'Jay',
+    age: 11,
+    sayHi() {
+        console.log(this.name)
+        console.log(this.gender)
+    }
+};
 
-// user.sayHi();
+user.sayHi();
 
-// let username = { name: "Johnny", age: 21 };
-// let admin = { name: "Admin" };
+let username = { name: "Johnny", age: 21 };
+let admin = { name: "Admin" };
 
-// function call() {
-//     console.log(this.name); // Wrong Practice 
-//     console.log(username.name);
-// };
+function call() {
+    console.log(this.name); // Wrong Practice 
+    console.log(username.name);
+};
 
-// call();
+call();
 
-// let userName = { name: "John" };
+let userName = { name: "John" };
 
-// let permissions1 = { canView: true };
-// let permissions2 = { canEdit: true };
+let permissions1 = { canView: true };
+let permissions2 = { canEdit: true };
 
-// console.log(Object.assign(userName, permissions1, permissions2));
+console.log(Object.assign(userName, permissions1, permissions2));
 
 // let userName2 = { name: "John" };
 

@@ -184,29 +184,27 @@ console.log(b);
 console.log(c);
 console.log(d);
 
-// function multiply3(num1, num2) {
-//     return num1 * num2
-// };
+function multiply3(num1, num2) {
+    return num1 * num2
+};
 
-// function sum(a, b) {
-//     return multiply3(a, b) + b
-// };
+function sum(a, b) {
+    return multiply3(a, b) + b
+};
 
-// var total = sum(3, 4) + 6 // +b (4)   
-// console.log(total)
+var total = sum(3, 4) + 6 // +b (4)   
+console.log(total)
 
-// function multiply4(num1, num2) {
-//     return num1 * num2
-// };
+function multiply4(num1, num2) {
+    return num1 * num2
+};
 
-// function sum2(a, b) {
-//     return a + b
-// };
+function sum2(a, b) {
+    return a + b
+};
 
-// multiply4(a, b);
-
-// var total2 = sum2(multiply4(3, 4), 2) + 6
-// console.log(total2)
+var total2 = sum2(multiply4(3, 4), 2) + 6
+console.log(total2)
 
 // var sum;
 // var mul = multiply(3, 2);

@@ -379,7 +379,7 @@ function set() {
     console.log('Hi Solana!')
 }
 
-setTimeout(set, 3000);
+setTimeout(set, 2000);
 
 function addFun(a, b) {
     setTimeout(function () {
@@ -405,54 +405,54 @@ function renderData(x) {
 
 func(renderData);
 
-// let obj1 = {
-//     name: 'Elon',
-//     age: 20,
-//     borrow() {
-//         console.log(this.name + " + " + this.age)
-//     }
-// };
+let obj1 = {
+    name: 'Elon',
+    age: 20,
+    borrow() {
+        console.log(`${this.name} is ${this.age} Years Old!`)
+    }
+};
 
-// obj1.borrow();
+obj1.borrow();
 
-// var obJ2 = {
-//     name: 'Mike',
-//     age: 25
-// };
+var obJ2 = {
+    name: 'Micheal',
+    age: 25
+};
 
-// obj1.borrow.call(obJ2);
+obj1.borrow.call(obJ2);
 
-// var obj4 = {
-//     name: 'Elon',
-//     age: 22,
-// };
+var obj4 = {
+    name: 'Elon',
+    age: 20,
+};
 
-// let bio = function (grade) {
-//     console.log(this.name + " " + this.age + " Class " + grade)
-// }
+let bio = function(grade) {
+    console.log(this.name + " " + this.age + " Class " + grade)
+}
 
-// bio.call(obj4);
+bio.call(obj4);
 
-// var obj5 = {
-//     name: 'Harry',
-//     age: 29
-// };
+var obj5 = {
+    name: 'Harry',
+    age: 29
+};
 
-// bio.call(obj5, 08)
+bio.call(obj5, 18)
 
-// let bioo = function (grade, home) {
-//     console.log(this.name + " " + this.age + " Class " + grade + " " + home)
-// }
+let bioData = function (grade, home) {
+    console.log(this.name + " " + this.age + " Class " + grade + " " + home)
+}
 
-// var data = {
-//     name: 'Ali',
-//     age: 18
-// };
+var data = {
+    name: 'Ali',
+    age: 18
+};
 
-// bioo.apply(data, [08, "Malir"])
+bioData.apply(data, [10, "Malir"])
 
-// let myName = bioo.bind(data, 76, 'Clifton');
-// myName();
+let myName = bioData.bind(data, 22 , "Clifton");
+myName();
 
 // function addUp(fName, lName, ...title) {
 //     console.log(`${fName} ${lName}`);

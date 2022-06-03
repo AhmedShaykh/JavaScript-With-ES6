@@ -472,68 +472,68 @@ function showName(a, b) {
 
 showName("Jack", "Martin", "Thomas");
 
-// console.log(Math.max(3, 5, 1));
+console.log(Math.max(3, 5, 1));
 
-// let arr2 = [39, 52, 14];
+let arr2 = [39, 52, 14];
 
-// console.log(Math.max(...arr2));
+console.log(Math.max(...arr2));
 
-// let arr3 = [1, -2, 3, 4];
-// let arr4 = [8, 3, -8, 1];
+let arr3 = [1, -2, 3, 4];
+let arr4 = [8, 3, -8, 1];
 
-// console.log(Math.max(...arr3, ...arr4));
+console.log(Math.max(...arr3, ...arr4));
 
-// let arr5 = [3, 5, 1];
-// let arr6 = [8, 9, 15];
+let arr5 = [3, 5, 1];
+let arr6 = [8, 9, 15];
 
-// let merged = [0, ...arr5, 2, ...arr6];
+let merged = [0, ...arr5, 2, ...arr6];
 
-// console.log(merged);
+console.log(merged);    
 
-// let arrr = [1, 2, 3];
-// let arrCopy = [...arrr];
-// console.log("ArrCopy", arrCopy)
+let arrr = [1, 2, 3];
+let arrCopy = [ ...arrr] ;
+console.log("ArrCopy", arrCopy)
 
-// console.log(arrr === arrCopy);
+console.log(arrr === arrCopy);
 
-// console.log(JSON.stringify(arrr) === JSON.stringify(arrCopy));
+console.log(JSON.stringify(arrr) === JSON.stringify(arrCopy));
 
-// arrr.push(4);
-// console.log(arrr);
-// console.log(arrCopy);
+arrr.push(4);
+console.log(arrr);
+console.log(arrCopy);
 
-// let objz = { a: 1, b: 2, c: 3 };
-// let objCopy = { ...objz };
-// console.log("Obj Copy", objCopy)
+let objz = { a: 1, b: 2, c: 3 };
+let objCopy = { ...objz };
+console.log("Obj Copy", objCopy)
 
-// console.log(JSON.stringify(objz) === JSON.stringify(objCopy));
+console.log(JSON.stringify(objz) === JSON.stringify(objCopy));
 
-// console.log(obj === objCopy);
+console.log(obj === objCopy);   
 
-// objz.d = 4;
-// console.log(objz);
-// console.log(JSON.stringify(objz));
-// console.log(JSON.stringify(objCopy));
+objz.d = 4;
+console.log(objz);
+console.log(JSON.stringify(objz));
+console.log(JSON.stringify(objCopy));
 
-// var arr1 = [1, 2, 3];
-// arr1.push(4);
+var arr1 = [1, 2, 3];
+arr1.push(4);
 
-// var arrx = ["Steve", "Jet", "Cat"];
-// arrx.push(["Happy", "Coin"]);
+var arrx = ["Steve", "Jet", "Cat"];
+arrx.push(["Happy", "Coin"]);
 
-// console.log(arr1);
-// console.log(arrx);
+console.log(arr1);
+console.log(arrx);
 
-// var ourArray = ["Anderson", "Jelly", ["cat"]];
-// console.log(ourArray);
+var ourArray = ["Anderson", "Jelly", ["cat"]];
+console.log(ourArray);
 
-// var removedArray = ourArray.shift();
-// console.log(removedArray);
+var removedArray = ourArray.shift();
+console.log(removedArray);
 
-// var ourArray = ["Anderson", "Jelly", ["cat"]];
-// ourArray.unshift("Happy");
+var ourArray = ["Anderson", "Jelly", ["cat"]];
+ourArray.unshift("Happy");
 
-// console.log(ourArray);
+console.log(ourArray);
 
 // var processed = 0;
 

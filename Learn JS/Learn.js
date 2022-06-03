@@ -535,26 +535,26 @@ ourArray.unshift("Happy");
 
 console.log(ourArray);
 
-// var processed = 0;
+var processed = 0;
 
-// function processArg(num) {
-//     return (num + 3) / 5;
-// }
+function processArg(num) {
+    return (num + 3) / 5;
+}
 
-// var processed = processArg(7);
-// console.log(processed)
+var processed = processArg(7);
+console.log(processed)
 
-// function nextInLine(arr, item) {
-//     arr.push(item)
-//     var removed = arr.shift()
-//     return removed;
-// }
+function nextInLine(arr, item) {
+    arr.push(item)
+    var removed = arr.shift()
+    return removed;
+}
 
-// var testArr = [1, 2, 3, 4, 5];
+var testArr = [1, 2, 3, 4, 5];
 
-// console.log("Before: " + JSON.stringify(testArr));
-// console.log(nextInLine(testArr, 6));
-// console.log("After: " + JSON.stringify(testArr));
+console.log("Before: " + JSON.stringify(testArr));
+console.log(nextInLine(testArr, 6));
+console.log("After: " + JSON.stringify(testArr));
 
 // var someObj = {
 //     propName: "AHM X"

@@ -558,28 +558,28 @@ console.log(nextInLine(testArr, 6));
 console.log(testArr);
 console.log("After: " + JSON.stringify(testArr));
 
-// var someObj = {
-//     propName: "AHM X"
-// };
+var someObj = {
+    propName: "AHM X"
+};
 
-// function propPrefix(str) {
-//     var sample = "prop";
-//     return sample + str;
-// }
+function propPrefix(str) {
+    var sample = "prop";
+    return sample + str;
+}
 
-// var someProp = propPrefix("Name");
-// console.log(someProp);
-// console.log(someObj[someProp]);
+var someProp = propPrefix("Name");
+console.log(someProp);
+console.log(someObj[someProp]);
 
-// var testObj = {
-//     12: "Namath",
-//     16: "Montana",
-//     19: "Unitas"
-// };
+var testObj = {
+    12: "Dr Disrespect",
+    16: "Shroud",
+    19: "Brooke"
+};
 
-// var playerNumber = 16;
-// var player = testObj[playerNumber];
-// console.log(player)
+var playerNumber = 16;
+var player = testObj[playerNumber];
+console.log(player)
 
 // var ourStorage = {
 //     "desk": {

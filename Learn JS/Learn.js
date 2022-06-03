@@ -454,23 +454,23 @@ bioData.apply(data, [10, "Malir"])
 let myName = bioData.bind(data, 22 , "Clifton");
 myName();
 
-// function addUp(fName, lName, ...title) {
-//     console.log(`${fName} ${lName}`);
-//     console.log(title);
-//     console.log(title[1]);
-//     console.log(title[0]);
-// };
+function addUp(fName, lName, ...title) {
+    console.log(`${fName} ${lName}`);
+    console.log(title);
+    console.log(title[1]);
+    console.log(title[0]);
+};
 
-// addUp('Yaseen', 'Usman', 'Saqlain', 'Majid');
+addUp('Yaseen', 'Usman', 'Saqlain', 'Majid');
 
-// function showName(a, b) {
-//     console.log(arguments.length);
-//     console.log(arguments);
-//     console.log(arguments[0]);
-//     console.log(arguments[2]);
-// };
+function showName(a, b) {
+    console.log(arguments.length);
+    console.log(arguments);
+    console.log(arguments[0]);
+    console.log(arguments[2]);
+};
 
-// showName("Jack", "Martin", "Thomas");
+showName("Jack", "Martin", "Thomas");
 
 // console.log(Math.max(3, 5, 1));
 

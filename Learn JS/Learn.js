@@ -573,7 +573,7 @@ console.log(someObj[someProp]);
 
 var testObj = {
     12: "Dr Disrespect",
-    16: "Shroud",
+    16: "Dreams",
     19: "Brooke"
 };
 
@@ -581,96 +581,96 @@ var playerNumber = 16;
 var player = testObj[playerNumber];
 console.log(player)
 
-// var ourStorage = {
-//     "desk": {
-//         "drawer": "stapler"
-//     },
-//     "cabinet": {
-//         "top drawer": {
-//             "folder1": "a file",
-//             "folder2": "secrets"
-//         },
-//         "bottom drawer": "soda"
-//     }
-// };
+var ourStorage = {
+    "desk": {
+        "drawer": "stapler"
+    },
+    "cabinet": {
+        "top drawer": {
+            "folder1": "normal file",
+            "folder2": "secrets file"
+        },
+        "bottom drawer": "soda"
+    }
+};
 
-// console.log(ourStorage.cabinet["top drawer"].folder2);
-// console.log(ourStorage.desk.drawer);
+console.log(ourStorage.cabinet["top drawer"].folder2);
+console.log(ourStorage.desk.drawer);
 
-// var myStorage = {
-//     "car": {
-//         "inside": {
-//             "glove box": "maps",
-//             "passenger seat": "crumbs"
-//         },
-//         "outside": {
-//             "trunk": "jack"
-//         }
-//     }
-// };
+var myStorage = {
+    "car": {
+        "inside": {
+            "glove box": "maps",
+            "passenger seat": "crumbs"
+        },
+        "outside": {
+            "trunk": "jack"
+        }
+    }
+};
 
-// var gloveBoxContents = myStorage.car.inside["glove box"];
-// console.log(gloveBoxContents);
+var gloveBoxContents = myStorage.car.inside["glove box"];
+console.log(gloveBoxContents);
 
-// var ourPets = [
-//     {
-//         animalType: "cat",
-//         names: [
-//             "Meowzer",
-//             "Fluffy",
-//             "Kit-Cat"
-//         ]
-//     },
-//     {
-//         animalType: "dog",
-//         names: [
-//             "Spot",
-//             "Bowser",
-//             "Frankie"
-//         ]
-//     }
-// ];
+var ourPets = [
+    {
+        animalType: "cat",
+        names: [
+            "Meowzer",
+            "Fluffy",
+            "Kit-Cat"
+        ]
+    },
+    {
+        animalType: "dog",
+        names: [
+            "Spot",
+            "Bowser",
+            "Frankie"
+        ]
+    }
+];
 
-// console.log(ourPets[0].names[1]);
-// console.log(ourPets[1].names[0]);
+console.log(ourPets[0].names[1]);
+console.log(ourPets[1].names[0]);
 
-// var myPlants = [
-//     {
-//         type: "flowers",
-//         list: [
-//             "rose",
-//             "tulip",
-//             "dandelion"
-//         ]
-//     },
-//     {
-//         type: "trees",
-//         list: [
-//             "fir",
-//             "pine",
-//             "birch"
-//         ]
-//     }
-// ];
+var myPlants = [
+    {
+        type: "flowers",
+        list: [
+            "rose",
+            "tulip",
+            "dandelion"
+        ]
+    },
+    {
+        type: "trees",
+        list: [
+            "fir",
+            "pine",
+            "birch"
+        ]
+    }
+];
 
-// var secondTree = myPlants[1].list[1];
-// console.log(secondTree);
+var secondTree = myPlants[1].list[1];
+console.log(secondTree);
 
-// let arrDest = ["Shaykh", "Ahmed"]
+let arrDest = ["Shaykh", "Ahmed"]
 
-// let [ firstMyName, lastMyName ] = arrDest
+let [ firstMyName, lastMyName ] = arrDest
 
-// console.log(lastMyName);
-// console.log(firstMyName);
+console.log(lastMyName);
+console.log(firstMyName);
 
-// const objDest = {
-//     nameObj: 'Andrew',
-//     age: 19,
-// };
+const objDest = {
+    nameObj: 'Andrew',
+    age: 19,
+};
 
-// let { nameObj, age } = objDest
+let { nameObj, age } = objDest
 
-// console.log(nameObj);
-// console.log(age);
+console.log(nameObj);
+console.log(age);
 
 // // ====================== End ====================== //

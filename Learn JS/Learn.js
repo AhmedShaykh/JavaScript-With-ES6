@@ -140,11 +140,11 @@ function multiply(num1, num2) {
 
 multiply(3, 3);
 
-function showName(name) {
-    console.log('Hello', name);
+function artistName(name) {
+    console.log('DJ', name);
 };
 
-showName("Hardwell");
+artisitName("Hardwell");
 
 function test() {
     return 45

@@ -358,8 +358,8 @@ call();
 
 let userName = { name: "John" };
 
-let permissions1 = { canView: true };
-let permissions2 = { canEdit: true };
+let permissions1 = { Smart: true };
+let permissions2 = { Male: true };
 
 console.log(Object.assign(userName, permissions1, permissions2));
 

@@ -144,7 +144,7 @@ function artistName(name) {
     console.log('DJ', name);
 };
 
-artisitName("Hardwell");
+artistName("Hardwell");
 
 function test() {
     return 45
@@ -168,7 +168,7 @@ showMessage2("Metaverse")
 showMessage2(404)
 showMessage2(true)  
 showMessage2()
-showMessage2("Crypto", 12)
+showMessage2("Crypto", 1000)
 showMessage2("Bitcoin " + "#1")
 
 function multiply2(num1, num2) {

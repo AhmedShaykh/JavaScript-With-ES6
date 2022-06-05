@@ -12,16 +12,14 @@ fun1();
 fun1(5);
 fun1(5, 6, 7);
 
-// Anonymous function
-
-var f = function () {
-    console.log('Hello World');
+var fun2 = function () {
+    console.log('Anonymous Function');
 };
 
-console.log(f());
+fun2();
 
-// Anonymous recursive Function
-
-(function (){
+(function () {
     console.log('Recursive Function');
-})(); 
+})
+
+(); 

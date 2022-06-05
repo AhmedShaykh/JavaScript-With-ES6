@@ -1,11 +1,11 @@
-var a = ['John', 'Mosh', 'David', 'Jack', 'Christian', 'Cook'];
+var a = ['Joe', 'Morten', 'David', 'Jack', 'Christian', 'Chris'];
 console.log(a);
 
 var b = a.slice(1, 4);
 console.log(b);
 
-var c = ['John', 'Mosh', 'David', 'Christian'];
-c.splice(2, 0, 'Cook');
+var c = ['Joe', 'Morten', 'David', 'Christian'];
+c.splice(2, 1, 'Chris');
 console.log(c);
 
 var d = Array.isArray(a);
@@ -17,26 +17,32 @@ if (Array.isArray(a) === true) {
     console.log('It is not an Array');
 };
 
-var e = a.includes('Mosh');
+var e = a.includes('Morten');
 console.log(e);
 
-var x = a.indexOf('David', 1);
+var see = a.indexOf('David', 1); // (Search + Start)
+console.log(see);
+
+var x = a.indexOf('Jack');
 console.log(x);
 
-var y = a.indexOf('Jack', 2);
+var y = a.indexOf('Peter', 1);
 console.log(y);
 
-var z = a.lastIndexOf('Christian', 4);
+var z = a.lastIndexOf('Christian', 5);
 console.log(z);
 
-var arr = [12, 13, 15, 18];
-var ag = arr.some(adultFunc);
+var zee = a.lastIndexOf('Joe');
+console.log(zee);
+
+var arr = [12, 13, 15, 17];
+var ages = arr.some(adultFunc);
 
 function adultFunc(age) {
     return age >= 18
 };
 
-console.log(ag);
+console.log(ages);
 
 var ages = [10, 23, 19, 20];
 var b = ages.find(checkAdult);
@@ -54,9 +60,9 @@ console.log(bn);
 
 function checkNumbers(chk) {
     return chk >= 18;
-};
+};      
 
-var arrString = ['Jerry', 'Mike', 'Thomas'];
+var arrString = [10, 58, 44];
 arrString.toString();
 
 console.log(arrString);

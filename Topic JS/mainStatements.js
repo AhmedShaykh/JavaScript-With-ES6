@@ -1,13 +1,9 @@
-// IF statement
-
 var a = 15;
 var b = 20;
 
 if (a < b) {
     console.log('A is greater');
 };
-
-// IF ELSE IF statement
 
 var per = 60;
 

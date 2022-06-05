@@ -8,9 +8,9 @@ function Test(x) {
 };
 
 var nameArr = [
-    { fName: 'David', lName: 'John' },
+    { fName: 'David', lName: 'Anderson' },
     { fName: 'Tokyo', lName: 'Moscow' },
-    { fName: 'Mosh', lName: 'Bravo' },
+    { fName: 'Mark', lName: 'Bravo' },
 ];
 
 var Arr = nameArr.map(Test2);

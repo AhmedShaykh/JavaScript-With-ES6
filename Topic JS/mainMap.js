@@ -15,7 +15,6 @@ var nameArr = [
 
 var Arr = nameArr.map(Test2);
 
-
 function Test2(x) {
     return (
         console.log(`Name: ${x.fName} ${x.lName}`)

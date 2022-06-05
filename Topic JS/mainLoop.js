@@ -1,9 +1,8 @@
 console.log('Loops');
 
-// For loop
 var i = 0;
 
-for (i=0; i<3; i++) {
+for (i = 0; i < 3; i++) {
     console.log(i);
 };
 
@@ -14,24 +13,21 @@ for (let index = 0; index < places.length; index++) {
     console.log('Hello from ' + element);
 };
 
-// forEach loop
-var frameWork = ['React', 'Angular', 'Vue'];
+var frameWork = ['React', 'Next', 'Ether'];
 
-frameWork.forEach(function f(e) {
-    console.log('Hi from ' + e)
+frameWork.forEach(function (e) {
+    console.log('Hi from ' + e + ' JS')
 });
 
-// For of loop
-let num = [14, 56, 98];
+let num = [18, 56, 98];
 
 for (e of num) {
-    console.log('--> ' + e);
+    console.log('==> ' + e);
 };
 
-// Object Loop
 const employee = {
     name: 'David',
-    salary: 400,
+    salary: 40000,
 };
 
 for (key in employee) {

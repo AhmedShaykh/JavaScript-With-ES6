@@ -7,7 +7,6 @@ const bioData = {
 const names = bioData.name
 console.log(names);
 
-// Destructuring ES6
 const { name, age, gender } = bioData;
 
 console.log(age);

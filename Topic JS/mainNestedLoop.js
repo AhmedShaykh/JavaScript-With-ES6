@@ -29,7 +29,7 @@ for (var y = 5; y >= 1; y--) {
 
 for (var c = 5; c >= 1; c--) {
     for (var d = c; d >= 1; d--) {
-        document.write('<b>' + c + '</b>');
+        document.write('<b>' + d + '</b>');
     };
     document.write('<br> <br>');
 };

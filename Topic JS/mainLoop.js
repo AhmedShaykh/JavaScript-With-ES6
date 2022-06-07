@@ -25,11 +25,11 @@ for (e of num) {
     console.log('==> ' + e);
 };
 
-const employee = {
+var employee = {
     name: 'David',
     salary: 40000,
 };
 
-for (key in employee) {
+for (var key in employee) {
     console.log(`The ${key} of employee is ${employee[key]}`)
 };

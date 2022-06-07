@@ -1,4 +1,4 @@
-console.log('Hello from Object');
+console.log('Learning Object');
 
 class Hobbit {
     constructor(height, weight) {

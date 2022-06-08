@@ -1,7 +1,7 @@
 var x = 15;
-var z;
+var z = prompt('Enter Value');
 
-z = (x >= 10) ? 'True' : 'False';
+z = (x < 10) ? 'True' : 'False';
 
 console.log(z);
 

@@ -1,4 +1,4 @@
-console.log('Object Literals');
+console.log('Learning New Object');
 
 function Foo(id) {
     return {

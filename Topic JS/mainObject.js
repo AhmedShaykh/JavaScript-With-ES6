@@ -1,26 +1,25 @@
 console.log('Learning Object');
 
-class Hobbit {
-    constructor(height, weight) {
+class Solana {
+    constructor(height, width) {
         this.height = height;
-        this.weight = weight;
+        this.width = width;
     };
 };
 
-var Frodo = new Hobbit();
+var Frodo = new Solana();
 Frodo.height = 100;
-Frodo.weight = 300;
+Frodo.width = 300;
 console.log(Frodo);
 
-
 var Polygon = class {
-    constructor(height, weight) {
+    constructor(height, width) {
         this.height = height;
-        this.weight = weight;
+        this.width = width;
     };
 };
 
 var Square = new Polygon();
 Square.height = 20;
-Square.weight = 10;
+Square.width = 10;
 console.log(Square);

@@ -2,7 +2,7 @@ console.log('Object Literals');
 
 function Foo(id) {
     return {
-        name: 'dummy',
+        name: 'OBJ',
         id,
         bar() {
             console.log('bar');
@@ -10,22 +10,26 @@ function Foo(id) {
     };
 };
 
-console.log(Foo());
+console.log(Foo('ES6'));
 
 var fees = {};
 
 fees['Fee'] = 100;
-fees['Name'] = 'Josh';
+fees['Name'] = 'Enderman';
 
-fees.Gender = 'male';
-fees.City = 'Karachi';
+fees.Gender = 'Cartoon';
+fees.Game = 'Minecraft';
+
+console.log(fees);
+console.log(fees.Name);
+console.log(fees.Game);
 
 var person = new Object();
 
 person.firstName = 'David';
-person.lastName = 'Mosh';
+person.lastName = 'Guetta';
 
-var lastName = person.lastName 
+var lastName = person.lastName
 
 console.log(person);
 console.log(person.firstName);

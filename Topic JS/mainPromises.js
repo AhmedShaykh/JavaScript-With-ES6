@@ -1,51 +1,37 @@
-function promises() {
-    return new Promise(function(resolve, reject) {
-        setTimeout(() => {
-            let error = false;
-            if(!error) {
-                console.log('Promise Fulfilled');
-                resolve();
-            } else {
-                console.log('Promise is not fulfilled');
-                reject();
-            }
-        }, 2000);
-    });
-};
-
-promises().then(() => {
-    console.log(`Your Crush accepted your proposal 😂`);
-}).catch(() => {
-    console.log('Your crush rejected your proposal 💔')
-});
-
-// function promise() {
+// function promises() {
 //     return new Promise(function(resolve, reject) {
 //         setTimeout(() => {
-//             reject(new Error('Whoops!'));
+//             let problem = false;
+//             if(!problem) {
+//                 console.log('Promise Fulfilled');
+//                 resolve();
+//             } else {
+//                 console.log('Promise is not fulfilled');
+//                 reject();
+//             }
 //         }, 1000);
 //     });
 // };
 
-// promise().then(
-//     result => console.log(result),
-//     error => console.log(error)
-// );
+// promises().then(() => {
+//     console.log(`Your Crush Accepted your Proposal 😂`);
+// }).catch(() => {
+//     console.log('Your Crush Rejected your Proposal 💔');
+// });
 
-// new Promise(function(resolve, reject) {
-//     setTimeout(() => {
-//         resolve('Completed');
-//     }, 3000);
-// })
-//     .finally(() => console.log('Done'))
-//     .then(result => console.log(result))
+new Promise(function(resolve, reject) {
+    setTimeout(() => {
+        resolve('Completed');
+    }, 3000);
+})
+    .finally(() => console.log('Done'))
+    .then(result => console.log(result))
 
-// function delay(ms) {
-//     return new Promise(resolve => setTimeout(resolve, ms));
-// }
+function delay(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
   
-// delay(3000).then(() => console.log('runs after 3 seconds'));
-
+delay(3000).then(() => console.log('runs after 3 seconds'));
 
 // class Thenable {
 //     constructor(num) {

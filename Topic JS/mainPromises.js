@@ -1,38 +1,38 @@
-// function promises() {
-//     return new Promise(function(resolve, reject) {
-//         setTimeout(() => {
-//             let problem = false;
-//             if(!problem) {
-//                 console.log('Promise Fulfilled');
-//                 resolve();
-//             } else {
-//                 console.log('Promise is not fulfilled');
-//                 reject();
-//             }
-//         }, 1000);
-//     });
-// };
+function promises() {
+    return new Promise(function(resolve, reject) {
+        setTimeout(() => {
+            let problem = false;
+            if(!problem) {
+                console.log('Promise Fulfilled');
+                resolve();
+            } else {
+                console.log('Promise is not fulfilled');
+                reject();
+            }
+        }, 1000);
+    });
+};
 
-// promises().then(() => {
-//     console.log(`Your Crush Accepted your Proposal 😂`);
-// }).catch(() => {
-//     console.log('Your Crush Rejected your Proposal 💔');
-// });
+promises().then(() => {
+    console.log(`Your Crush Accepted your Proposal 😂`);
+}).catch(() => {
+    console.log('Your Crush Rejected your Proposal 💔');
+});
 
-// new Promise(function(resolve, reject) {
-//     setTimeout(() => {
-//         resolve('Completed');
-//     }, 3000);
-// })
-// .finally(() => console.log('Done'))
-// .then(result => console.log(result));
+new Promise(function(resolve, reject) {
+    setTimeout(() => {
+        resolve('Completed');
+    }, 3000);
+})
+.finally(() => console.log('Done'))
+.then(result => console.log(result));
 
-// function delay(ms) {
-//     return new Promise(resolve => setTimeout(resolve, ms));
-// }
+function delay(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
   
-// delay(2000)
-// .then(() => console.log('Running After 2 seconds'));
+delay(2000)
+.then(() => console.log('Running After 2 seconds'));
 
 async function getData() {
     let promise04 = new Promise(function(resolve, reject) {

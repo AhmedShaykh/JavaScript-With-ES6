@@ -30,11 +30,10 @@ switch (day) {
 var age = prompt('Enter Your Age');
 
 switch (true) {
-    case (age >= 18 && age <= 60):
+    case (age >= 18 && age <= 90):
         console.log('You are Eligible');
         break;
-
-    case (age >= 1 && age <= 18):
+    case (age >= 15 && age < 18):
         console.log('You are not Eligible');
         break;
 

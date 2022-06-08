@@ -1,4 +1,4 @@
-var day = 6;
+var day = 4;
 
 switch (day) {
     case 0:
@@ -27,10 +27,10 @@ switch (day) {
         console.log('Error');
 };
 
-var age = 17;
+var age = prompt('Enter Your Age');
 
 switch (true) {
-    case (age >= 18 && age <= 25):
+    case (age >= 18 && age <= 60):
         console.log('You are Eligible');
         break;
 

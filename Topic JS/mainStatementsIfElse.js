@@ -7,7 +7,7 @@ if (a < b) {
     console.log('A is Greater Of B');
 };
 
-var per = prompt('Enter Your Value', '99 Value Limit Otherwise Value Acceptable');
+var per = prompt('Enter Your Value', '99 Value Limit Otherwise Value Not Acceptable');
 
 if (per >= 80 && per < 100) {
     console.log('You Earn A+ Grade');

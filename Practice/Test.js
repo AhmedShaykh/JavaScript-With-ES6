@@ -49,7 +49,6 @@
     
 //     console.log('this is '+ fruits[i])
 
-
 // };
 
 // let vegetable = ['aalo','piyaaz','baingan']
@@ -57,10 +56,6 @@
 // for (let u = 0; u < vegetable.length; u++){
 //     console.log('this is ' + vegetable[u])
 // };
-
-
-
-
 
 // ============== TEST 03 ================
 
@@ -107,9 +102,6 @@
 //     console.log('failed')
 // };
 
-
-
-
 // var arr = [1, 2, 3, 4]
 // function arrayIndex(val) {
 //     val[1]= 12
@@ -125,7 +117,6 @@
 
 // let disk = (a) => a <= 5 ? 'fine' : 'not fine'
 // console.log(disk(9))
-
 
 // let userChecker = (user) => {
 //    if (user.email && user.password) {

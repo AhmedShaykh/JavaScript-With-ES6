@@ -1,7 +1,3 @@
-// https://dev.to/dip15739/responsive-website-with-only-1-css-property-3ea9?fbclid=IwAR075JUHpYjOVbsJNUbpz1ouNdhXK2HF1mRyUFSwO5QabdejrF7nuQt7FN8
-// clamp CSS
-
-
 // // var a = '10';
 // // var b = 15;
 
@@ -14,7 +10,6 @@
 // // };
 
 // // console.log(age());
-
 
 // // function age (a){
 // //     if ( a >= 25 || a <= 26) {
@@ -74,8 +69,6 @@
 // // 0.2
 // console.log(d)
 
-
-
 function bhund(r,s){
     return (r+s)
 }
@@ -110,48 +103,8 @@ console.log(w(12))
 var r = (a,b) => a+b
 console.log(r(4,4))
 
-
-
-
-
-
-
-
-
 let a = t  => t + 7
 console.log(a(7))
 
-
 var l = (w,b) => w+b
 console.log(l(9,9))
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

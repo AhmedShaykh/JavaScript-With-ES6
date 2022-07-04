@@ -166,7 +166,7 @@ function showMessage2(name) {
 
 showMessage2("Metaverse")
 showMessage2(404)
-showMessage2(true)  
+showMessage2(true)
 showMessage2()
 showMessage2("Crypto", 1000)
 showMessage2(`Bitcoin #1`)
@@ -427,7 +427,7 @@ var obj4 = {
     age: 20,
 };
 
-let bio = function(grade) {
+let bio = function (grade) {
     console.log(this.name + " " + this.age + " Class " + grade)
 }
 
@@ -451,7 +451,7 @@ var data = {
 
 bioData.apply(data, [10, "Malir"])
 
-let myName = bioData.bind(data, 22 , "Clifton");
+let myName = bioData.bind(data, 22, "Clifton");
 myName();
 
 function addUp(fName, lName, ...title) {
@@ -501,7 +501,7 @@ console.log(Math.random());
 console.log(Math.floor((Math.random() * 10) + 1));
 
 let arrr = [1, 2, 3];
-let arrCopy = [...arrr] ;
+let arrCopy = [...arrr];
 console.log("ArrCopy", arrCopy)
 
 console.log(arrr === arrCopy);
@@ -668,7 +668,7 @@ console.log(secondTree);
 
 let arrDest = ["Shaykh", "Ahmed"]
 
-let [ firstMyName, lastMyName ] = arrDest
+let [firstMyName, lastMyName] = arrDest
 
 console.log(lastMyName);
 console.log(firstMyName);
@@ -690,12 +690,46 @@ console.log(adminname);
 
 function emailChecker(x, y) {
     if (x.includes('@') && y.length >= 6) {
-        console.log(`${x} and ${y}`)
-    } else {
-        console.log(`Enter email and password`);
+        console.log(`Email: ${x}`);
+        console.log(`Password: ${y}`);
+    } 
+    else {
+        console.log(`Enter Correct Email and Password`);
     };
 };
 
-emailChecker('test@mail.com', 'testing123');
+emailChecker('test@gmail.com', 'testing123');
 
-// // // ====================== End ====================== //
+const bnb = "Binance Coin";
+console.log(bnb.charAt(8));
+
+var fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+console.log(fruits.slice(1,4));
+
+console.log(fruits.splice(1, 2));
+
+let number = 5.56789;
+console.log(number.toFixed());
+
+var rightNow = new Date();
+console.log(rightNow);
+
+console.log(rightNow.getDate());
+
+console.log(rightNow.getDay());
+
+console.log(rightNow.getMonth());
+
+console.log(rightNow.getHours());
+
+console.log(rightNow.getFullYear());
+
+console.log(rightNow.getTime());
+
+console.log(rightNow.getMinutes());
+
+console.log(rightNow.getSeconds());
+
+console.log(rightNow.getMilliseconds());
+
+// ====================== End ====================== //

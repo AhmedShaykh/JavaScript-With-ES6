@@ -673,4 +673,30 @@ let { nameObj, age } = objDest
 console.log(nameObj);
 console.log(age);
 
+var name = 'Martin';
+var adminname = name;
+
+console.log(adminname);
+
+function arguments(a, b){
+    if(a > b){
+        console.log(a)
+    }
+    else{
+        console.log(b)
+    }
+}
+
+arguments(20,30);
+
+function emailChecker(x, y) {
+    if (x.includes('@') && y.length >= 6) {
+        console.log(`${x} and ${y}`)
+    } else {
+        console.log(`Enter email and password`);
+    };
+};
+
+emailChecker('test@mail.com', 'testing123');
+
 // // ====================== End ====================== //

@@ -1,7 +1,6 @@
 // create a function to check two numbers and return true if one of the number is 100 or if the sum of
 // the two numbers is 100
 
-// vanilla Javascript version
 function checkNum(a, b) {
     if (a === 100) {
         return true
@@ -18,7 +17,6 @@ console.log(checkNum(90, 10));
 
 // ES6 version
 let checkNum2 = (a, b) => a === 100 || b === 100 || a + b === 100;
-
 
 console.log(checkNum2(0, 100));
 console.log(checkNum2(10, 90));

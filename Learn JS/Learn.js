@@ -739,6 +739,10 @@ var metaTech2 = ["MR" , "XR"];
 var meta = metaTech1.concat(metaTech2);
 console.log(meta);
 
-setInterval(() => console.log('Metaverse') ,1000)
+let arrCom =[{ Name: "Elon" , Com: "Twitter" } ,{ Name: "Steve" , Com: "Apple" }];
+
+let filter = arrCom.filter(a => a.Name === "Steve")
+
+console.log(filter);
 
 // ====================== End ====================== //

@@ -169,7 +169,7 @@ showMessage2(404)
 showMessage2(true)  
 showMessage2()
 showMessage2("Crypto", 1000)
-showMessage2("Bitcoin " + "#1")
+showMessage2(`Bitcoin #1`)
 
 function multiply2(num1, num2) {
     return num1 * num2
@@ -210,7 +210,7 @@ var sum;
 var mul = multiply(3, 2);
 console.log("Mul = ", mul);
 var add = sum(3, 2); // Previous Function Sum() Call Paramater 'B'
-console.log("Add = ", add); // (a * b) + b = 4
+console.log("Add = ", add); // (a * b) + b = 2
 
 var sum = function (a, b) {
     return a + b
@@ -346,7 +346,7 @@ let user = {
 
 user.sayHi();
 
-let username = { name: "Johnny", age: 21 };
+let username = { name: "Johnny", age: 41 };
 let admin = { name: "Admin" };
 
 function call() {
@@ -372,7 +372,7 @@ console.log(userName2.name);
 let fun = new Function('a', 'b', 'return a + b')
 console.log(fun(1, 2));
 
-let sayHello = new Function('console.log("Hello")');
+let sayHello = new Function('console.log("Hello Ether")');
 sayHello();
 
 function set() {
@@ -483,15 +483,25 @@ let arr4 = [8, 3, -8, 1];
 
 console.log(Math.max(...arr3, ...arr4));
 
+console.log(Math.round(2.60));
+
+console.log(Math.round(1.49));
+
+console.log(Math.round(5.5));
+
 let arr5 = [3, 5, 1];
 let arr6 = [8, 9, 15];
 
 let merged = [0, ...arr5, 2, ...arr6];
 
-console.log(merged);    
+console.log(merged);
+
+console.log(Math.random());
+
+console.log(Math.floor((Math.random() * 10) + 1));
 
 let arrr = [1, 2, 3];
-let arrCopy = [ ...arrr] ;
+let arrCopy = [...arrr] ;
 console.log("ArrCopy", arrCopy)
 
 console.log(arrr === arrCopy);
@@ -508,7 +518,7 @@ console.log("Obj Copy", objCopy)
 
 console.log(JSON.stringify(objz) === JSON.stringify(objCopy));
 
-console.log(obj === objCopy);   
+console.log(obj === objCopy);
 
 objz.d = 4;
 console.log(objz);
@@ -673,21 +683,10 @@ let { nameObj, age } = objDest
 console.log(nameObj);
 console.log(age);
 
-var name = 'Martin';
-var adminname = name;
+var namel = 'Martin';
+var adminname = namel;
 
 console.log(adminname);
-
-function arguments(a, b){
-    if(a > b){
-        console.log(a)
-    }
-    else{
-        console.log(b)
-    }
-}
-
-arguments(20,30);
 
 function emailChecker(x, y) {
     if (x.includes('@') && y.length >= 6) {
@@ -699,4 +698,4 @@ function emailChecker(x, y) {
 
 emailChecker('test@mail.com', 'testing123');
 
-// // ====================== End ====================== //
+// // // ====================== End ====================== //

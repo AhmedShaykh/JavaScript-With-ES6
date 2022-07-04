@@ -732,4 +732,13 @@ console.log(rightNow.getSeconds());
 
 console.log(rightNow.getMilliseconds());
 
+var metaTech1 = ["VR" , "AR"];
+
+var metaTech2 = ["MR" , "XR"];
+
+var meta = metaTech1.concat(metaTech2);
+console.log(meta);
+
+setInterval(() => console.log('Metaverse') ,1000)
+
 // ====================== End ====================== //

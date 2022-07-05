@@ -5,8 +5,6 @@
 console.log("a defined? " + (typeof a !== 'undefined'));
 console.log("b defined? " + (typeof b !== 'undefined'));
 
-// because a will get the value of b thats why it is not null
-
 var myObject = {
     foo: "bar",
     func: function() {

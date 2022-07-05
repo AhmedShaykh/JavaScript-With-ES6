@@ -745,4 +745,8 @@ let filter = arrCom.filter(a => a.Name === "Steve")
 
 console.log(filter);
 
+console.log(Math.floor(1.99));
+
+console.log(Math.floor(-1.01));
+
 // ====================== End ====================== //

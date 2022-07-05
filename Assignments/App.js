@@ -1,6 +1,3 @@
-// create a function to check two numbers and return true if one of the number is 100 or if the sum of
-// the two numbers is 100
-
 function checkNum(a, b) {
     if (a === 100) {
         return true
@@ -356,7 +353,7 @@ obj1.summary();
 
 
 
-let obj1 = {
+let obj2 = {
    day: 'Monday',
    meeting: 0,
    meetDone: 0,
@@ -394,11 +391,11 @@ let obj1 = {
    }
 };
 
-obj1.addMeeting(1)
-obj1.addMeeting(1)
-obj1.summary()
-obj1.addMeetDone()
-obj1.summaryMeetDone()
+obj2.addMeeting(1)
+obj2.addMeeting(1)
+obj2.summary()
+obj2.addMeetDone()
+obj2.summaryMeetDone()
 // obj1.decrementMeet()
 // obj1.decrementSummary()
 // obj1.resetMeeting()

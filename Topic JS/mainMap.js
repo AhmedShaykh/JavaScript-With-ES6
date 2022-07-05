@@ -10,7 +10,7 @@ function Test(x) {
 var nameArr = [
     { fName: 'David', lName: 'Anderson' },
     { fName: 'Tokyo', lName: 'Moscow' },
-    { fName: 'Mark', lName: 'Henry' }
+    { fName: 'Satoshi', lName: 'Nakamoto' }
 ];
 
 var Arr = nameArr.map(Test2);

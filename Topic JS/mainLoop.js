@@ -13,10 +13,10 @@ for (let index = 0; index < places.length; index++) {
     console.log('Hello from ' + element);
 };
 
-var frameWork = ['React', 'Next', 'Ether'];
+var frameWork = ['React', 'Next', 'Ether', 'Nest'];
 
 frameWork.forEach(function (e) {
-    console.log('Hi from ' + e + ' JS')
+    console.log('Working In ' + e + ' JS')
 });
 
 let num = [18, 56, 98];
@@ -26,10 +26,10 @@ for (e of num) {
 };
 
 var employee = {
-    name: 'David',
-    salary: 40000,
+    name: 'Ahmed',
+    salary: "$10000000",
 };
 
 for (var key in employee) {
-    console.log(`The ${key} of employee is ${employee[key]}`)
+    console.log(`The ${key} of CEO is ${employee[key]}`)
 };

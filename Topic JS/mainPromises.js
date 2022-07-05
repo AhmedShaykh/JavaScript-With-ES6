@@ -6,7 +6,7 @@ function promises() {
                 console.log('Promise Fulfilled');
                 resolve();
             } else {
-                console.log('Promise is not fulfilled');
+                console.log('Promise is not Fulfilled');
                 reject();
             }
         }, 1000);

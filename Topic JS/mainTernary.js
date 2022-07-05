@@ -9,4 +9,4 @@ var y = prompt('Enter Value');
 var b;
 
 b = "Value is " + (y == 20 ? 'True' : 'False');
-console.log(b)
+console.log(b);

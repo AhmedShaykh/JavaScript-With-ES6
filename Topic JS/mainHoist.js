@@ -5,6 +5,7 @@ function hoist() {
     var b = 100;
 };
 
-hoist();
+console.log(a);
 
+hoist();
 console.log(a);

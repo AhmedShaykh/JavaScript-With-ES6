@@ -702,11 +702,9 @@ emailChecker('test@gmail.com', 'testing123');
 
 const bnb = "Binance Coin";
 console.log(bnb.charAt(8));
-
-var fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
-console.log(fruits.slice(1,4));
-
-console.log(fruits.splice(1, 2));
+console.log(bnb.charAt(9));
+console.log(bnb.charAt(10));
+console.log(bnb.charAt(11));
 
 let number = 5.56789;
 console.log(number.toFixed());

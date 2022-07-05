@@ -26,7 +26,7 @@ console.log(see);
 var x = a.indexOf('Jack');
 console.log(x);
 
-var y = a.indexOf('Peter', 1);
+var y = a.indexOf('Peter', 1); // Peter Not Add in Array Answer ====> (-1)
 console.log(y);
 
 var z = a.lastIndexOf('Christian', 5);

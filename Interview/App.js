@@ -2,65 +2,65 @@
     return a = b = 3
 })()
 
-console.log("a defined? " + (typeof a !== 'undefined'));
-console.log("b defined? " + (typeof b !== 'undefined'));
+console.log("A Defined? " + (typeof a !== 'undefined'));
+console.log("B Defined? " + (typeof b == 'undefined'));
 
-// var myObject = {
-//     foo: "bar",
-//     func: function () {
-//         var self = this;
-//         console.log("outer func:  this.foo = " + this.foo); // bar
-//         console.log("outer func:  self.foo = " + self.foo); // bar
-//         (function () {
-//             console.log("inner func:  this.foo = " + this.foo); // undefined
-//             console.log("inner func:  self.foo = " + self.foo); // bar
-//         }());
-//     }
-// };
-// myObject.func();
+var myObject = {
+    foo: "bar",
+    func: function () {
+        var self = this;
+        console.log("Outer func:  this.foo = " + this.foo); // bar
+        console.log("Outer func:  self.foo = " + self.foo); // bar
+        (function () {
+            console.log("Inner func:  this.foo = " + this.foo); // undefined
+            console.log("Inner func:  self.foo = " + self.foo); // bar
+        }());
+    }
+};
 
-// function reverseStr(str) {
-//     const arr = str.split("");
-//     arr.reverse();
-//     str = arr.join("");
-//     console.log(str);
-// };
-// reverseStr("Ahmed");
+myObject.func();
 
-// const palindrome = (str) => {
-//     let x = str
-//     console.log("word before", x)
-//     const arr = x.split("");
-//     arr.reverse();
-//     x = arr.join("")
-//     console.log("word after", x);
-//     if (x == str) {
-//         console.log(true)
-//     } else {
-//         console.log(false)
-//     }
-// }
+function reverseStr(str) {
+    const arr = str.split("");
+    console.log(arr);
+    arr.reverse();
+    a = arr.join("");
+    console.log(a);
+};
 
-// palindrome('civics');
+reverseStr("Ahmed");
 
+const palindrome = (str) => {
+    let x = str
+    console.log("Word Before", x)
+    const arr = x.split("");
+    arr.reverse();
+    x = arr.join("")
+    console.log("Word After", x);
+    if (x == str) {
+        console.log(true)
+    } else {
+        console.log(false)
+    }
+}
+var input = prompt("Enter Your Word ....")
+palindrome(input);
 
-// // closures
+var num = 3;
 
-// var num = 3;
+function outer() {
+    var num = 2;
+    function inner() {
+        num++
+        var num = 4;
+        console.log(num);
+    }
+    inner();
+};
 
-// function outer() {
-//     var num = 2;
-//     function inner() {
-//         num++
-//         var num = 4;
-//         console.log(num);
-//     }
-//     inner();
-// };
+outer();
 
-// outer();
-
-// console.log(typeof typeof 1);
+console.log(typeof typeof 1);
 
 // var hero = {
 //     _name: 'John Doe',

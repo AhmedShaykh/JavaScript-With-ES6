@@ -416,7 +416,7 @@ let obj1 = {
 obj1.borrow();
 
 var obJ2 = {
-    name: 'Micheal',
+    name: 'Michael',
     age: 25
 };
 

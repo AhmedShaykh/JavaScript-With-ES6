@@ -70,168 +70,101 @@ function newStr(str) {
 }
 
 console.log(newStr('Amsterdam'));
-console.log(newStr('Iran'));
+console.log(newStr('Karachi'));
 
-const newStr1 = (str) => str.length < 3 ? str : str.slice(0, 3) + str.slice(-3);
+const newStr1 = (str) => str.length <= 3 ? str : str.slice(0, 3) + str.slice(-3);
 console.log(newStr1('Pakistan'));
 
-// Vanilla Javascript version
 function firstHalf(str) {
     return str.slice(0, str.length / 2);
 };
 
-console.log(firstHalf('rain'))
+console.log(firstHalf('Rain'));
 
-// // ES6 version
-// const firstHalf2 = (str) => str.slice(0, str.length / 2);
+const firstHalf2 = (str) => str.slice(0, str.length / 2);
 
-// console.log(firstHalf2('temp'));
+console.log(firstHalf2('World'));
 
-// // write a function to concatenate two string except their first character
+function rmvCh(strA, strB) {
+    return strA.substring(1) + strB.substring(1);
+};
 
-// // Vanilla Javascript version
-// function rmvCh(strA, strB) {
-//     return strA.substring(1) + strB.substring(1);
-// };
+console.log(rmvCh('Learn', 'Night'));
 
-// console.log(rmvCh('Hello', 'World'));
+const rmvCh2 = (str1, str2) => str1.slice(1) + str2.slice(1);
+console.log(rmvCh2('World', 'Hello'));
 
-// // ES6 version
-// const rmvCh2 = (str1, str2) => str1.slice(1) + str2.slice(1);
-// console.log(rmvCh2('World', 'Hello'))
+const triangle = {
+    type: 'Polygon',
+    sides: 3,
+    sumOfAngles: 180,
+    equilateral: true,
+    equiangular: true
+};
 
-// // Write an expression that invokes the function referenced by the bell object's ring property:
+console.log(Object.keys(triangle));
+console.log(Object.values(triangle));
 
-// const bell = {
-//     color: 'gold',
-//     ring: function () {
-//         console.log('Ring ring ring!');
-//     }
-// }
+const musicData = [
+    { artist: 'ZAYN', name: 'Whole New World', sales: 1608000 },
+    { artist: 'SQLN', name: 'Sunset', sales: 1554000 },
+    { artist: 'Martin Garrix', name: 'Animals', sales: 1085000 },
+    { artist: 'AHM X', name: 'Revealed', sales: 603000 },
+    { artist: 'Dyro', name: 'Like A Boss', sales: 904000 },
+    { artist: 'Hardwell', name: 'Hakuna Matata', sales: 820000 },
+    { artist: 'The Chainsmokers', name: 'Selfie', sales: 738000 },
+    { artist: 'Will Sparks', name: 'Dreaming', sales: 668000 },
+    { artist: 'Justin Bieber', name: 'Purpose', sales: 554000 }
+];
 
-// bell.ring();
+const albumSalesStrings = musicData.map(function (data) {
+    return (`<b>${data.name} By ${data.artist} Sold ${data.sales} Copies<b/> <br/><br/>`)
+})
 
-// //Write an expression using Object.keys() to extract the keys (i.e., property names) from the triangle object
-// // and values also
+document.write(albumSalesStrings);
 
-// const triangle = {
-//     type: 'polygon',
-//     sides: 3,
-//     sumOfAngles: 180,
-//     equilateral: true,
-//     equiangular: true
-// };
-// Object.keys(triangle);
-// Object.values(triangle);
+const musicData2 = [
+    { artist: 'ZAYN', name: 'Whole New World', sales: 1608000 },
+    { artist: 'SQLN', name: 'Sunset', sales: 1554000 },
+    { artist: 'Martin Garrix', name: 'Animals', sales: 1085000 },
+    { artist: 'AHM X', name: 'Revealed', sales: 603000 },
+    { artist: 'Dyro', name: 'Like A Boss', sales: 904000 },
+    { artist: 'Hardwell', name: 'Hakuna Matata', sales: 820000 },
+    { artist: 'The Chainsmokers', name: 'Selfie', sales: 738000 },
+    { artist: 'Will Sparks', name: 'Dreaming', sales: 668000 },
+    { artist: 'Justin Bieber', name: 'Purpose', sales: 554000 }
+];
 
-// /* Using map()
-//  *
-//  * Using the musicData array and map():
-//  *   - Return a string for each item in the array in the following format:
-//  *     <album-name> by <artist> sold <sales> copies
-//  *   - Store the returned data in a new albumSalesStrings variable
-//  *
-//  * Note:
-//  *   - Do not delete the musicData variable
-//  *   - Do not alter any of the musicData content
-//  *   - Do not format the sales number; leave it as a long string of digits
-//  */
+const results = musicData2.filter(function (album) {
+    return album.name.length > 7 && album.name.length < 15;
+});
 
-// const musicData = [
-//     { artist: 'Adele', name: '25', sales: 1731000 },
-//     { artist: 'Drake', name: 'Views', sales: 1608000 },
-//     { artist: 'Beyonce', name: 'Lemonade', sales: 1554000 },
-//     { artist: 'Chris Stapleton', name: 'Traveller', sales: 1085000 },
-//     { artist: 'Pentatonix', name: 'A Pentatonix Christmas', sales: 904000 },
-//     {
-//         artist: 'Original Broadway Cast Recording',
-//         name: 'Hamilton: An American Musical', sales: 820000
-//     },
-//     { artist: 'Twenty One Pilots', name: 'Blurryface', sales: 738000 },
-//     { artist: 'Prince', name: 'The Very Best of Prince', sales: 668000 },
-//     { artist: 'Rihanna', name: 'Anti', sales: 603000 },
-//     { artist: 'Justin Bieber', name: 'Purpose', sales: 554000 }
-// ];
+console.log(results);
 
-// const albumSalesStrings = musicData.map(function (data) {
-//     return (`${data.name} by ${data.artist} sold ${data.sales} copies`)
-// })
+function expandArray() {
+    let myArray = [1, 2, 3];
+    return function () {
+        myArray.push(4)
+        return myArray
+    }
+}
 
-// console.log(albumSalesStrings);
+console.log(expandArray());
 
-// /* Using filter()
-//  *
-//  * Using the musicData array and filter():
-//  *   - Return only album objects where the album's name is
-//  *     10 characters long, 25 characters long, or anywhere in between
-//  *   - Store the returned data in a new `results` variable
-//  *
-//  * Note:
-//  *   - Do not delete the musicData variable
-//  *   - Do not alter any of the musicData content
-//  */
+const driver = {
+    name: 'Trevor',
+    displayName: function () {
+        return `Name: ${this.name}`;
+    }
+};
 
-// const musicData2 = [
-//     { artist: 'Adele', name: '25', sales: 1731000 },
-//     { artist: 'Drake', name: 'Views', sales: 1608000 },
-//     { artist: 'Beyonce', name: 'Lemonade', sales: 1554000 },
-//     { artist: 'Chris Stapleton', name: 'Traveller', sales: 1085000 },
-//     { artist: 'Pentatonix', name: 'A Pentatonix Christmas', sales: 904000 },
-//     {
-//         artist: 'Original Broadway Cast Recording',
-//         name: 'Hamilton: An American Musical', sales: 820000
-//     },
-//     { artist: 'Twenty One Pilots', name: 'Blurryface', sales: 738000 },
-//     { artist: 'Prince', name: 'The Very Best of Prince', sales: 668000 },
-//     { artist: 'Rihanna', name: 'Anti', sales: 603000 },
-//     { artist: 'Justin Bieber', name: 'Purpose', sales: 554000 }
-// ];
+console.log(driver.displayName());
 
-// const results = musicData2.filter(function collect(album) {
-//     return album.name.length > 9 && album.name.length < 26;
-// });
+const car = {
+    name: 'Michael'
+};
 
-
-// console.log(results);
-
-// /*
-
-// Declare a function named `expandArray()` that:
-
-// * Takes no arguments
-// * Contains a single local variable, `myArray`, which points to [1, 1, 1]
-// * Returns an anonymous function that directly modifies `myArray` by
-//   appending another `1` into it
-// * The returned function then returns the value of `myArray`
-
-// */
-// function expandArray() {
-//     let myArray = [1, 1, 1]
-//     return function () {
-//         myArray.push(1)
-//         return myArray
-//     }
-// }
-
-// console.log(expandArray());
-
-// // Write an expression using bind() that allows us to "borrow" the displayName() method from driver for the car object to use. 
-// // Note: The expression itself is sufficient (no need to save it to a variable).
-
-// const driver = {
-//     name: 'Danica',
-//     displayName: function () {
-//         console.log(`Name: ${this.name}`);
-//     }
-// };
-
-// const car = {
-//     name: 'Fusion'
-// };
-
-// driver.displayName.bind(car);
-
-// // write a function that find the number of even digits in an array of integers
+console.log(driver.displayName.apply(car));
 
 // const findEven = (arr) =>
 //     arr.filter(num => num % 2 === 0).length;
@@ -246,7 +179,7 @@ console.log(firstHalf('rain'))
 // console.log(leapYear(2016));
 // console.log('+++++++++++++')
 
-// // write a function that check same Object keys in 2 Objects, 
+// // write a function that check same Object keys in 2 Objects,
 
 // let objectA = {
 //     a: 1,
@@ -310,7 +243,7 @@ console.log(firstHalf('rain'))
 // ladder.stepDown();
 // ladder.showStep();
 
-// /* create an Object which has the given keys: 
+// /* create an Object which has the given keys:
 // 1) day: "Monday", meeting: 0, meetDone: 0!
 // 2) Your Task: create a function inside object that add +1 meeting, the current state of the meeting is
 //    0, so we want to add a one meeting when the function is called!

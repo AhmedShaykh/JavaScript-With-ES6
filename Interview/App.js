@@ -60,146 +60,137 @@ function outer() {
 
 outer();
 
+console.log(typeof true);
+console.log(typeof "Type");
 console.log(typeof typeof 1);
 
-// var hero = {
-//     _name: 'John Doe',
-//     getSecretIdentity: function () {
-//         return this._name
-//     }
-// };
+var hero = {
+    _name: 'Imran Khan',
+    getSecretIdentity: function () {
+        return this._name
+    }
+};
 
-// var identity = hero.getSecretIdentity();
-// console.log(identity);
-// console.log(hero.getSecretIdentity())
-
-
-// function myArr(arr, callback) {
-//     arr.push(100);
-//     callback();
-// };
-
-// var arr = [10, 20, 30, 40, 50, 60, 70, 80, 90];
-
-// myArr(arr, function () {
-//     console.log('New Number is pushed in array', arr)
-// });
-
-// function revString(str) {
-//     const arr = str.split("");
-//     arr.reverse();
-//     str = arr.join("");
-//     console.log(str)
-// };
-
-// reverseStr("Hello Bro");
-
-// var arrL = [1, 2, 3, 4, 5, 6];
-// var newArr = arrL
-// arrL.length = 0
-// console.log(newArr);
+var identity = hero.getSecretIdentity();
+console.log(identity);
+console.log(hero.getSecretIdentity())
 
 
-// function checkInt(int) {
-//     typeof int === "number" ? console.log("its a number") : console.log("its not an integer")
-// };
+function myArr(arr, callback) {
+    arr.push(100);
+    callback();
+};
 
-// checkInt(2);
+var arr = [10, 20, 30, 40, 50, 60, 70, 80, 90];
 
+myArr(arr, function () {
+    console.log('Number 100 is pushed in array', arr)
+});
 
-// var Stack = ["Cat", "Dog", "Eagle"];
+var arrL = [1, 2, 3, 4, 5, 6];
+var newArr = arrL;
+arrL.length = 0;
+console.log(newArr);
 
-// function duplicate(arr) {
-//     return arr.concat(arr)
-// };
+function checkInt(int) {
+    typeof int === "number" ? console.log("It's a Number") : console.log("It's Not an Integer")
+};
 
-// console.log(duplicate(Stack));
+checkInt(2);
 
+var Stack = ["Cat", "Dog", "Eagle"];
 
-// function mul(x) {
-//     return function (y) {
-//         return function (z) {
-//             return (x * y * z)
-//         }
-//     }
-// }
+function duplicate(arr) {
+    return arr.concat(arr)
+};
 
-// console.log(mul(2)(2)(2));
+console.log(duplicate(Stack));
 
+function mul(x) {
+    return function (y) {
+        return function (z) {
+            return (x * y * z)
+        }
+    }
+}
 
-// function baseNumber(num) {
-//     return function (N) {
-//         return num + N
-//     }
-// };
-// var baseResult = baseNumber(6);
-// console.log(baseResult(10))
+console.log(mul(2)(2)(2));
 
-// function plus(num) {
-//     return function (N) {
-//         return num + N
-//     };
-// };
+function baseNumber(num) {
+    return function (N) {
+        console.log(N);
+        return num + N
+    }
+};
 
-// console.log(plus(3)(3));
+var baseResult = baseNumber(6);
+console.log(baseResult(10));
 
+function plus(num) {
+    return function (N) {
+        return num + N
+    };
+};
 
-// var ary = [1, 2, 3, 4];
-// ary.map((y) => {
-//     console.log(y * 2)
-// });
+console.log(plus(3)(3));
 
-// const obj = [
-//     { fName: 'Syed', lName: 'Bilal' },
-//     { fName: 'Mike', lName: 'David' },
-//     { fName: 'White', lName: 'Mike' },
-// ];
+var ary = [1, 2, 3, 4];
 
-// obj.map((ob) => {
-//     console.log(ob.fName)
-// });
+ary.map((y) => {
+    console.log(y * 2);
+});
 
-// const number = [1, -2, 3, -9, 0, 2];
+const obj = [
+    { fName: 'Ahmed', lName: 'Shaikh' },
+    { fName: 'Elon', lName: 'Musk' },
+    { fName: 'Steve', lName: 'Job' },
+];
 
-// var vn = number.filter((value) => {
-//     return value >= 0
-// })
+obj.map((ob) => {
+    console.log(ob.fName)
+});
 
-// console.log(vn);
+const number = [1, -2, 3, -9, 0, 2];
 
+var vn = number.filter((value) => {
+    return value >= 0
+})
 
-// var res = [
-//     { name: 'Broadway', isOpen: true },
-//     { name: 'PizzaHut', isOpen: false },
-//     { name: 'Wireless', isOpen: true },
-//     { name: 'California', isOpen: false },
-// ];
+console.log(vn);
 
-// var openRes = res.map(rp => {
-//     return rp.name
-// })
+var res = [
+    { name: 'Broadway', isOpen: true },
+    { name: 'Pizza Hut', isOpen: false },
+    { name: 'Pizza king', isOpen: true },
+    { name: 'California', isOpen: false },
+];
 
-// console.log(openRes)
+var openRes = res.map(rp => {
+    return rp.name + ` is Open ` + rp.isOpen
+})
 
-// function promise() {
-//     return new Promise((resolve, reject) => {
-//         setTimeout(() => {
-//             let api = false
+console.log(openRes);
 
-//             if (!api) {
-//                 console.log('Api Connected');
-//                 resolve()
-//             } else {
-//                 console.log('Api not Connected');
-//                 reject()
-//             }
-//         }, 2000);
-//     })
-// };
-// promise()
-//     .then(() => {
-//         console.log('Incoming Data')
-//     })
-//     .catch((error) => {
-//         console.log(error)
-//     });
+function promise() {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            let api = false
+
+            if (!api) {
+                console.log('Api Connected');
+                resolve()
+            } else {
+                console.log('Api not Connected');
+                reject()
+            }
+        }, 2000);
+    })
+};
+
+promise()
+    .then(() => {
+        console.log('Incoming Data')
+    })
+    .catch((error) => {
+        console.log(error)
+    });

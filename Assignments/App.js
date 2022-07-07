@@ -166,18 +166,14 @@ const car = {
 
 console.log(driver.displayName.apply(car));
 
-// const findEven = (arr) =>
-//     arr.filter(num => num % 2 === 0).length;
+const findEven = (arr) => arr.filter(num => num % 2 === 0).length;
 
-// console.log(findEven([1, 2, 4, 5, 8]));
+console.log(findEven([1, 2, 4, 5, 8]));
 
-// // Given a year, report if it is a leap year
+const leapYear = (year) => year % 4 === 0;
 
-// const leapYear = (year) => year % 4 === 0;
-
-// console.log(leapYear(2014));
-// console.log(leapYear(2016));
-// console.log('+++++++++++++')
+console.log(leapYear(2014));
+console.log(leapYear(2016));
 
 // // write a function that check same Object keys in 2 Objects,
 
@@ -199,8 +195,7 @@ console.log(driver.displayName.apply(car));
 //     c: 1
 // }
 
-// const checkObject = (a, b) =>
-//     Object.keys(a).every(key => b[key]);
+// const checkObject = (a, b) => Object.keys(a).every(key => b[key]);
 
 // console.log(checkObject(objectA, objectB));
 
@@ -268,9 +263,6 @@ console.log(driver.displayName.apply(car));
 
 // obj1.addMeeting(2);
 // obj1.summary();
-
-
-
 
 // let obj2 = {
 //     day: 'Monday',

@@ -12,7 +12,6 @@ function checkNum(a, b) {
 
 console.log(checkNum(90, 10));
 
-// ES6 version
 let checkNum2 = (a, b) => a === 100 || b === 100 || a + b === 100;
 
 console.log(checkNum2(0, 100));

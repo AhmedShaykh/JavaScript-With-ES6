@@ -1,4 +1,4 @@
-(function() {
+(function () {
     return a = b = 3
 })()
 
@@ -7,11 +7,11 @@ console.log("b defined? " + (typeof b !== 'undefined'));
 
 var myObject = {
     foo: "bar",
-    func: function() {
+    func: function () {
         var self = this;
         console.log("outer func:  this.foo = " + this.foo); // bar
         console.log("outer func:  self.foo = " + self.foo); // bar
-        (function() {
+        (function () {
             console.log("inner func:  this.foo = " + this.foo); // undefined
             console.log("inner func:  self.foo = " + self.foo); // bar
         }());
@@ -19,31 +19,22 @@ var myObject = {
 };
 myObject.func();
 
-// because (this) will not be access in the auto-call function
-
-
-// reverse the given string
-
 function reverseStr(str) {
     const arr = str.split("");
     arr.reverse();
     str = arr.join("");
     console.log(str);
 };
-reverseStr("Bilal");
-
-// Palindrome
-// reverse the string
-// check the string with the original if it is same or not!
+reverseStr("Ahmed");
 
 const palindrome = (str) => {
     let x = str
-    console.log("word before",x)
+    console.log("word before", x)
     const arr = x.split("");
     arr.reverse();
     x = arr.join("")
     console.log("word after", x);
-    if(x == str) {
+    if (x == str) {
         console.log(true)
     } else {
         console.log(false)
@@ -73,7 +64,7 @@ console.log(typeof typeof 1);
 
 var hero = {
     _name: 'John Doe',
-    getSecretIdentity: function() {
+    getSecretIdentity: function () {
         return this._name
     }
 };
@@ -90,7 +81,7 @@ function myArr(arr, callback) {
 
 var arr = [10, 20, 30, 40, 50, 60, 70, 80, 90];
 
-myArr(arr, function() {
+myArr(arr, function () {
     console.log('New Number is pushed in array', arr)
 });
 
@@ -106,7 +97,7 @@ reverseStr("Hello Bro");
 var arrL = [1, 2, 3, 4, 5, 6];
 var newArr = arrL
 arrL.length = 0
-console.log(newArr);  
+console.log(newArr);
 
 
 function checkInt(int) {
@@ -126,9 +117,9 @@ console.log(duplicate(Stack));
 
 
 function mul(x) {
-    return function(y) {
-        return function(z) {
-            return(x * y * z)
+    return function (y) {
+        return function (z) {
+            return (x * y * z)
         }
     }
 }
@@ -145,7 +136,7 @@ var baseResult = baseNumber(6);
 console.log(baseResult(10))
 
 function plus(num) {
-    return function(N) {
+    return function (N) {
         return num + N
     };
 };
@@ -195,7 +186,7 @@ function promise() {
         setTimeout(() => {
             let api = false
 
-            if(!api) {
+            if (!api) {
                 console.log('Api Connected');
                 resolve()
             } else {

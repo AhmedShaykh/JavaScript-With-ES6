@@ -3,7 +3,7 @@ function checkNum(a, b) {
         return true
     } else if (b === 100) {
         return true
-    } else if (a + b === 100){
+    } else if (a + b === 100) {
         return true
     } else {
         return false
@@ -78,7 +78,7 @@ console.log(addStr('New! office!!!'));
 function newStr(str) {
     if (str.length > 3) {
         return (
-            str.substring(0, 3) + str.substring(str.length - 3) 
+            str.substring(0, 3) + str.substring(str.length - 3)
         )
     } else if (str.length <= 3) {
         return str
@@ -123,7 +123,7 @@ console.log(rmvCh2('World', 'Hello'))
 const bell = {
     color: 'gold',
     ring: function () {
-      console.log('Ring ring ring!');
+        console.log('Ring ring ring!');
     }
 }
 
@@ -161,15 +161,17 @@ const musicData = [
     { artist: 'Beyonce', name: 'Lemonade', sales: 1554000 },
     { artist: 'Chris Stapleton', name: 'Traveller', sales: 1085000 },
     { artist: 'Pentatonix', name: 'A Pentatonix Christmas', sales: 904000 },
-    { artist: 'Original Broadway Cast Recording', 
-      name: 'Hamilton: An American Musical', sales: 820000 },
+    {
+        artist: 'Original Broadway Cast Recording',
+        name: 'Hamilton: An American Musical', sales: 820000
+    },
     { artist: 'Twenty One Pilots', name: 'Blurryface', sales: 738000 },
     { artist: 'Prince', name: 'The Very Best of Prince', sales: 668000 },
     { artist: 'Rihanna', name: 'Anti', sales: 603000 },
     { artist: 'Justin Bieber', name: 'Purpose', sales: 554000 }
 ];
 
-const albumSalesStrings = musicData.map(function(data) {
+const albumSalesStrings = musicData.map(function (data) {
     return (`${data.name} by ${data.artist} sold ${data.sales} copies`)
 })
 
@@ -193,17 +195,19 @@ const musicData2 = [
     { artist: 'Beyonce', name: 'Lemonade', sales: 1554000 },
     { artist: 'Chris Stapleton', name: 'Traveller', sales: 1085000 },
     { artist: 'Pentatonix', name: 'A Pentatonix Christmas', sales: 904000 },
-    { artist: 'Original Broadway Cast Recording', 
-      name: 'Hamilton: An American Musical', sales: 820000 },
+    {
+        artist: 'Original Broadway Cast Recording',
+        name: 'Hamilton: An American Musical', sales: 820000
+    },
     { artist: 'Twenty One Pilots', name: 'Blurryface', sales: 738000 },
     { artist: 'Prince', name: 'The Very Best of Prince', sales: 668000 },
     { artist: 'Rihanna', name: 'Anti', sales: 603000 },
     { artist: 'Justin Bieber', name: 'Purpose', sales: 554000 }
 ];
 
-const results = musicData2.filter( function collect(album) {
+const results = musicData2.filter(function collect(album) {
     return album.name.length > 9 && album.name.length < 26;
-} );
+});
 
 
 console.log(results);
@@ -235,11 +239,11 @@ console.log(expandArray());
 const driver = {
     name: 'Danica',
     displayName: function () {
-      console.log(`Name: ${this.name}`);
+        console.log(`Name: ${this.name}`);
     }
 };
-  
-  const car = {
+
+const car = {
     name: 'Fusion'
 };
 
@@ -280,10 +284,10 @@ let objectC = {
     c: 1
 }
 
-const checkObject = (a, b) => 
+const checkObject = (a, b) =>
     Object.keys(a).every(key => b[key]);
 
-console.log(checkObject(objectA, objectB)); 
+console.log(checkObject(objectA, objectB));
 
 // Calculator with Objects and THIS method
 
@@ -292,7 +296,7 @@ let calculator = {
         return a + b
     },
     mul(a, b) {
-        if (a == null || b == null ) {
+        if (a == null || b == null) {
             return this.result()
         } else {
             return a * b
@@ -340,10 +344,10 @@ let obj1 = {
     meeting: 0,
     meetDone: 0,
     addMeeting(a) {
-       this.meeting = this.meeting + a
+        this.meeting = this.meeting + a
     },
     summary() {
-       console.log(`You have ${this.meeting} meeting left`);
+        console.log(`You have ${this.meeting} meeting left`);
     }
 };
 
@@ -354,41 +358,41 @@ obj1.summary();
 
 
 let obj2 = {
-   day: 'Monday',
-   meeting: 0,
-   meetDone: 0,
-   
-   addMeeting(a) {
-      this.meeting = this.meeting + a
-   },
-   
-   summary() {
-      console.log(`You have ${this.meeting} meeting left`);
-   },
-   
-   decrementMeet() {
-      this.meeting = this.meeting - 1
-   },
-   
-   decrementSummary() {
-      console.log(`You have ${this.meeting} meeting left`);
-   },
-   
-   resetMeeting() {
-      this.meeting = this.meeting * 0
-   },
-   
-   meetLeft() {
-      console.log(`You have ${this.meeting} meeting left`);
-   },
-   
-   addMeetDone() {
-      this.meetDone++
-   },
-   
-   summaryMeetDone() {
-      console.log(`You have done ${this.meetDone} meeting`);
-   }
+    day: 'Monday',
+    meeting: 0,
+    meetDone: 0,
+
+    addMeeting(a) {
+        this.meeting = this.meeting + a
+    },
+
+    summary() {
+        console.log(`You have ${this.meeting} meeting left`);
+    },
+
+    decrementMeet() {
+        this.meeting = this.meeting - 1
+    },
+
+    decrementSummary() {
+        console.log(`You have ${this.meeting} meeting left`);
+    },
+
+    resetMeeting() {
+        this.meeting = this.meeting * 0
+    },
+
+    meetLeft() {
+        console.log(`You have ${this.meeting} meeting left`);
+    },
+
+    addMeetDone() {
+        this.meetDone++
+    },
+
+    summaryMeetDone() {
+        console.log(`You have done ${this.meetDone} meeting`);
+    }
 };
 
 obj2.addMeeting(1)
@@ -416,9 +420,9 @@ obj2.summaryMeetDone()
 let userChecker = (user) => user.email && user.password ? 'You are logged in' : 'enter email and password'
 
 var obj = {
-   name: 'Bilal',
-   email: 'test123@gmail.com',
-   password: 'abc123'
+    name: 'Bilal',
+    email: 'test123@gmail.com',
+    password: 'abc123'
 }
 
 console.log(userChecker(obj))

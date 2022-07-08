@@ -182,130 +182,111 @@ let objectA = {
 };
 
 let objectB = {
-    a: 1,
-    b: 4,
+    a: 2,
+    d: 4,
     c: 3
 };
 
 let objectC = {
-    a: 1,
-    b: 1,
-    c: 1
+    a: 6,
+    b: 7,
+    c: 5
 }
 
 const checkObject = (a, b) => Object.keys(a).every(key => b[key]);
 console.log(checkObject(objectA, objectB));
+console.log(checkObject(objectA, objectC));
 
-// let calculator = {
-//     sum(a, b) {
-//         return a + b
-//     },
-//     mul(a, b) {
-//         if (a == null || b == null) {
-//             return this.result()
-//         } else {
-//             return a * b
-//         }
-//     },
-//     result() {
-//         console.log('Enter a value')
-//     }
-// }
+let calculator = {
+    sum(a, b) {
+        return a + b
+    },
+    mul(a, b) {
+        if (a == null || b == null) {
+            return this.result();
+        } else {
+            return a * b
+        }
+    },
+    result() {
+        console.log('Enter a Value');
+    }
+}
 
-// console.log(calculator.mul(2, 4));
+console.log(calculator.mul(2, 4));
 
-// // create a stepper object with function that allows to go up and go down
-// const ladder = {
-//     step: 0,
-//     stepUp() {
-//         this.step++
-//     },
-//     stepDown() {
-//         this.step--
-//     },
-//     showStep() {
-//         console.log(this.step);
-//     }
-// }
+const ladder = {
+    step: 0,
+    stepUp() {
+        this.step++
+        console.log(this.step);
+    },
+    stepDown() {
+        this.step--
+        console.log(this.step);
+    },
+    showStep() {
+        console.log(this.step);
+    }
+}
 
-// ladder.stepUp();
-// ladder.stepUp();
-// ladder.stepDown();
-// ladder.showStep();
+ladder.stepUp();
+ladder.showStep();
+ladder.stepUp();
+ladder.stepDown();
 
-// /* create an Object which has the given keys:
-// 1) day: "Monday", meeting: 0, meetDone: 0!
-// 2) Your Task: create a function inside object that add +1 meeting, the current state of the meeting is
-//    0, so we want to add a one meeting when the function is called!
-// 3) create another function that print (console.log()) after the new meeting is added.
-// For Example:
-//     current state of meeting is 0,
-//     function is called and one meeting is added is the state, so the new state of meeting is now 01
-//     now print the new state of meeting after the function is called!
-// */
+let obj1 = {
+    meeting: 0,
+    addMeeting(a) {
+        this.meeting = this.meeting + a
+    },
+    summary() {
+        console.log(`You have ${this.meeting} Meeting Left`);
+    }
+};
 
-// let obj1 = {
-//     day: 'Monday',
-//     meeting: 0,
-//     meetDone: 0,
-//     addMeeting(a) {
-//         this.meeting = this.meeting + a
-//     },
-//     summary() {
-//         console.log(`You have ${this.meeting} meeting left`);
-//     }
-// };
+obj1.addMeeting(2);
+obj1.summary();
 
-// obj1.addMeeting(2);
-// obj1.summary();
+let obj2 = {
+    day: 'Monday',
+    meeting: 0,
+    meetDone: 0,
+    addMeeting(a) {
+        this.meeting = this.meeting + a
+    },
+    summary() {
+        console.log(`You have ${this.meeting} Meeting Left`);
+    },
+    decrementMeet() {
+        this.meeting = this.meeting - 1
+    },
+    decrementSummary() {
+        console.log(`You have ${this.meeting} Meeting Left`);
+    },
+    resetMeeting() {
+        this.meeting = this.meeting * 0
+    },
+    meetLeft() {
+        console.log(`You have ${this.meeting} Meeting Left`);
+    },
+    addMeetDone() {
+        this.meetDone++
+    },
+    summaryMeetDone() {
+        console.log(`You have Done ${this.meetDone} Meeting`);
+    }
+};
 
-// let obj2 = {
-//     day: 'Monday',
-//     meeting: 0,
-//     meetDone: 0,
-
-//     addMeeting(a) {
-//         this.meeting = this.meeting + a
-//     },
-
-//     summary() {
-//         console.log(`You have ${this.meeting} meeting left`);
-//     },
-
-//     decrementMeet() {
-//         this.meeting = this.meeting - 1
-//     },
-
-//     decrementSummary() {
-//         console.log(`You have ${this.meeting} meeting left`);
-//     },
-
-//     resetMeeting() {
-//         this.meeting = this.meeting * 0
-//     },
-
-//     meetLeft() {
-//         console.log(`You have ${this.meeting} meeting left`);
-//     },
-
-//     addMeetDone() {
-//         this.meetDone++
-//     },
-
-//     summaryMeetDone() {
-//         console.log(`You have done ${this.meetDone} meeting`);
-//     }
-// };
-
-// obj2.addMeeting(1)
-// obj2.addMeeting(1)
-// obj2.summary()
-// obj2.addMeetDone()
-// obj2.summaryMeetDone()
-// // obj1.decrementMeet()
-// // obj1.decrementSummary()
-// // obj1.resetMeeting()
-// // obj1.meetLeft()
+obj2.addMeeting(1);
+obj2.addMeeting(1);
+obj2.summary();
+obj2.addMeetDone();
+obj2.summaryMeetDone();
+obj2.decrementMeet();
+obj2.decrementSummary();
+obj2.resetMeeting();
+obj2.meetLeft();
 
 // // email and password checker function, if a user entered email and password it should print "You are logged in"
 // // or else it will return "enter email and password", and if a user entered only email not password or only password

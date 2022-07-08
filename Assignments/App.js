@@ -249,7 +249,6 @@ obj1.addMeeting(2);
 obj1.summary();
 
 let obj2 = {
-    day: 'Monday',
     meeting: 0,
     meetDone: 0,
     addMeeting(a) {
@@ -265,21 +264,21 @@ let obj2 = {
         console.log(`You have ${this.meeting} Meeting Left`);
     },
     resetMeeting() {
-        this.meeting = this.meeting * 0
+        this.meeting = this.meeting = 'No';
     },
     meetLeft() {
-        console.log(`You have ${this.meeting} Meeting Left`);
+        console.log(`You have ${this.meeting} Meeting ...!`);
     },
     addMeetDone() {
         this.meetDone++
     },
     summaryMeetDone() {
-        console.log(`You have Done ${this.meetDone} Meeting`);
+        console.log(`You have Done ${this.meetDone} Meeting ...!`);
     }
 };
 
-obj2.addMeeting(1);
-obj2.addMeeting(1);
+obj2.addMeeting(2);
+obj2.addMeeting(2);
 obj2.summary();
 obj2.addMeetDone();
 obj2.summaryMeetDone();
@@ -288,24 +287,12 @@ obj2.decrementSummary();
 obj2.resetMeeting();
 obj2.meetLeft();
 
-// // email and password checker function, if a user entered email and password it should print "You are logged in"
-// // or else it will return "enter email and password", and if a user entered only email not password or only password
-// // not email it will again print "enter email and password".
+let userChecker = (user) => user.email && user.password ? 'You are logged In' : 'Enter Email & Password';
 
-// // let userChecker = (user) => {
-// //    if (user.email && user.password) {
-// //       console.log('You are logged in')
-// //    } else {
-// //       console.log('You need to log in')
-// //    }
-// // }
+var obj = {
+    name: 'Ahmed',
+    email: 'test123@gmail.com',
+    password: 'testing123'
+}
 
-// let userChecker = (user) => user.email && user.password ? 'You are logged in' : 'enter email and password'
-
-// var obj = {
-//     name: 'Bilal',
-//     email: 'test123@gmail.com',
-//     password: 'abc123'
-// }
-
-// console.log(userChecker(obj))
+console.log(userChecker(obj));

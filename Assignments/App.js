@@ -175,31 +175,26 @@ const leapYear = (year) => year % 4 === 0;
 console.log(leapYear(2014));
 console.log(leapYear(2016));
 
-// // write a function that check same Object keys in 2 Objects,
+let objectA = {
+    a: 1,
+    b: 2,
+    c: 3
+};
 
-// let objectA = {
-//     a: 1,
-//     b: 2,
-//     c: 3
-// };
+let objectB = {
+    a: 1,
+    b: 4,
+    c: 3
+};
 
-// let objectB = {
-//     a: 1,
-//     b: 4,
-//     c: 3
-// };
+let objectC = {
+    a: 1,
+    b: 1,
+    c: 1
+}
 
-// let objectC = {
-//     a: 1,
-//     b: 1,
-//     c: 1
-// }
-
-// const checkObject = (a, b) => Object.keys(a).every(key => b[key]);
-
-// console.log(checkObject(objectA, objectB));
-
-// // Calculator with Objects and THIS method
+const checkObject = (a, b) => Object.keys(a).every(key => b[key]);
+console.log(checkObject(objectA, objectB));
 
 // let calculator = {
 //     sum(a, b) {

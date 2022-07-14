@@ -142,7 +142,7 @@ ary.map((y) => {
 const obj = [
     { fName: 'Ahmed', lName: 'Shaikh' },
     { fName: 'Elon', lName: 'Musk' },
-    { fName: 'Steve', lName: 'Job' },
+    { fName: 'Steve', lName: 'Jobs' },
 ];
 
 obj.map((ob) => {
@@ -173,8 +173,7 @@ console.log(openRes);
 function promise() {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
-            let api = false
-
+            let api = false;
             if (!api) {
                 console.log('Api Connected');
                 resolve()
@@ -188,7 +187,7 @@ function promise() {
 
 promise()
     .then(() => {
-        console.log('Incoming Data')
+        console.log('Incoming Data .....')
     })
     .catch((error) => {
         console.log(error)

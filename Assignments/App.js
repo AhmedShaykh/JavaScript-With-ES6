@@ -74,6 +74,7 @@ console.log(newStr('Karachi'));
 
 const newStr1 = (str) => str.length <= 3 ? str : str.slice(0, 3) + str.slice(-3);
 console.log(newStr1('Pakistan'));
+console.log(newStr1('USA'));
 
 function firstHalf(str) {
     return str.slice(0, str.length / 2);

@@ -46,8 +46,6 @@ const palindrome = (str) => {
 var input = prompt("Enter Your Word ....")
 palindrome(input);
 
-var num = 3;
-
 function outer() {
     var num = 2;
     function inner() {

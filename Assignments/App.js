@@ -162,14 +162,13 @@ const driver = {
 console.log(driver.displayName());
 
 const car = {
-    name: 'Michael'
+    name: 'Bugatti'
 };
 
 console.log(driver.displayName.apply(car));
 
 const findEven = (arr) => arr.filter(num => num % 2 === 0).length;
-
-console.log(findEven([1, 2, 4, 5, 8]));
+console.log(findEven([1, 2, 4, 5, 8])); // 8 % 2 = 4 % 2 = 2 % 2 = 0;
 
 const leapYear = (year) => year % 4 === 0;
 

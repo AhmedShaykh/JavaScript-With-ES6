@@ -60,6 +60,7 @@ outer();
 
 console.log(typeof true);
 console.log(typeof "Type");
+console.log(typeof 4);
 console.log(typeof typeof 1);
 
 var hero = {

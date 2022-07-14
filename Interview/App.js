@@ -83,7 +83,7 @@ function myArr(arr, callback) {
 var arr = [10, 20, 30, 40, 50, 60, 70, 80, 90];
 
 myArr(arr, function () {
-    console.log('Number 100 is pushed in array', arr)
+    console.log('Number 100 is pushed in Array', arr);
 });
 
 var arrL = [1, 2, 3, 4, 5, 6];
@@ -92,7 +92,7 @@ arrL.length = 0;
 console.log(newArr);
 
 function checkInt(int) {
-    typeof int === "number" ? console.log("It's a Number") : console.log("It's Not an Integer")
+    typeof int === "number" ? console.log("It's a Number") : console.log("It's Not an Integer");
 };
 
 checkInt(2);

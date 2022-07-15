@@ -358,10 +358,12 @@ call();
 
 let userName = { name: "John" };
 
-let permissions1 = { Smart: true };
-let permissions2 = { Male: true };
+const target = { a: 12, b: 2 };
+const source = { b: 4, c: 5 };
+const assign = { c: 3, b: 6, a: 7 };
 
-console.log(Object.assign(userName, permissions1, permissions2));
+const objAssign = Object.assign(target, source, assign);
+console.log(objAssign);
 
 let userName2 = { name: "John" };
 

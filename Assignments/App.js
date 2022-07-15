@@ -73,8 +73,8 @@ console.log(newStr('Amsterdam'));
 console.log(newStr('Karachi'));
 
 const newStr1 = (str) => str.length <= 3 ? str : str.slice(0, 3) + str.slice(-3);
-console.log(newStr1('Pakistan'));
-console.log(newStr1('USA'));
+console.log(newStr1('Iran'));
+console.log(newStr1('UAE'));
 
 function firstHalf(str) {
     return str.slice(0, str.length / 2);
@@ -107,7 +107,7 @@ console.log(Object.keys(triangle));
 console.log(Object.values(triangle));
 
 const musicData = [
-    { artist: 'ZAYN', name: 'Whole New World', sales: 1608000 },
+    { artist: 'ZAYN', name: 'Dusk Till Dawn', sales: 1608000 },
     { artist: 'SQLN', name: 'Sunset', sales: 1554000 },
     { artist: 'Martin Garrix', name: 'Animals', sales: 1085000 },
     { artist: 'AHM X', name: 'Revealed', sales: 603000 },

@@ -32,17 +32,18 @@ reverseStr("Ahmed");
 
 const palindrome = (str) => {
     let x = str
-    console.log("Word Before", x)
+    console.log("Before Text", x)
     const arr = x.split("");
     arr.reverse();
     x = arr.join("")
-    console.log("Word After", x);
+    console.log("After Text", x);
     if (x == str) {
         console.log(true)
     } else {
         console.log(false)
     }
 }
+
 var input = prompt("Enter Your Word ....")
 palindrome(input);
 

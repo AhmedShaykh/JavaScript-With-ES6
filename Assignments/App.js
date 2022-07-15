@@ -86,11 +86,11 @@ const firstHalf2 = (str) => str.slice(0, str.length / 2);
 
 console.log(firstHalf2('World'));
 
-function rmvCh(strA, strB) {
+function sub(strA, strB) {
     return strA.substring(1) + strB.substring(1);
 };
 
-console.log(rmvCh('Learn', 'Night'));
+console.log(sub('Learn', 'Night'));
 
 const rmvCh2 = (str1, str2) => str1.slice(1) + str2.slice(1);
 console.log(rmvCh2('World', 'Hello'));

@@ -360,7 +360,7 @@ let userName = { name: "John" };
 
 const target = { a: 12, b: 2 };
 const source = { b: 4, c: 5 };
-const assign = { c: 3, b: 6, a: 7 };
+const assign = { c: 3, b: 6, a: 7, d: 9 };
 
 const objAssign = Object.assign(target, source, assign);
 console.log(objAssign);
@@ -372,7 +372,7 @@ Object.assign(userName2, { name: "Peter" });
 console.log(userName2.name);
 
 let fun = new Function('a', 'b', 'return a + b')
-console.log(fun(1, 2));
+console.log(fun(5, 2));
 
 let sayHello = new Function('console.log("Hello Ether")');
 sayHello();
@@ -543,7 +543,7 @@ var removedArray = ourArray.shift();
 console.log(removedArray);
 
 var ourArray = ["Anderson", "Jelly", ["cat"]];
-ourArray.unshift("Happy");
+ourArray.unshift("Holland");
 
 console.log(ourArray);
 
@@ -739,9 +739,9 @@ var metaTech2 = ["MR" , "XR"];
 var meta = metaTech1.concat(metaTech2);
 console.log(meta);
 
-let arrCom =[{ Name: "Elon" , Com: "Twitter" } ,{ Name: "Steve" , Com: "Apple" }];
+let arrCom =[{ Name: "Elon Musk" , Com: "Twitter" } ,{ Name: "Steve Jobs" , Com: "Apple" }];
 
-let filter = arrCom.filter(a => a.Name === "Steve")
+let filter = arrCom.filter(a => a.Name === "Steve Jobs")
 
 console.log(filter);
 

@@ -1,4 +1,4 @@
-var a = 'Ahmed Shaykh';
+var a = 'Ahmed Saleem Shaikh';
 document.write(a);
 console.log(a);
 
@@ -683,7 +683,7 @@ let { nameObj, age } = objDest
 console.log(nameObj);
 console.log(age);
 
-var namel = 'Martin';
+var namel = 'Martin Garrix';
 var adminname = namel;
 
 console.log(adminname);
@@ -692,9 +692,9 @@ function emailChecker(x, y) {
     if (x.includes('@') && y.length >= 6) {
         console.log(`Email: ${x}`);
         console.log(`Password: ${y}`);
-    } 
+    }
     else {
-        console.log(`Enter Correct Email and Password`);
+        console.log(`Enter Correct Your Email and Password`);
     };
 };
 
@@ -730,14 +730,14 @@ console.log(rightNow.getSeconds());
 
 console.log(rightNow.getMilliseconds());
 
-var metaTech1 = ["VR" , "AR"];
+var metaTech1 = ["VR", "AR"];
 
-var metaTech2 = ["MR" , "XR"];
+var metaTech2 = ["MR", "XR"];
 
 var meta = metaTech1.concat(metaTech2);
 console.log(meta);
 
-let arrCom =[{ Name: "Elon Musk" , Com: "Twitter" } ,{ Name: "Steve Jobs" , Com: "Apple" }];
+let arrCom = [{ Name: "Elon Musk", Com: "SpaceX" }, { Name: "Steve Jobs", Com: "Apple" }];
 
 let filter = arrCom.filter(a => a.Name === "Steve Jobs")
 
@@ -746,5 +746,17 @@ console.log(filter);
 console.log(Math.floor(1.99));
 
 console.log(Math.floor(-1.01));
+
+class Blockchain {
+    constructor(name, coin) {
+        this.name = name;
+        this.coin = coin;
+    };
+};
+
+var Crypto = new Blockchain();
+Crypto.name = "Bitcoin";
+Crypto.coin = "BTC";
+console.log(Crypto);
 
 // ====================== End ====================== //

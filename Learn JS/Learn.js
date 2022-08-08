@@ -356,8 +356,6 @@ function call() {
 
 call();
 
-let userName = { name: "John" };
-
 const target = { a: 12, b: 2 };
 const source = { b: 4, c: 5 };
 const assign = { c: 3, b: 6, a: 7, d: 9 };
@@ -365,11 +363,11 @@ const assign = { c: 3, b: 6, a: 7, d: 9 };
 const objAssign = Object.assign(target, source, assign);
 console.log(objAssign);
 
-let userName2 = { name: "John" };
+let userName = { name: "John" };
 
-Object.assign(userName2, { name: "Peter" });
+Object.assign(userName, { name: "Peter" });
 
-console.log(userName2.name);
+console.log(userName.name);
 
 let fun = new Function('a', 'b', 'return a + b')
 console.log(fun(5, 2));

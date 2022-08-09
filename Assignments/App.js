@@ -27,7 +27,7 @@ let checkExt2 = (str) => {
     return str.slice(str.lastIndexOf('.'));
 };
 
-console.log(checkExt2('App.ts'));
+console.log(checkExt2('App.tsx'));
 
 function getDate1(date = new Date()) {
     var dates = date.getDate();
@@ -241,7 +241,7 @@ let obj1 = {
         this.meeting = this.meeting + a
     },
     summary() {
-        console.log(`You have ${this.meeting} Meeting Left`);
+        console.log(`You have ${this.meeting} Meetings Left`);
     }
 };
 
@@ -255,13 +255,13 @@ let obj2 = {
         this.meeting = this.meeting + a
     },
     summary() {
-        console.log(`You have ${this.meeting} Meeting Left`);
+        console.log(`You have ${this.meeting} Meetings Left`);
     },
     decrementMeet() {
         this.meeting = this.meeting - 1
     },
     decrementSummary() {
-        console.log(`You have ${this.meeting} Meeting Left`);
+        console.log(`You have ${this.meeting} Meetings Left`);
     },
     resetMeeting() {
         this.meeting = this.meeting = 'No';
@@ -287,7 +287,7 @@ obj2.decrementSummary();
 obj2.resetMeeting();
 obj2.meetLeft();
 
-let userChecker = (user) => user.email && user.password ? 'You are logged In' : 'Enter Email & Password';
+let userChecker = (user) => user.email && user.password ? 'You are logged In' : 'Enter Your Email & Password';
 
 var obj = {
     name: 'Ahmed',

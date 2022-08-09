@@ -2,9 +2,9 @@ var a = prompt('Enter A Value');
 var b = 20;
 
 if (a < b) {
-    console.log('B is Greater Of A');
+    console.log('B is Greater Than Of A');
 } else {
-    console.log('A is Greater Of B');
+    console.log('A is Greater Than Of B');
 };
 
 var per = prompt('Enter Your Value', '99 Value Limit Otherwise Value Not Acceptable');

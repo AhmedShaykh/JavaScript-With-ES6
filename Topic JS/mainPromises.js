@@ -35,7 +35,7 @@ delay(2000)
 .then(() => console.log('Running After 2 seconds'));
 
 async function getData() {
-    let promise04 = new Promise(function(resolve, reject) {
+    let myPromise = new Promise(function(resolve, reject) {
         fetch('https://jsonplaceholder.typicode.com/todos/1')
         .then(function(response) {
             return response.json()
@@ -47,7 +47,7 @@ async function getData() {
             reject(error)
         })
     })
-    let data = await promise04
+    let data = await myPromise
     console.log(data)
 };
 

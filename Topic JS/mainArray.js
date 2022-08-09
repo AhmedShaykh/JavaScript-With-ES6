@@ -32,8 +32,8 @@ console.log(y);
 var z = a.lastIndexOf('Christian', 5);
 console.log(z);
 
-var zee = a.lastIndexOf('Joe');
-console.log(zee);
+var j = a.lastIndexOf('Joe');
+console.log(j);
 
 var arr = [12, 13, 15, 17];
 var ages = arr.some(adultFunc);
@@ -63,6 +63,4 @@ function checkNumbers(chk) {
 };      
 
 var arrString = [10, 58, 44];
-arrString.toString();
-
-console.log(arrString);
+console.log(arrString.toString());

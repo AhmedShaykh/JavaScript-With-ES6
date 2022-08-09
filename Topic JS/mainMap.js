@@ -9,7 +9,7 @@ function Test(x) {
 
 var nameArr = [
     { fName: 'David', lName: 'Anderson' },
-    { fName: 'Tokyo', lName: 'Moscow' },
+    { fName: 'Alan', lName: 'Walker' },
     { fName: 'Satoshi', lName: 'Nakamoto' }
 ];
 

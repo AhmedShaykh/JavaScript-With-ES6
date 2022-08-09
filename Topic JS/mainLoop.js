@@ -25,11 +25,11 @@ for (e of num) {
     console.log('==> ' + e);
 };
 
-var employee = {
+var founder = {
     name: 'Ahmed',
     salary: "$10000000",
 };
 
-for (var key in employee) {
-    console.log(`The ${key} of CEO is ${employee[key]}`)
+for (var key in founder) {
+    console.log(`The ${key} of Founder is ${founder[key]}`)
 };

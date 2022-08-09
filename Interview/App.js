@@ -22,8 +22,8 @@ myObject.func();
 
 function reverseStr(str) {
     const arr = str.split("");
-    console.log(arr);
     arr.reverse();
+    console.log(arr);
     a = arr.join("");
     console.log(a);
 };
@@ -93,7 +93,7 @@ arrL.length = 0;
 console.log(newArr);
 
 function checkInt(int) {
-    typeof int === "number" ? console.log("It's a Number") : console.log("It's Not an Integer");
+    typeof int === "number" ? console.log("It's a Number") : console.log("It's Not a Integer");
 };
 
 checkInt(2);

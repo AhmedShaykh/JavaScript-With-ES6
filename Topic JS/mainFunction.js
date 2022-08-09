@@ -1,7 +1,7 @@
 Hello();
 
 function Hello() {
-    console.log('Hello from function')
+    console.log('Hello from Function')
 };
 
 var exp = function () {
